@@ -1,0 +1,108 @@
+\documentclass[phd,black]{PrincetonThesis}
+%\usepackage{hyerref}
+%\usepackage{hepnames}
+\usepackage{multirow}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{slashed}
+\usepackage{amssymb}
+\usepackage{numprint}
+\usepackage{array}
+\usepackage{fp}
+\usepackage{acronym} %texorpdfstring
+\usepackage{ifthen}
+\usepackage{ptdr-definitions}
+
+\newcolumntype{T}{>{\trunc}r}
+\def\trunc\ignorespaces#1\\{%
+  \FPset\a{#1}
+  \FPround\a\a4
+  \a
+  \\
+}
+
+%  Needed to insert AN-11-486 in to thesis.
+\newboolean{cms@an}
+\setboolean{cms@an}{true} 
+
+%\newcommand{\registered}{\ooalign{\hfil\raise .00ex\hbox{\scriptsize R}\hfil\crcr\mathhexbox20D} }
+\newcommand{\lt}{\!<\! }
+\newcommand{\gt}{\!>\! }
+\newcommand{\instLumiUnit}{cm$^{-2}$s$^{-1}$ }
+\newcommand{\CHECK}[1]{\textbf{\color{red}[#1]}\xspace }
+\newcommand{\chk}[1]{\CHECK{CHECK THIS!} }
+
+%\ from AN-11-486
+\newcommand{\cmsSymbolFace}{\mathrm}
+\newcommand{\X}{\ensuremath{\mathrm{X}}\xspace}
+\newcommand{\BR}{\ensuremath{\mathrm{B}}\xspace}
+
+\newcommand{\Higgs}{\Hz}
+
+\newcommand{\Kzero}{\ensuremath{\mathrm{K}^0_\mathrm{s}}\xspace}
+\newcommand{\Zprime}{\cPZpr\xspace}
+\newcommand{\Pshiggs}{\Az}
+\newcommand{\Y}{\ensuremath{\mathrm{Y}}\xspace}
+
+\title{A Search for Long-Lived Neutral Particles Decaying to Dijets}
+\author{Andrzej Maciej Zuranski}
+\department{Physics}
+\advisor{Daniel Marlow}
+\degreemonth{September}
+\degreeyear{2013} 
+
+\begin{document}
+\begin{frontmatter}
+  \begin{thesisabstract}
+    \input abstract.tex
+  \end{thesisabstract}
+  %\begin{acknowledgements}
+  %  \input acknowledgements.tex
+  %\end{acknowledgements}
+\end{frontmatter}
+
+
+\chapter{Introduction}
+%\input {introduction.tex}
+\chapter{Displaced DiLepton Signatures}
+%\input Chapters/Theory/standardModel.tex
+%\input Chapters/Theory/hiddenValley.tex
+%\input {AN-11-486/Introduction.tex}
+\chapter{The LHC and the CMS Detector}
+\label{chap:cmslhc}
+%\input Chapters/lhcDescription.tex
+%\input Chapters/CMS/cmsDescription.tex
+\chapter{The CMS Online Luminosity System}
+\label{chap:lumi}
+%\input Chapters/Lumi/lumi.tex 
+\chapter{Data and Monte-Carlo Samples}
+%\input AN-11-486/DataAndMCsamples.tex
+\chapter{Event Selection and Performance}
+%\input AN-11-486/RecoAndSelection.tex
+\chapter {Background Estimates}
+%\input AN-11-486/Background.tex 
+\chapter{Systematic Uncertainties}
+%\input AN-11-486/Systematics.tex
+\chapter {Results}
+%\input AN-11-486/Results.tex
+\chapter{Conclusion}
+%\input Conclusion.tex
+%\chapter{Other}
+%\input AN-11-486/AppendixBayesian.tex
+%\input AN-11-486/AppendixLoose.tex
+%\input AN-11-486/AppendixTrackingEfficiencyFromCosmics.tex
+%\input AN-11-486/AppendixSignalResolution.tex
+%\input AN-11-486/AppendixBkgStat.tex 
+
+\appendix
+%\chapter{Anomolous events in the Forward Hadronic Calorimeter}
+%\label{appendix:TB2007}
+%\input Chapters/HFAnomolousEvents.tex 
+%\chapter{Tag and Probe}
+%\input Chapters/Analysis/TagAndProbePackage.tex
+\chapter{Stand Alone Muon Reconstruction for 2012}
+%\input Chapters/StandAloneMuonReconstruction.tex
+\cleardoublepage 
+\bibliographystyle{abbrv}  %or your favorite style
+\bibliography{thesis}  %assuming your bibtex file is thesis.bib
+\end{document}
