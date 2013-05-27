@@ -1,6 +1,7 @@
 \documentclass[phd,black]{PrincetonThesis}
-%\usepackage{hyerref}
+\usepackage{hyperref}
 %\usepackage{hepnames}
+\usepackage{heppennames2}
 \usepackage{multirow}
 \usepackage{epsfig}
 \usepackage{subfigure}
@@ -35,17 +36,17 @@
 %\ from AN-11-486
 \newcommand{\cmsSymbolFace}{\mathrm}
 \newcommand{\X}{\ensuremath{\mathrm{X}}\xspace}
+\newcommand{\XX}{\ensuremath{\mathrm{XX}}\xspace}
 \newcommand{\BR}{\ensuremath{\mathrm{B}}\xspace}
-
 \newcommand{\Higgs}{\Hz}
-
 \newcommand{\Kzero}{\ensuremath{\mathrm{K}^0_\mathrm{s}}\xspace}
 \newcommand{\Zprime}{\cPZpr\xspace}
 \newcommand{\Pshiggs}{\Az}
 \newcommand{\Y}{\ensuremath{\mathrm{Y}}\xspace}
+\newcommand{\qq}{\cPq\cPaq}
 
 \title{A Search for Long-Lived Neutral Particles Decaying to Dijets}
-\author{Andrzej Maciej Zuranski}
+\author{Andrzej Maciej \.Zura\'nski}
 \department{Physics}
 \advisor{Daniel Marlow}
 \degreemonth{September}
@@ -56,52 +57,44 @@
   \begin{thesisabstract}
     \input abstract.tex
   \end{thesisabstract}
-  %\begin{acknowledgements}
-  %  \input acknowledgements.tex
-  %\end{acknowledgements}
+  \begin{acknowledgements}
+    \input acknowledgements.tex
+  \end{acknowledgements}
 \end{frontmatter}
 
 
 \chapter{Introduction}
-%\input {introduction.tex}
-\chapter{Displaced DiLepton Signatures}
-%\input Chapters/Theory/standardModel.tex
-%\input Chapters/Theory/hiddenValley.tex
-%\input {AN-11-486/Introduction.tex}
+\label{chap:intro}
+\input {chapters/Introduction.tex}
+\chapter{Displaced Dijet Signatures}
+
 \chapter{The LHC and the CMS Detector}
 \label{chap:cmslhc}
-%\input Chapters/lhcDescription.tex
-%\input Chapters/CMS/cmsDescription.tex
-\chapter{The CMS Online Luminosity System}
-\label{chap:lumi}
-%\input Chapters/Lumi/lumi.tex 
-\chapter{Data and Monte-Carlo Samples}
-%\input AN-11-486/DataAndMCsamples.tex
-\chapter{Event Selection and Performance}
-%\input AN-11-486/RecoAndSelection.tex
-\chapter {Background Estimates}
-%\input AN-11-486/Background.tex 
+\input {chapters/CMSdetector.tex}
+
+\chapter{Event Selection}
+\label{chap:selection}
+\input{chapters/DataAndMCsamples.tex} 
+\input{chapters/RecoAndSelection.tex} 
+
+\chapter{Background}
+\input{chapters/Background.tex}
+
 \chapter{Systematic Uncertainties}
-%\input AN-11-486/Systematics.tex
-\chapter {Results}
-%\input AN-11-486/Results.tex
-\chapter{Conclusion}
+\input{chapters/Systematics.tex}
+
+\chapter{Results}
+\input{chapters/Results.tex}
+
+\chapter{Conclusions}
 %\input Conclusion.tex
-%\chapter{Other}
-%\input AN-11-486/AppendixBayesian.tex
-%\input AN-11-486/AppendixLoose.tex
-%\input AN-11-486/AppendixTrackingEfficiencyFromCosmics.tex
-%\input AN-11-486/AppendixSignalResolution.tex
-%\input AN-11-486/AppendixBkgStat.tex 
+
 
 \appendix
-%\chapter{Anomolous events in the Forward Hadronic Calorimeter}
-%\label{appendix:TB2007}
-%\input Chapters/HFAnomolousEvents.tex 
-%\chapter{Tag and Probe}
-%\input Chapters/Analysis/TagAndProbePackage.tex
-\chapter{Stand Alone Muon Reconstruction for 2012}
-%\input Chapters/StandAloneMuonReconstruction.tex
+\chapter{Hierarchical Clusters}
+\input{appendix/AppendixClusters.tex}
+\chapter{Impact of the signal efficiency systematic uncertainty on the expected limit}
+\input{appendix/AppendixSystematicsVsLimits.tex}
 \cleardoublepage 
 \bibliographystyle{abbrv}  %or your favorite style
 \bibliography{thesis}  %assuming your bibtex file is thesis.bib

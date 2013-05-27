@@ -1,0 +1,15 @@
+\section{The CMS detector}
+
+The central feature of the Compact Muon Solenoid (CMS) apparatus is a superconducting solenoid of 6\unit{m} internal diameter. Within the superconducting solenoid volume are a silicon pixel and strip tracker, a lead tungstate crystal electromagnetic calorimeter (ECAL), and a brass/scintillator hadron calorimeter (HCAL). Muons are measured in gas-ionization detectors embedded in the steel return yoke outside the solenoid. Extensive forward calorimetry complements the coverage provided by the barrel and endcap detectors. 
+
+The inner tracker measures charged particles within the pseudorapidity range $\abs{\eta}< 2.5$. It consists of 1440 silicon pixel and 15\,148 silicon strip detector modules and is located in the 3.8\unit{T} field of the superconducting solenoid. It provides an impact parameter resolution of ${\sim}15\mum$ and a transverse momentum (\pt) resolution of about 1.5\% for 100\GeVc particles. 
+The track reconstruction algorithms are able to reconstruct displaced tracks with transverse impact
+parameters up to $\approx 30$\,cm from particles decaying up to $\approx 60$\,cm from the beam line.  The
+performance of the track reconstruction algorithms has been studied with data
+\cite{Khachatryan:2010pw}. The silicon
+tracker is also used to reconstruct the primary vertices positions with a
+precision of $\sigma_d\sim 20$~\mum in each dimension.
+
+The particle-flow event reconstruction consists in reconstructing and identifying each single particle with an optimised combination of all subdetector information. The energy of photons is directly obtained from the ECAL measurement, corrected for zero-suppression effects. The energy of electrons is determined from a combination of the track momentum at the main interaction vertex, the corresponding ECAL cluster energy, and the energy sum of all bremsstrahlung photons attached to the track. The energy of muons is obtained from the corresponding track momentum. The energy of charged hadrons is determined from a combination of the track momentum and the corresponding ECAL and HCAL energy, corrected for zero-suppression effects, and calibrated for the nonlinear response of the calorimeters. Finally the energy of neutral hadrons is obtained from the corresponding calibrated ECAL and HCAL energy. 
+
+For each event, hadronic jets are clustered from these reconstructed particles with the infrared and collinear safe anti-$k_\mathrm{t}$ algorithm~\cite{Cacciari:2008gp}, operated with a size parameter $R$ of 0.5. The jet momentum is determined as the vectorial sum of all particle momenta in this jet, and is found in the simulation to be within 5\% to 10\% of the true momentum over the whole \pt spectrum and detector acceptance. Jet energy corrections are derived from the simulation, and are confirmed with in situ measurements with the energy balance of dijet and photon+jet events~\cite{CMS-PAS-JME-10-010}. The jet energy resolution amounts typically to 15\% at 10\GeV, 8\% at 100\GeV, and 4\% at 1\TeV. 

@@ -1,5 +1,5 @@
 *.ps
-*.pdf
+*.out
 *.dvi
 *.log
 *.toc

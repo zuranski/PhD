@@ -1,0 +1,663 @@
+--- COMMENTS may be placed outside the @ENTRYTYPE{ ... } stuctures
+--- CMS guidelines
+---- Every journal article citation should include the DOI, assuming one exists.
+---- All URLs for CMS notes, ANs, etc, should refer to the CDS server, not the CMS server. Use our standard format for them, as shown below.
+----  CMS Notes not available on CDS are regarded as private and may not be cited.
+----  CMS physics papers (i.e., those intended for publication in journals) may reference only POG PASs, not PAG PASs.
+---- For papers by collaborations, list the collaboration in the COLLABOROATION field and put the first author and "and others" in the AUTHOR field.
+----  If only the collaboration is listed as the author, put "{XXX Collaboration}" under AUTHOR.
+---- Number of authors to list:
+----   PRL requests that we include all authors up to fifteen except for large collaborations, and we take this as our internal guide as well. If there
+----   are more than fifteen, just list the first + "and others", as above.
+----   The individual journal bib style file (theirs, ours, PLB, etc.) will truncate at the appropriate point. We have ours set to _3_ as
+----   a reminder to list the appropriate number. For larger collaborations, just use first author + "and others".
+---- Use only the URL field instead of embedding an href (this is a change in our practice).
+---- A reference only published on the arXiv should be listed as UNPUBLISHED (with a note "Submitted to XXX" for large collaboration papers).
+----   Experimental papers only on the arXiv and not submitted for publication may not be cited.
+---- Some journals will lowercase the title: use {} to protect words which must be capitalized, e.g., {LHC}, {TeV}, {CERN}, {CMS}.
+----  Do not escape the entire title as it will then clash with the journal style.
+---- Journal names: the journals generally include the series in the journal name, "Physical Review D", vol 5, rather than PR D5
+%
+% Notes hosted only on CDS are listed as TECHREPORTs.
+%
+@article{cmsLongLivedLeptons,
+author = "Chatrchyan, Serguei and others",
+title          = "{Search in leptonic channels for heavy resonances decaying to long-lived neutral particles}",
+collaboration  = "CMS Collaboration",
+journal        = "JHEP",
+volume         = "1302",
+pages          = "085",
+doi            = "10.1007/JHEP02(2013)085",
+year           = "2013",
+eprint         = "1211.2472",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ex",
+reportNumber   = "CMS-EXO-11-101, CERN-PH-EP-2012-304",
+SLACcitation   = "%%CITATION = ARXIV:1211.2472;%%",
+}
+@Article{JINST,
+     author    = "Adolphi, R. and others",
+ collaboration = "CMS",
+     title     = "{The CMS experiment at the CERN LHC}",
+     journal   = "JINST",
+     volume    = "03",
+     year      = "2008",
+     pages     = "S08004",
+     doi       = "10.1088/1748-0221/3/08/S08004",
+     SLACcitation  = "%%CITATION = JINST,3,S08004;%%"
+}
+
+@Article{PYTHIA,
+     author    = "T. Sj{\"o}strand, S. Mrenna and P. Z. Skands",
+ collaboration = "",
+     title     = "{PYTHIA 6.4 Physics and Manual}",
+     journal   = "JHEP",
+     volume    = "05",
+     year      = "2006",
+     pages     = "576",
+     eprint    = "0603175",
+     archivePrefix = "arXiv",
+     SLACcitation  = "%%CITATION = JINST,3,S08004;%%"
+}
+
+@Article{GEANT4,
+     author    = "Agostinelli, S. and others",
+ collaboration = "GEANT4",
+     title     = "{GEANT4: A simulation toolkit}",
+     journal   = "Nucl. Instrum. Meth. A",
+     volume    = "506",
+     year      = "2003",
+     pages     = "250",
+     doi       = "10.1016/S0168-9002(03)01368-8",
+     SLACcitation  = "%%CITATION = NUIMA,A506,250;%%"
+}
+
+@Article{Khachatryan:2010pw,
+     author    = "Khachatryan, Vardan and others",
+     collaboration = "CMS",
+     title     = "{CMS Tracking Performance Results from Early LHC
+                  Operation}",
+     journal   = "Eur. Phys. J. C",
+     volume    = "70",
+     year      = "2010",
+     pages     = "1165",
+     eprint    = "1007.1988",
+     archivePrefix = "arXiv",
+     primaryClass  =  "physics.ins-det",
+     doi       = "10.1140/epjc/s10052-010-1491-3",
+}
+@ARTICLE{CMS_NOTE_2006-041,
+     AUTHOR       = "Adam, W. and others",
+     TITLE        = "{Track Reconstruction in the CMS Tracker}",
+     JOURNAL      = "CMS NOTE",
+     VOLUME       = "2006/041",
+     URL          = "http://cms.cern.ch/iCMS/jsp/openfile.jsp?type=IN&year=2006&files=NOTE2006_041.pdf",
+     YEAR         = "2006"}
+@ARTICLE{CMS_IN_2007-065,
+     AUTHOR       = "Pioppi, M.",
+     TITLE        = "{Iterative Tracking}",
+     JOURNAL      = "CMS IN-Note",
+     VOLUME       = "2007/065",
+     URL          = "http://cms.cern.ch/iCMS/jsp/openfile.jsp?type=IN&year=2007&files=IN2007_065.pdf",
+     YEAR         = "2007"}
+@ARTICLE{CMS_AN_2009-107,
+     AUTHOR       = "Azzuri, P. and others",
+     TITLE        = "{Very Large Impact Parameter Reconstruction}",
+     JOURNAL      = "CMS AN-Note",
+     VOLUME       = "2009/107",
+     URL          = "http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2009_107_v1.pdf",
+     YEAR         = "2009"}
+@ARTICLE{CMS_AN_2011-112,
+     AUTHOR       = "Harper, S. and Tomalin, I. and Halyo, V. and Lujan, P. and Boulahouache, C.",
+     TITLE        = "{Triggers to find Displaced Fermions from Exotica in the 2011 Run}",
+     JOURNAL      = "CMS AN-Note",
+     VOLUME       = "2011/112",
+     URL          = "http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2011_112_v2.pdf",
+     YEAR         = "2011"}
+@ARTICLE{CMS_AN_2011-488,
+     AUTHOR       = "Baber, M and others",
+     TITLE        = "{Triggers to find Displaced Fermions from Long Lived Resonances}",
+     JOURNAL      = "CMS AN-Note",
+     VOLUME       = "2011/488",
+     URL          = "http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2011_488_v1.pdf",
+     YEAR         = "2011"}
+@ARTICLE{CMS_AN_2009-082,
+     AUTHOR       = "Gay, A. and Belyaev, A. and Tomalin, I.",
+     TITLE        = "{Triggering on events with highly displaced vertices}",
+     JOURNAL      = "CMS AN-Note",
+     VOLUME       = "2009/082",
+     URL          = "http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2009_082_v1.pdf",
+     YEAR         = "2009"}
+@ARTICLE{CERN-LHCC-2007-021,
+     COLLABORATION= "CMS",
+     TITLE        = "CMS high level trigger",
+     JOURNAL      = "CERN-LHCC",
+     VOLUME       = "2007/021",
+     URL          = "http://cdsweb.cern.ch/record/1043242/files/lhcc-2007-021.pdf",
+     YEAR         = "2007"}
+@article{Han:2007ae,
+      author         = "Han, Tao and Si, Zongguo and Zurek, Kathryn M. and
+                        Strassler, Matthew J.",
+      title          = "{Phenomenology of hidden valleys at hadron colliders}",
+      journal        = "JHEP",
+      volume         = "07",
+      pages          = "008",
+      doi            = "10.1088/1126-6708/2008/07/008",
+      year           = "2008",
+      eprint         = "0712.2041",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+}
+@Article{Barbier:2004ez,
+     author    = "Barbier, R. and Berat, C. and Besancon, M. and Chemtob, M. and Deandrea, A. and others",
+     title     = "{R-parity violating supersymmetry}",
+     journal   = "Phys. Rept.",
+     volume    = "420",
+     year      = "2005",
+     pages     = "1",
+     eprint    = "hep-ph/0406039",
+     archivePrefix = "arXiv",
+     doi       = "10.1016/j.physrep.2005.08.006",
+     SLACcitation  = "%%CITATION = HEP-PH/0406039;%%"
+}
+@article{Hewett:2004nw,
+      author         = "Hewett, JoAnne L. and Lillie, Ben and Masip, Manuel and
+                        Rizzo, Thomas G.",
+      title          = "{Signatures of long-lived gluinos in split
+                        supersymmetry}",
+      journal        = "JHEP",
+      volume         = "09",
+      pages          = "070",
+      doi            = "10.1088/1126-6708/2004/09/070",
+      year           = "2004",
+      eprint         = "hep-ph/0408248",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+}
+@article{Basso:2008iv,
+      author         = "Basso, Lorenzo and Belyaev, Alexander and Moretti,
+                        Stefano and Shepherd-Themistocleous, Claire H.",
+      title          = "{Phenomenology of the minimal B-L extension of the
+                        Standard model: Z' and neutrinos}",
+      journal        = "Phys. Rev. D",
+      volume         = "80",
+      pages          = "055030",
+      doi            = "10.1103/PhysRevD.80.055030",
+      year           = "2009",
+      eprint         = "0812.4313",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+}
+@UNPUBLISHED{hltJetValid,
+     author    = "Tomalin, I.",
+     title     = "Displaced jet trigger validation software",
+     note      = "{CMSSW analysis module HLTriggerOffline\/SUSYBSM\/test\/analyseDisplacedJetTrigger\_cfg.py}",
+     year      = "2011"
+}
+@UNPUBLISHED{PD,
+     title     = "CMS physics primary datasets",
+     note      = "{https://twiki.cern.ch/twiki/bin/view/CMS/PhysicsPrimaryDatasets}",
+}
+@Article{Abazov:2009ik,
+     author    = "Abazov, V. M. and others",
+     collaboration = "D0",
+     title     = "{Search for Resonant Pair Production of long-lived
+                  particles decaying to $b \bar{b}$ in $p \bar{p}$ collisions
+                  at $\sqrt{s}= 1.96$-TeV}",
+     journal   = "Phys. Rev. Lett.",
+     volume    = "103",
+     year      = "2009",
+     pages     = "071801",
+     eprint    = "0906.1787",
+     archivePrefix = "arXiv",
+     doi       = "10.1103/PhysRevLett.103.071801",
+     SLACcitation  = "%%CITATION = 0906.1787;%%"
+}
+@article{Abazov:2008zm,
+      author         = "Abazov, V.M. and others",
+      title          = "{Search for long-lived particles decaying into electron
+                        or photon pairs with the D0 detector}",
+      collaboration  = "D0",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "101",
+      pages          = "111802",
+      doi            = "10.1103/PhysRevLett.101.111802",
+      year           = "2008",
+      eprint         = "0806.2223",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+}
+@article{Abazov:2006as,
+      author         = "Abazov, V.M. and others",
+      title          = "{Search for neutral, long-lived particles decaying into
+                        two muons in $p \bar{p}$ collisions at $\sqrt{s}$ =
+                        1.96-TeV}",
+      collaboration  = "D0",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "97",
+      pages          = "161802",
+      doi            = "10.1103/PhysRevLett.97.161802",
+      year           = "2006",
+      eprint         = "hep-ex/0607028",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+}
+@article{Cacciari:2008gp,
+      author         = "Cacciari, Matteo and Salam, Gavin P. and Soyez, Gregory",
+      title          = "{The Anti-k(t) jet clustering algorithm}",
+      journal        = "JHEP",
+      volume         = "04",
+      pages          = "063",
+      doi            = "10.1088/1126-6708/2008/04/063",
+      year           = "2008",
+      eprint         = "0802.1189",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+}
+@article{FeldmanCousins,
+  title = {Unified approach to the classical statistical analysis of small signals},
+  author = {Feldman, Gary J. and Cousins, Robert D.},
+  journal = {Phys. Rev. D},
+  volume = {57},
+  number = {7},
+  pages = {3873},
+  numpages = {16},
+  year = {1998},
+  month = {Apr},
+  doi = {10.1103/PhysRevD.57.3873},
+  publisher = {American Physical Society}
+}
+@Article{Martin:2009iq,
+     author    = "Martin, A. D. and Stirling, W. J. and Thorne, R. S. and
+                  Watt, G.",
+     title     = "{Parton distributions for the LHC}",
+     journal   = "Eur. Phys. J. C",
+     volume    = "63",
+     year      = "2009",
+     pages     = "189",
+     eprint    = "0901.0002",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph",
+     doi       = "10.1140/epjc/s10052-009-1072-5",
+     SLACcitation  = "%%CITATION = 0901.0002;%%"
+}
+@Article{Pumplin:2002vw,
+     author    = "Pumplin, J. and others",
+     title     = "{New generation of parton distributions with uncertainties
+                  from global QCD analysis}",
+     journal   = "JHEP",
+     volume    = "07",
+     year      = "2002",
+     pages     = "012",
+     eprint    = "hep-ph/0201195",
+     archivePrefix = "arXiv",
+     SLACcitation  = "%%CITATION = HEP-PH/0201195;%%"
+}
+@article{Nadolsky:2008zw,
+      author         = "Nadolsky, Pavel M. and Lai, Hung-Liang and Cao, Qing-Hong
+                        and Huston, Joey and Pumplin, Jon and others",
+      title          = "{Implications of CTEQ global analysis for collider
+                        observables}",
+      journal        = "Phys. Rev. D",
+      volume         = "78",
+      pages          = "013004",
+      doi            = "10.1103/PhysRevD.78.013004",
+      year           = "2008",
+      eprint         = "0802.0007",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+}
+@Article{VdM,
+     author    = "S. Van der Meer",
+     title     = "{Calibration of the effective beam height in the ISR}",
+     journal   = "CERN-ISR-PO",
+     volume    = "68-31",
+     year      = "1968",
+     pages     = "3",
+     eprint    = "",
+     archivePrefix = "",
+     SLACcitation  = "%%%%"
+}
+@TECHREPORT{cms:lumi11update,
+     author = "{CMS Collaboration}",
+     collaboration = "CMS",
+     title     = "{Absolute Calibration of the CMS Luminosity Measurement}",
+     url       = "http://cdsweb.cern.ch/record/1376102",
+     type      = "CMS Physics Analysis Summary",
+     number    = "CMS-PAS-EWK-11-001",
+     year      = "2011",
+}
+@TECHREPORT{cms:lumi11WinterUpdate,
+     author = "{CMS Collaboration}",
+     collaboration = "CMS",
+     title     = "{Absolute Calibration of the Luminosity Measurement at CMS: Winter 2012 Update}",
+     url       = "http://cdsweb.cern.ch/record/1434360",
+     type      = "CMS Physics Analysis Summary",
+     number    = "CMS-PAS-SMP-12-008",
+     year      = "2012",
+}
+@Article{cms:lumi12,
+     collaboration = "CMS",
+     title     = "{CMS luminosity calibration for 2012 LHC data}",
+     journal   = "CMS-PAS-LUM-12-003",
+     volume    = "",
+     year      = "2012",
+     pages     = "",
+     eprint    = "",
+     archivePrefix = "",
+     SLACcitation  = ""
+}
+@TECHREPORT{cms:lumi10,
+     author = "{CMS Collaboration}",
+     collaboration = "CMS",
+     title     = "{Measurement of the Luminosity}",
+     url       = "http://cdsweb.cern.ch/record/1279145",
+     type      = "CMS Physics Analysis Summary",
+     number    = "CMS-PAS-EWK-10-004",
+     year      = "2010",
+}
+@TECHREPORT{pas-trk-10-001,
+     author = "{CMS Collaboration}",
+     collaboration = "CMS",
+     title     = "{Tracking and Vertexing Results from First Collisions}",
+     url       = "http://cdsweb.cern.ch/record/1258204",
+     type      = "CMS Physics Analysis Summary",
+     number    = "CMS-PAS-TRK-10-001",
+     year      = "2010"
+}
+@TECHREPORT{pas-trk-10-003,
+     author = "{CMS Collaboration}",
+     collaboration = "CMS",
+     title     = "{Studies of tracker material}",
+     url       = "http://cdsweb.cern.ch/record/1279138",
+     type      = "CMS Physics Analysis Summary",
+     number    = "CMS-PAS-TRK-10-003",
+     year      = "2010"
+}
+@techreport{Frühwirth:1027031,
+      author       = "Frühwirth, R and Waltenberger, Wolfgang and Vanlaer,
+                      Pascal",
+      title        = "Adaptive Vertex Fitting",
+      institution  = "CERN",
+      address      = "Geneva",
+      number       = "CMS-NOTE-2007-008",
+      month        = "Mar",
+      year         = "2007",
+}
+@article{Bourilkov:2006cj,
+      author         = "Bourilkov, D and Group, R C and Whalley, M R",
+      title          = "{LHAPDF: PDF use from the Tevatron to the LHC}",
+      year           = "2006",
+      eprint         = "hep-ph/0605240",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      SLACcitation   = "%%CITATION = HEP-PH/0605240;%%",
+}
+@article{CMS-PAS-PFT-09-001,
+      author       = "Janot, M.",
+      title        = "Particle-Flow Event Reconstruction in CMS and Performance
+                      for Jets, Taus, and MET",
+      month        = "Apr",
+      year         = "2009",
+}
+@ARTICLE{CMS_AN_2010-209,
+     AUTHOR       = "Jones, M. and Silvers, D.",
+     TITLE        = "{A Measurement of the Absolute Track Reconstruction
+Efficiency Using a Track Embedding Method}",
+     JOURNAL      = "CMS AN-Note",
+     VOLUME       = "2010/209",
+     URL          = "http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2010_209_v5.pdf",
+     YEAR         = "2010"
+}
+@ARTICLE{CMS_AN_2011-159,
+     AUTHOR       = "B. Clerbaux and others",
+     TITLE        = "{Search for High-Mass Resonances Decaying to Electron Pairs in the CMS Experiment}",
+     JOURNAL      = "CMS AN-Note",
+     VOLUME       = "2011/159",
+     URL          = "http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2011_159_v6.pdf",
+     YEAR         = "2011"
+}
+@TECHREPORT{CMS_PAS_EXO-11-019,
+     author = "{CMS Collaboration}",
+     collaboration = "CMS",
+     title     = "{Search for Resonances in the Dilepton Mass Distribution in pp collisions at $\sqrt{s}=7$~TeV}",
+     url       = "http://cdsweb.cern.ch/record/1369192?ln=en",
+     type      = "CMS Physics Analysis Summary",
+     number    = "CMS-PAS-EXO-11-019",
+     year      = "2011",
+}
+@Article{Baffioni:2006cd,
+     author    = "Baffioni, S. and others",
+     title     = "{Electron reconstruction in CMS}",
+     journal   = "Eur. Phys. J. C",
+     volume    = "49",
+     year      = "2007",
+     pages     = "1099",
+     doi       = "10.1140/epjc/s10052-006-0175-5",
+     SLACcitation  = "%%CITATION = EPHJA,C49,1099;%%"
+}
+@TECHREPORT{cms:muon,
+     author = "{CMS Collaboration}",
+     collaboration = "CMS",
+     title     = "{Performance of the muon identification in pp collisions at $\sqrt{s}=7$~TeV}",
+     url       = "http://cdsweb.cern.ch/record/1279140",
+     type      = "CMS Physics Analysis Summary",
+     number    = "CMS-PAS-MUO-10-002",
+     year      = "2010",
+}
+@Article{RPCTechnicalTrigger,
+     author = "S. Tupputi on behalf of the CMS collaboration",
+     title = "{CMS RPC Technical trigger performances in cosmic runs}",
+     journal = "Nuclear Science Symposium Conference Record, 2008. NSS '08. IEEE",
+     volume = "",
+     year = "2008",
+     pages = "3222",
+     doi = "10.1109/NSSMIC.2008.4775034",
+     SLACcitation  = ""
+}
+@Article{cosmicMuonsAlgorithm,
+     author = "C. Liu, N. Neumeister",
+     title = "{Reconstruction of Cosmic and Beam-Halo Muons}",
+     journal = "CMS NOTE-2008/001",
+     volume = "",
+     year = "2008",
+     pages = "",
+     eprint = "",
+     archivePrefix = "",
+     SLACcitation = ""
+}
+@Article{Khachatryan:2011tm,
+     author    = "Khachatryan, Vardan and others",
+     collaboration = "CMS",
+     title     = "{Strange Particle Production in pp Collisions at $\sqrt{s}$ =
+                  0.9 and 7 TeV}",
+     journal   = "JHEP",
+     volume    = "05",
+     year      = "2011",
+     pages     = "064",
+     eprint    = "1102.4282",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ex",
+     doi       = "10.1007/JHEP05(2011)064",
+     SLACcitation  = "%%CITATION = 1102.4282;%%"
+}
+@article{Strassler:2006ri,
+      author         = "Strassler, Matthew J. and Zurek, Kathryn M.",
+      title          = "{Discovering the Higgs through highly-displaced
+                        vertices}",
+      journal        = "Phys. Lett. B",
+      volume         = "661",
+      pages          = "263",
+      doi            = "10.1016/j.physletb.2008.02.008",
+      year           = "2008",
+      eprint         = "hep-ph/0605193",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+}
+@Article{Read:2002hq,
+     author    = "Read, Alexander L.",
+     title     = "{Presentation of search results: The CL(s) technique}",
+     journal   = "J. Phys. G",
+     volume    = "28",
+     year      = "2002",
+     pages     = "2693",
+     doi       = "10.1088/0954-3899/28/10/313",
+     SLACcitation  = "%%CITATION = JPHGB,G28,2693;%%"
+}
+@article{Junk:1999kv,
+      author         = "Junk, Thomas",
+      title          = "{Confidence level computation for combining searches with
+                        small statistics}",
+      journal        = "Nucl. Instrum. Meth. A",
+      volume         = "434",
+      pages          = "435",
+      doi            = "10.1016/S0168-9002(99)00498-2",
+      year           = "1999",
+      eprint         = "hep-ex/9902006",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CARLETON-OPAL-PHYS-99-01, CERN-EP-99-041",
+      SLACcitation   = "%%CITATION = HEP-EX/9902006;%%",
+}
+@UNPUBLISHED{HiggsStatSoftware,
+     title     = "RooStats-based statistics tools for Higgs PAG",
+     note      = "{https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideHiggsAnalysisCombinedLimit}",
+}
+@article{Aad:2011zb,
+      author         = "Aad, Georges and others",
+      title          = "{Search for displaced vertices arising from decays of new
+                        heavy particles in 7 TeV pp collisions at ATLAS}",
+      collaboration  = "ATLAS",
+      journal        = "Phys. Lett. B",
+      volume         = "707",
+      pages          = "478",
+      doi            = "10.1016/j.physletb.2011.12.057",
+      year           = "2012",
+      eprint         = "1109.2242",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2011-131",
+      SLACcitation   = "%%CITATION = ARXIV:1109.2242;%%",
+}
+@article{ATLAS:2012av,
+      author         = "Aad, Georges and others",
+      title          = "{Search for a light Higgs boson decaying to long-lived
+                        weakly-interacting particles in proton-proton collisions
+                        at sqrt(s) = 7 TeV with the ATLAS detector}",
+      collaboration  = "ATLAS Collaboration",
+      journal        = "Phys.Rev.Lett.",
+      volume         = "108",
+      pages          = "251801",
+      year           = "2012",
+      eprint         = "1203.1303",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2011-228",
+      SLACcitation   = "%%CITATION = ARXIV:1203.1303;%%",
+}
+@article{Aaltonen:2011rja,
+      author         = "Aaltonen, T. and others",
+      title          = "{Search for heavy metastable particles decaying to jet
+                        pairs in $p\bar{p}$ collisions at $\sqrt{s} = 1.96$ TeV}",
+      collaboration  = "CDF",
+      journal        = "Phys. Rev. D",
+      volume         = "85",
+      pages          = "012007",
+      doi            = "10.1103/PhysRevD.85.012007",
+      year           = "2012",
+      note           = "18 pages, 12 figures, submitted to Phys. Rev. D",
+      eprint         = "1109.3136",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "FERMILAB-PUB-11-451-E-PPD, PUB-11-451-E-PPD",
+      SLACcitation   = "%%CITATION = ARXIV:1109.3136;%%",
+}
+@ARTICLE{CMS_AN_2011-444,
+     AUTHOR       = "Clerbaux, B. and others",
+     TITLE        = "{Search for High-Mass Resonances Decaying to Electron Pairs in the CMS Experiment}",
+     JOURNAL      = "CMS AN-Note",
+     VOLUME       = "2011/444",
+     URL          = "http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2011_444_v8.pdf",
+     YEAR         = "2011"}
+@ARTICLE{Khachatryan:2010xn,
+      author         = "Khachatryan, Vardan and others",
+      title          = "{Measurements of Inclusive W and Z Cross Sections in pp
+                        Collisions at sqrt(s)=7 TeV}",
+      collaboration  = "CMS Collaboration",
+      journal        = "JHEP",
+      volume         = "1101",
+      pages          = "080",
+      doi            = "10.1007/JHEP01(2011)080",
+      year           = "2011",
+      eprint         = "1012.2466",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "FERMILAB-PUB-10-623-CMS, CMS-EWK-10-002,
+                        CERN-PH-EP-2010-050",
+      SLACcitation   = "%%CITATION = ARXIV:1012.2466;%%",
+}
+@article{Beringer:1900zz,
+      author         = "{Particle Data Group} and J. Beringer and others",
+      title          = "{Review of Particle Physics}",
+      journal        = "Phys. Rev. D",
+      volume         = "86",
+      pages          = "010001",
+      doi            = "10.1103/PhysRevD.86.010001",
+      year           = "2012",
+}
+@article{Chatrchyan:2012jna,
+      author         = "Chatrchyan, Serguei and others",
+      title          = "{Search in leptonic channels for heavy resonances
+                        decaying to long-lived neutral particles}",
+      collaboration  = "CMS Collaboration",
+      journal        = "JHEP",
+      volume         = "1302",
+      pages          = "085",
+      doi            = "10.1007/JHEP02(2013)085",
+      year           = "2013",
+      eprint         = "1211.2472",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-EXO-11-101, CERN-PH-EP-2012-304",
+      SLACcitation   = "%%CITATION = ARXIV:1211.2472;%%",
+}
+@article{Bartoldus:1357303,
+      author       = "Bartoldus, R",
+      title        = "Online Determination of the LHC Luminous Region with the
+                      ATLAS High-Level Trigger",
+      month        = "Jun",
+      year         = "2011",
+}
+@TECHREPORT{CMS-PAS-JME-10-010,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = "CMS",
+      TITLE       = "Determination of the Jet Energy Scale in {CMS} with pp Collisions at $\sqrt{s}= 7$ {TeV}",
+      URL         = "http://cdsweb.cern.ch/record/1308178",
+      TYPE        = "CMS Physics Analysis Summary",
+      NUMBER      = "CMS-PAS-JME-10-010",
+      YEAR        = "2010"
+}
+@UNPUBLISHED{METFilters,
+     AUTHOR   = "{CMS Collaboration}",
+     TITLE    = "Missing ET optional filters",
+     URL      = "{https://twiki.cern.ch/twiki/bin/view/CMS/MissingETOptionalFilters}",
+     YEAR     = "2012"
+}
+@UNPUBLISHED{PileUp,
+     title     = "CMS reweighting procedure for pile-up",
+     url      = "{https://twiki.cern.ch/twiki/bin/view/CMS/PileupReweighting}",
+     year      = "2012",
+     author    = "{CMS Collaboration}"
+}
+@UNPUBLISHED{PileUpSystematic,
+     title     = "CMS estimating systematic errors due to pile-up modeling",
+     url      = "{https://twiki.cern.ch/twiki/bin/view/CMS/PileupSystematicErrors}",
+     year      = "2012",
+     author    = "{CMS Collaboration}"
+}
+@UNPUBLISHED{RooStatsCL95,
+     title = "RooStatsCl95: cross section in a counting experiment",	
+     url = "{https://twiki.cern.ch/twiki/bin/view/CMS/RooStatsCl95}",
+     year = "2012",
+     author = "{CMS Collaboration}"
+}
