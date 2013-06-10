@@ -23,7 +23,7 @@ Andrzej_Zuranski-Thesis.pdf: thesis.aux thesis.bbl
 	mv thesis.pdf Andrzej_Zuranski-Thesis.pdf
 
 clean:
-	$(RM) Andrzej_Zuranski-Thesis.pdf *.ps *.dvi *.log *.toc *.aux *.lot *.lof *.bbl *.blg
+	$(RM) Andrzej_Zuranski-Thesis.pdf *.ps *.dvi *.log *.toc *.aux *.lot *.lof *.bbl *.blg *.out
 
 distclean: clean
 	$(RM) *~
