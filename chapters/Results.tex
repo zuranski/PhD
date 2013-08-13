@@ -164,36 +164,43 @@ tracker layers being consistent with a nuclear interaction vertex. \label{fig:ev
 \subsection{Limits}
 \label{subsec:limits}
 
-Given the null result of the search an upper limit is quoted on the cross-section 
-to produce $\Higgs \to 2\X$ times the branching ratio squared, $B^2$, for \X to decay into \qq. 
-The expected number of signal dijet candidates passing the selection cuts can be expressed as:
+We set 95\% confidence level
+(CL) upper limits for a counting experiment
+using the CL$_\mathrm{s}$ method \cite{Read:2002hq, Junk:1999kv}. The limit calculation
+takes into account the systematic uncertainties described in Section \ref{sec:systematics} by introducing
+a nuisance parameter for each uncertainty, marginalised by a log-normal prior distribution.
+
+As a first step, upper limits are placed on the mean number of \X bosons ($N_\X$) that could pass
+the selection requirements. The resulting observed upper limits on $N_\X$ are 4.6 candidates
+for the {\it low} $L_{xy}$ selection and 3.7 candidates for the {\it high} selection.
+ These limits are independent
+of the particular model assumed for \X boson production.
+
+
+Secondly, an upper limit is quoted on the cross section
+to produce $\Higgs \to 2\X$ times the branching fraction squared, $B^2$, for \X to decay into \qq.
+The expected number of signal dijet candidates passing the selection can be expressed as:
 \begin{equation}
 N_\X \geq 2 \mathcal{L}\epsilon A\sigma B^2
 \end{equation}
 where $\mathcal{L}$ is the integrated luminosity, $A$ is the acceptance,
- $\epsilon$ is the efficiency to reconstruct \X boson candidates
-(Table \ref{tab:sigeff}), $\sigma$ is the production cross-section of the heavy resonance decaying to 2\X and 
-$B$ is the branching ratio of \X to dijets. The non-equality arises from the fact that when the branching ratio $B$
-is smaller than 1, there is an additional contribution from events where only one \X boson decayed to dijets. 
+$\epsilon$ is the efficiency to reconstruct \X boson candidates
+(Table \ref{tab:sigeff}), $\sigma$ is the production cross-section of the heavy resonance decaying to \X,
+$B$ is the branching fraction of $\X$ to dijets, and the factor of 2 arises from 2 $\X$ decays in each event.
+ The non-equality arises from the fact that when the branching
+fraction $B$
+is smaller than 1, there is an additional contribution from events where only one \X boson decayed to dijets.
 The limits will therefore be exact when $B=1$ and conservative when $B$ is smaller than 1.
- 
-
-For each combination of the \Higgs and \X boson masses that are modelled and for a range of \X boson lifetimes,
-the 95\% CL upper limits on $\sigma B^2$ are calculated.
-  
-%The lifetime re-weighting procedure is explained in Appendix \ref{sec:reweighting}.
- The limit calculation employs CL$_s$ method \cite{Read:2002hq} for a counting
-experiment with 95\% confidence level. The calculation uses the statistics software 
-package {\tt RooStatsCL95} recommended by
- the CMS Statistics Committee \cite{RooStatsCL95}. 
-
-In order to expand the number of tested models
-the lifetime distributions of the signal MC events are re-weighted to different
-mean values using generator level lifetimes, thus providing additional signal efficiencies. 
-%The lifetime re-weighting procedure is explained in Appendix \ref{sec:reweighting}.
-The limits on $\sigma B^2$ and the limits on $\sigma B^2 A$ corrected for detector acceptance are computed. 
-They are presetned in Figures
-\ref{fig:limits} and \ref{fig:limitsacceptance} respectively.
+The observed and
+expected limits are shown in Figure \ref{fig:limits}. In order to expand the number of tested models,
+the lifetime distributions of the signal MC candidates are reweighted to
+different mean values, namely $0.4\tau$, $0.6\tau$, and $1.4\tau$ for every
+lifetime value $\tau$ and mass combination listed
+in Table \ref{tab:sigeff}.
+Candidates are weighted using event based weights computed as the product
+ of weights assigned to each $\X$ candidate in the event.
+The reweighted signal reconstruction efficiencies are then used
+to compute the expected and observed limits for these additional mean lifetime values.
 
 \begin{figure}[htbp]
 \centering
@@ -206,16 +213,16 @@ They are presetned in Figures
 \caption{Expected and observed 95\% CL limits for all tested signal models.\label{fig:limits}}
 \end{figure}
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.49\textwidth]{plots/limits/1000_350ea.pdf}
-\includegraphics[width=0.49\textwidth]{plots/limits/1000_150ea.pdf} 
-\includegraphics[width=0.49\textwidth]{plots/limits/400_150ea.pdf}
-\includegraphics[width=0.49\textwidth]{plots/limits/400_50ea.pdf} 
-\includegraphics[width=0.49\textwidth]{plots/limits/200_50ea.pdf}
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[width=0.49\textwidth]{plots/limits/1000_350ea.pdf}
+%\includegraphics[width=0.49\textwidth]{plots/limits/1000_150ea.pdf} 
+%\includegraphics[width=0.49\textwidth]{plots/limits/400_150ea.pdf}
+%\includegraphics[width=0.49\textwidth]{plots/limits/400_50ea.pdf} 
+%\includegraphics[width=0.49\textwidth]{plots/limits/200_50ea.pdf}
 
-\caption{Expected and observed 95\% CL limits within the detector acceptance for all tested signal models.\label{fig:limitsacceptance}}
-\end{figure}
+%\caption{Expected and observed 95\% CL limits within the detector acceptance for all tested signal models.\label{fig:limitsacceptance}}
+%\end{figure}
 
 \subsection{Conclusions}
 \label{subsec:conclusions}

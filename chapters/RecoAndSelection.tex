@@ -79,7 +79,7 @@ a transverse displacement up to 60\cm, therefore secondary vertices with higher 
 \subsection{Event filters}
 
 The following event filters are applied to mitigate known detector effects affecting the quality of the data
-acquired by CMS during the 2012 LHC run \cite{METFilters}:
+acquired by CMS during the 2012 LHC run:
 \begin{itemize}
 \item {\bf primary vertex filter} - events are required to contain a primary vertex with at least four associated
 tracks whose position is displaced from the nominal interaction point by no more than 2 \cm in the direction
@@ -138,7 +138,7 @@ once the full selection is applied.
  
 Additionally, tracks reconstructed with 
 the CMS iterative tracking
-algorithm \cite{CMS_IN_2007-065}, are associated within 0.5 cone to both jets. The track momentum vector used for 
+algorithm \cite{Giordano:2012hr}, are associated within 0.5 cone to both jets. The track momentum vector used for 
 the association is evaluated at the point of closest approach to the beam line. Only {\it high-purity} tracks
 with $p_T>$ 1\GeV are considered. Among them we select a set of {\bf displaced tracks} defined as those with
 a transverse impact parameter with respect to the primary vertex greater than 500\micron, which is large enough
@@ -174,7 +174,7 @@ using two different algorithms:
 
 \item{\bf Adaptive Vertex Fitter}
 \label{subsec:AVF}
-\cite{Frühwirth:1027031}. The secondary dijet vertex is required to have a chisquared per degree of freedom 
+\cite{Waltenberger:1166320}. The secondary dijet vertex is required to have a chisquared per degree of freedom 
 $\chi^2/dof < 5$. Additionally, for compatibility with the displaced dijet hypothesis we require that at least 
 one track from each jet be included in the secondary vertex. 
 This requirement greatly reduces the background contribution
@@ -186,7 +186,7 @@ The following quantities obtained from the vertex fit, with plots presented in F
  \item track multiplicity;
  \item fraction of tracks assigned to the vertex with a positive value of signed impact parameter;
  \item number of missing tracker hits behind the vertex position per track - each track in CMS is reconstructed 
-from hits in the silicon tracker using a Kalman Filter algorithm \cite{CMS_IN_2007-065}. The algorithm propagates
+from hits in the silicon tracker using a Kalman Filter algorithm \cite{Giordano:2012hr}. The algorithm propagates
  track seeds through the CMS tracker in the direction from the beam line towards the calorimeters. Whenever a hit 
 is found along the trajectory the track parameters are updated, while occasional missing measurements 
 are allowed. 
