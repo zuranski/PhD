@@ -11,18 +11,18 @@ independent regions as listed in Table \ref{tab:regions}.
 \begin{table}[htbp]
 \centering
 \caption{Naming convention for the regions used in background estimation. "+" corresponds to a selection 
-being applied, while "-" to a selection being inverted. \label{tab:regions}}
+being applied, while "--" to a selection being inverted. \label{tab:regions}}
 \begin{tabular}{cccc}
  \hline
   Region & selection 1 & selection 2 & selection 3 \\
  \hline
- A & - & - & - \\
- B & + & - & - \\
- C & - & + & - \\
- D & - & - & + \\
- E & - & + & + \\
- F & + & - & + \\
- G & + & + & - \\
+ A & -- & -- & -- \\
+ B & + & -- & -- \\
+ C & -- & + & -- \\
+ D & -- & -- & + \\
+ E & -- & + & + \\
+ F & + & -- & + \\
+ G & + & + & -- \\
  H & + & + & + \\
 \hline
 \end{tabular} 
@@ -47,33 +47,35 @@ between BCD/A$^2$ and any of the 6 other predictions.
 
 \subsection{Selection optimisation}
 \label{subsec:cutvalues}
-The final selection criteria on the individual variables which are employed in the background estimation procedure 
-are determined by optimizing expected limit for each tested signal model.
-Considered signal models include various masses of the \Higgs and \X exotic particles for different
-mean lifetimes. 
-The selection variables do not strongly depend on the particles masses, therefore the optimal selection
-varies only as a function of the mean transverse decay length ($L_{xy}$) of the \X bosons.
-We use two selections for {\it low} and {\it high} mean $L_{xy}$ values, which are 
-described in Table \ref{tab:background}.
-The {\it Low} selection is used for signal models where the mean $L_{xy}$ of the exotic particles
- is below $\sim$20cm, whilst for higher lifetimes {\it high} selection is used.   
+We determine the numerical values of the selection criteria that are employed in the background estimation procedure 
+by optimizing expected limit for each tested signal model.
+The signal models considered include various values of the \Higgs mass, the \X mass, and the \X lifetime.
+The selection variables
+do not strongly depend on the particles masses, therefore the optimal selection criteria
+vary only as a function of the
+mean transverse decay length ($L_{xy}$)
+of the \X bosons. We use two sets of selection criteria,
+depending on whether the mean
+$L_{xy}$ of the \X bosons is below or above 30 \cm, respectively. The selection criteria are
+detailed in Table \ref{tab:background}.
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{lcc}
+\begin{tabular}{r|c|c}
+%\hline
+$\bf L_{xy}$ &\bf  $\bf <20\cm (low)$ & \bf  $\bf >20\cm (high)$ \\
 \hline
-$\bf L_{xy}$ \bf selection & \bf low & \bf high \\
+prompt tracks & $\leq1$ & $\leq1$ \\
+%\hline
+prompt energy fraction & $<0.15$ & $<0.09$ \\
+%\hline
+vertex/cluster disc. & $>0.9$ & $>0.8$  \\
 \hline
-Prompt Tracks & max 1 & max 1 \\ 
-Prompt Energy Fraction & max 15\% & max 9\% \\
-Vertex Discriminant & min 0.9 & min 0.8  \\
-\hline
-\bf Predicted Background & $\bf 1.60\pm0.26(stat)\pm0.51(sys)$ & $\bf 1.14\pm0.15(stat)\pm0.52(sys)$ \\
-\hline
+\bf expected background & $\bf 1.60\pm0.26(stat.)\pm0.51(syst.)$ & $\bf 1.14\pm0.15(stat.)\pm0.52(syst.)$ \\
+%\hline
 \end{tabular}
-\caption{Optimized selection criteria and predicted background.\label{tab:background}}
-\end{table}  
-
+\caption{Optimised selection criteria and the corresponding background expectations with their statistical and systematic uncertainties.\label{tab:background}}
+\end{table}
 
 \subsection{Background tests}
 \label{subsec:backgroundtests}
@@ -88,11 +90,12 @@ and its uncertainty are obtained
 using the prescription from Section \ref{subsec:abcd}. The background prediction and its statistical 
 and systematic uncertainties are
  not explicitly plotted given that all of the 7 combinations employed in its derivation are shown.  
-The compatibility between predicted and observed background counts 
-are estimated with {\it p-values} and {\it z-scores} of a given measurement in the bottom plots. The {\it p-values}
-are computed with respect to the estimated background probability density function (p.d.f.). 
-As the background level is estimated
-with an uncertainty, therefore the background p.d.f. is a Poissonian function convolved  
+The compatibility between predicted and observed background is estimated with a {\it p-value} for every measurement. 
+%The {\it p-values} are then converted into {\it significances} using the normal distribution. 
+ The {\it p-value}
+is computed with respect to the estimated background probability density function (p.d.f.). 
+The background prediction has an associated uncertainty, 
+therefore the background p.d.f. is a Poissonian function convolved  
 with a Gaussian error function. The probability of observing $n$ background events is given by:
 \begin{equation}
 B(n,b,\sigma_b)= \frac{1}{\sqrt{2\pi}\sigma_b} \int_{0}^{\infty} 
@@ -108,8 +111,10 @@ normalization into account.
 {\it p} (n_{obs},b,\sigma_b) = \sum_{k\geq n_{obs}} B(k,b,\sigma_b) / \sum_{k} B(k,b,\sigma_b)
 \label{eqn:pvalues}
 \end{equation}
-The {\it p-values} are then converted into {\it z-scores} using quantiles of the normal
- distribution, therefore they describe the significance of the observed discrepancies. 
+The {\it p-values} are then converted into {\it significances} using the normal
+ distribution. The {\it significances} are shown in the bottom plots (Figures 
+\ref{fig:bkg_MC}-\ref{fig:10percent}) aligned to the corresponding background
+measurements.  
 
 \subsubsection{QCD Monte Carlo background prediction}
 \label{subsubsec:bkgQCDMC}

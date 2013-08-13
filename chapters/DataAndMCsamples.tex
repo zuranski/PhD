@@ -4,7 +4,7 @@ For this analysis, pp collision data at a centre-of-mass energy of 8~TeV corresp
 luminosity of $18.6 \pm 0.8$ ~\fbinv delivered by the LHC in 2012 are used. 
 Data have been collected with dedicated displaced jet triggers. Displaced jet triggers require
 the transverse energy sum
-of all jets, $H_T$, to be above 300 \GeV and further demand the presence of one or two jets with $p_T>$60\GeVc,
+of all jets, $H_T$, to be above 300 \GeV and further demand the presence of one or two jets with $p_T>$60\GeV,
 each having not more than 2 associated tracks with impact parameters below 300\mum. Additionally, the energy 
 contribution of associated tracks with transverse impact parameters below 500\mum is required to be less than
 15\% of the total jet energy. Impact parameters are computed with respect to the leading primary vertex 
@@ -34,12 +34,12 @@ HLT\_HT300\_DoubleDisplacedPFJet60 & 1 & 18.6 & 1.9\\
 \end{table}
 
 Signal Monte Carlo (MC) simulation samples are generated using \PYTHIA V6.424 \cite{PYTHIA} to
-simulate \Higgs~production through gluon fusion ($gg \rightarrow\Higgs$). Using \PYTHIA PYUPDA cards,
+simulate \Higgs~production through gluon fusion ($gg \to \Higgs$). Using \PYTHIA PYUPDA cards,
 subsequently the \Higgs~is forced to decay to two long-lived, spin~0, exotic particles
-($\Higgs\rightarrow\X\X$), which each then decays to quark-antiquark pairs ($\X\rightarrow\qq$).
-The long-lived exotic \X decays to any flavor $\qq$ pair, excluding \ttbar, with equal probability. Samples
-with different combinations of \Higgs~masses ($M_{\Higgs}$ = 120, 200, 400, 1000 \GeVcc ) and \X~boson masses
-($M_{\X}$ = 20, 50, 150, 350 \GeVcc) are generated. These are listed in Table~\ref{tab:signalMC}. The
+($\Higgs \to 2\X$), which each then decays to quark-antiquark pairs ($\X \to \qq$).
+The long-lived exotic \X decays to any flavor \qq pair, excluding \ttbar, with equal probability. Samples
+with different combinations of \Higgs~masses ($M_{\Higgs}$ = 120, 200, 400, 1000 \GeV ) and \X~boson masses
+($M_{\X}$ = 20, 50, 150, 350 \GeV) are generated. These are listed in Table~\ref{tab:signalMC}. The
 \X boson ~lifetime used in these samples is chosen to give a mean transverse decay length of approximately
 2\cm, 20\cm and 200\cm in the laboratory frame. Such a selection of laboratory frame lifetimes is chosen in 
 order to maximally explore the capabilities of the CMS detector for reconstructing long-lived particles.
@@ -54,16 +54,16 @@ models are presented in Figure \ref{fig:sigHX}.
 \caption{Generated \Higgs $p_T$ and \X $p_T$ and $\eta$ distributions for selected signal models.\label{fig:sigHX}}
 \end{figure} 
 
-The only significant background is expected to arise from multijet events, and the corresponding simulated samples
+The only significant background is expected to arise from QCD events, and the corresponding simulated samples
 are listed in Table~\ref{tab:backgrMC}.
 For each simulated background sample the number of events passing the signal trigger
 scaled to the total integrated luminosity is shown. The per event weight factors that are applied according to the
 number of events available in each sample are also given. The weight factors for samples with $\hat{p_T}$ 
-below 470\GeVc are significantly above 1, therefore the amount of simulated events in this region is insufficient. 
+below 470\GeV are significantly above 1, therefore the amount of simulated events in this region is insufficient. 
 The background contribution   
 significantly decreases with increased $\hat{p_T}$, therefore we do not consider samples with $\hat{p_T}$ higher
-than 800 \GeVc. For QCD events with $\hat{p_T}$ below 80\GeVc the small efficiency of passing the trigger
- requirement of $H_T>$300\GeVc 
+than 800 \GeV. For QCD events with $\hat{p_T}$ below 80\GeV the small efficiency of passing the trigger
+ requirement of $H_T>$300\GeV 
 makes the low $\hat{p_T}$ contribution negligible.  
 In all the samples, the response of the detector is simulated
 in detail using \GEANTfour~\cite{GEANT4}. The samples are then processed through the trigger emulation and
@@ -82,7 +82,7 @@ simulated signal event is presented in Figure \ref{fig:eventDisplay}.
 as is the mean proper decay length of the \X~boson. \label{tab:signalMC}}
 \begin{tabular}{|c|c|c|}
 \hline 
-  $M_{\Higgs}$ (\GeVcc) & $M_{\X}$ (\GeVcc) & $c\tau$ (cm) \\
+  $M_{\Higgs}$ (\GeV) & $M_{\X}$ (\GeV) & $c\tau$ (cm) \\
 \hline
        1000      &       350      &     3.5, 35, 350      \\          
        1000      &       150      &     1, 10, 100      \\          
@@ -100,8 +100,6 @@ as is the mean proper decay length of the \X~boson. \label{tab:signalMC}}
 \end{center}
 \end{table}
 
-% Weights taken from Kristian's output log file.
-% Cross-sections sampleXSec taken from UserCode/DisplacedLeptons/Samples/python/samples/
 
 \begin{table}[hbtp]
 \begin{center}
