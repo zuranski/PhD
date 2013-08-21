@@ -1,6 +1,6 @@
 \documentclass[phd,black]{PrincetonThesis}
 \usepackage{hyperref}
-\usepackage{heppennames2}
+\usepackage{hepnames}
 \usepackage{multirow}
 \usepackage{epsfig}
 \usepackage{subfigure}
@@ -33,15 +33,15 @@
 
 %\ from AN-12-402
 \newcommand{\cmsSymbolFace}{\mathrm}
-\newcommand{\X}{\ensuremath{\mathrm{X}}\xspace}
-\newcommand{\XX}{\ensuremath{\mathrm{XX}}\xspace}
+\newcommand{\X}{\ensuremath{\mathrm{X^{0}}}\xspace}
+\newcommand{\XX}{\ensuremath{\mathrm{X^{0}X^{0}}}\xspace}
 \newcommand{\BR}{\ensuremath{\mathrm{B}}\xspace}
 \newcommand{\Higgs}{\Hz}
 \newcommand{\Kshort}{\ensuremath{\mathrm{K}^0_\mathrm{s}}\xspace}
 \newcommand{\Zprime}{\cPZpr\xspace}
 \newcommand{\Pshiggs}{\Az}
 \newcommand{\Y}{\ensuremath{\mathrm{Y}}\xspace}
-\newcommand{\qq}{\cPq\cPaq\xspace}
+\newcommand{\qq}{\Pq\Paq\xspace}
 
 \title{A Search for Long-Lived Neutral Particles Decaying to Dijets}
 \author{Andrzej Maciej \.Zura\'nski}
@@ -68,6 +68,7 @@
 
 \chapter{The LHC and the CMS Detector}
 \label{chap:cmslhc}
+\input {chapters/LHC.tex}
 \input {chapters/CMSdetector.tex}
 
 \chapter{Event Selection}
