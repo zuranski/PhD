@@ -14,17 +14,22 @@ The issues we have already encountered at the energy scales available experiment
 hint at some grander underlying structure of nature, which is yet to be found.
 
 % More intro needed
-The physics goals of the experiments at the Large Hadron Collider (LHC) are to
-explore the Higgs sector of the SM, explore the TeV mass
-scale, seek connections between the particles produced in proton collision and dark matter etc.
+The physics goals of the experiments at the Large Hadron Collider (LHC) are to explore
+the Higgs sector of the Standard Model, fully investigate the \TeV mass scale with searches
+for new particles, seek connections between the particles 
+produced in proton collision and dark matter and many others. 
 Described in this dissertation is a particular course of exploration: a search for hypothetical
-particles that are massive and decay with a lifetime of the order of nanoseconds. The existence
-of such particles would offer a clue about what physics may lie beyond the Standard Model.
+particles that are neutral, 
+massive and decay with a mean lifetime between pico and nanoseconds. The existence
+of such long-lived exotic
+particles would offer a clue about what physics may lie beyond the Standard Model.
 
-The thesis is structured as follows. Chapter 1 presents the Standard Model together with its
-open questions followed by an introduction of Hidden Valley SM extensions and 
-the emergence of the long-lived particles we search for.
-Chapter 2 describes the LHC and the Compact Muon Solenoid (CMS) apparatus.
+The thesis is structured as follows. Chapter \ref{chap:intro}
+ presents the Standard Model together with its
+open questions, it is then followed by an introduction of Hidden Valley models as a possible
+ extension of the Standard Model. The motivations for long-lived particles searches are also 
+given.
+Chapter \ref{chap:cmslhc} describes the LHC and the Compact Muon Solenoid (CMS) apparatus.
 
 Used throughout is the system of units in which $\hbar=c=1$.
 
@@ -108,21 +113,21 @@ is the strong coupling constant.
 
 An interesting feature of the strong interaction is that as the energy scale of the interaction 
 increases (the length scale decreases) the strength of the coupling constant becomes small.
-Such a feature, also known as {\it asymptotic freedom},
+Such a feature of the coupling constant,
+ also known as {\it asymptotic freedom},
  is an outcome of the interaction dimension (N=3) and the number of existing
-quark flavors (6 known quark flavors) when the coupling constant is determined as a function
-of the energy scale of the interaction.
+quark flavors (6 known flavors).
  Another aspect of the strong interaction is {\it colour
 confinement}. Although the phenomenon is not yet well explained, it is believed to
  relate to the fact that gluons also carry colour charge and can interact
 with themselves. As a result of the confinement the colour particles 
-cannot be isolated and also directly measured, 
-but they rather clump together to form groups of particles that are colour neutral, the hadrons.
+cannot be isolated and also directly measured. The particles that carry colour
+ clump together to form groups of particles that are colour neutral which we know as the hadrons.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{plots/intro/Higgs_SM.jpeg}
-\caption{Table of elementary particles: quarks and leptons (spin-1/2) on the left,
+\caption{Table of elementary particles: quarks and leptons (spin-1/2) are shown on the left,
 the gauge bosons (spin-1) on the right, in the center the Higgs boson (spin-0).
 \label{fig:parttable}}
 
@@ -141,10 +146,10 @@ weak isospin and hypercharge interactions into the well known weak and electroma
 
 
 
-\subsection{Higgs Mechanism}
+\subsection{The Higgs Mechanism}
 
 What happens if a particle field takes on a non-zero expectation value in vacuum? Depending on the
-quantum numbers of the non-zero field, the vacuum will not necessarily be invariant under
+quantum numbers of this non-zero field, the vacuum will not necessarily be invariant under
 all symmetries of the Lagrangian. That's what is postulated by the Higgs mechanism, where
 an existence of a scalar field, with non-zero vacuum expectation value
 reduces the gauge symmetries of the physical 
@@ -167,20 +172,21 @@ where $\theta_W$ is the weak mixing angle defined as $\theta_W=tan^{-1} g^{'}/g$
 and $g^{'}$ are the coupling constants of $SU(2)_L$ and $U(1)_Y$, respectively; $A_{\mu}$ is the 
 massless electromagnetic photon field ($\gamma$); $W_{\mu}^{\pm}$ and $Z_{\mu}$ are the charged 
 and neutral weak fields, correspondingly. The mechanism requires the introduction of a complex
-scalar Higgs doublet. The potential introduced by this field breaks part of the EW gauge symmetry,
+scalar Higgs doublet. The potential introduced by this field breaks part of the electroweak
+ gauge symmetry,
 after which only one neutral Higgs scalar $H$ remains. As a result, 
 the $W^{\pm}$ and $Z$ acquire masses and the photon remains massless.
 
-\subsection{Open questions and physics beyond the Standard Model}
+\section{Open questions and physics beyond the Standard Model}
 
 At the current stage all the parameters of the Standard Model have been experimentally measured,
 the last being the Higgs mass, and the
 self-consistency of the theory has been tested with electroweak fits \cite{Baak:2013ppa}.
-The Standard Model proves to be self-consistent so far and more precise measurements,
-as well as theoretical calculations of its
-parameters, such as the mass of the $W$, 
-the $\theta_W$ etc. are needed in order to find indirect hints
-of new physics. Nevertheless, the SM remains incomplete as it cannot answer some fundamental 
+Thus far, the Standard Model proves to be self-consistent with only insignificant tensions between
+the predicted and measured observables. More precise measurements and theoretical calculations
+are needed in order to emphasize weak points of the Standard Model and thus
+find indirect hints of new physics.
+Despite its consistency, the SM remains incomplete as it cannot answer some fundamental 
 questions. I list a few of them below:
 \begin{itemize}
  \item {\it the hierarchy problem} - the gravitational interaction becomes strong only at the 
@@ -198,44 +204,69 @@ determined as well as whether they follow Dirac or Majorana statistics;
  \item {\it the number of fermion generations} - it is unknown why are there three generations
 of fermions;
  \item {\it the matter-antimatter asymmetry} - the observable imbalance between the matter and
-antimatter in the observable universe requires an explanation, one course of action is studying
-the CP violation; 
+antimatter in the observable universe lacks an explanation;
  \item {\it the vacuum energy} - the SM vacuum
 energy density is many orders of magnitude higher when compared to astrophysical measurements
 of the cosmological constant;
 \end{itemize}
 To overcome some of these difficulties many theories beyond the Standard Model have been
-proposed, such as Supersymmetry (SUSY), Grand Unified Theories (GUT), String Theory
-and others. 
+proposed, such as Supersymmetry (SUSY), Grand Unified Theories (GUT), extra dimensions and others.
+Up to this date none of them have been experimentally confirmed, nonetheless the searches continue.
+In the next section an alternative extension of the Standard Model known as Hidden Valleys 
+is described. 
 
-\subsection{Hidden Valleys and Long-Lived particles}
+\section{Hidden Valleys and Long-Lived particles}
 
 In many theories like the string theory, supersymmetry, grand unification theories etc.
  one encounters large symmetry groups which imply existence of
 new particles, while the Standard Model symmetry group $SU(3)_C \times SU(2)_L \times U(1)_Y$ 
-and its three families of quarks
-and leptons is only a part of a bigger picture.
+ is only a part of a bigger picture that we observe at the electroweak scale.
 The new interactions between
 both ordinary and new matter will arise from the larger symmetry groups,  and  
 the new states are usually
-assumed to be around the Grand Unification or the Planck scales. However, it is not unreasonable
-to assume that some of the new particles are lighter, much closer to the electroweak scale.
-Additionally, if amongst
-this new sector there is a lowest energy state that is stable it is a suitable candidate for
-dark matter. 
-In hidden valley models the new particles are light and have no charges under the SM 
-symmetry group, but couple to the SM particles through a new coupling that involves a heavy state.
- A good analogy from the Standard Model are 
+assumed to have masses around the Grand Unification or the Planck scales. However, it is not unreasonable
+to assume that some of the new particles are lighter, much closer to the electroweak scale,
+but there is some barrier preventing us from finding them up to now.
+Although, the relevant mass scale of the Hidden Valley is not well
+specified, it is interesting to study scenarios that may produce visible signals within 
+the reach of the LHC.
+A good analogy from the Standard Model are 
 the neutrinos which are somewhat hidden by only interacting via the massive $W$ and $Z$ bosons.
 Therefore, there is no reason why new particles cannot be hidden also. 
 
+In Hidden Valley models, the Standard Model gauge group $G_{SM}$ is extended by a symmetry 
+group of the hidden sector $G_v$. 
+All Standard Model particles carry no charges in $G_v$, while
+all the new particles (v-particles) in the hidden sector are charged in $G_v$ and neutral 
+in $G_{SM}$. Higher dimension operators (induced perhaps by a Higgs particle, a $Z^{'}$ or
+a lightest supersymmetric particle) allow interaction between SM fields and the v-particles.
+One typically assumes that the $G_v$ is a confining, non-abelian group with the
+v-confinement scale $\Lambda_v$, which in many ways is similar to Standard Model colour group,
+therefore v-particles assemble themselves into $G_v$-neutral v-hadrons.
+The v-particles may then decay, again via higher dimension operators, to gauge invariant 
+combinations of SM particles. The interactions between the SM and Hidden Valley sector are
+schematically presented in Figure~\ref{fig:hv}. 
 
-Most of the new models, i.e. supersymmetry, are introduced in order to fix some issues with the SM
-and as such one introduces specific gauge groups and particles. In case of HV models, one typically
-does not consider why they are introduced from a theoretical perspective, only note that they 
-are allowed. Although, the relevant mass scale of the hidden valley is not well
-specified, it is interesting to study scenarios that may produce visible signals within 
-the reach of the LHC.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\textwidth]{plots/intro/hiddenvalley.pdf}
+\caption{Schematic view of production and decay of v-hadrons. If with the energies
+available at the LHC we may penetrate the barrier and produce v-hadrons, some of them may
+decay back to SM particles. \label{fig:hv}}
+\end{figure}
+
+There is not a clear minimal representative for Hidden Valley models, but
+many phenomena are common for a typical v-sector. Some examples are listed:
+\begin{itemize}
+\item v-hadron production multiplicites at the LHC may be large, especially if $\Lambda_v\ll1$\TeV;
+\item some v-hadrons may be stable, providing dark matter candidates and missing energy signals,
+while others decay to neutral combinations of SM particles;
+\item decay lifetimes can vary over many orders of magnitude, some of the v-particles may produce
+displaced vertices;
+\item some v-hadrons decay preferentially to heavy flavor, while others decay more democratically
+to $f\bar{f}$ states ($f$ is any SM fermion), or $f\bar{f}$ plus another v-hadrons or other final
+states.
+\end{itemize}
 
 
 
