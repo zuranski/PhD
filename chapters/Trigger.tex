@@ -30,4 +30,55 @@ is performed only once.
 
 \subsection{Trigger for long-lived particles decaying to dijets}
 
+A dedicated trigger has been designed to accept events that contain long-lived particles 
+decaying to dijets. 
+The underlying idea behind such a trigger is not to reconstruct dijets
+associated with a displaced vertex, because such a procedure is too complicated to be executed 
+at HLT, but rather to reject events where all the jets are produced promptly at the collision
+point which is much simpler. The rate limitations (up to 1~Hz imposed by the CMS collaboration)
+ together with the limited execution time (up to 5~ms on average for a single trigger)
+resulted in the trigger that consists of the following filters:
+
+\begin{enumerate}
+ \item Scalar transverse energy sum of all 
+the L1 jets in the event, $H_T$, above 150\GeV, which is the lowest threshold allowed by CMS;
+ \item Scalar transverse energy sum of all 
+the HLT jets in the event, $H_T$, above 300\GeV. The jets at L1 are determined with large
+uncertainties, imposing a requirement twice as large at HLT guarantees very high L1 efficiency and 
+therefore reduces the dependence of the further analysis on the L1 trigger performance and
+simulation;
+\item At least two jets that have transverse momenta, $p_T>$~60\GeV and pseudorapidity
+$|\eta|<$2. This requirement selects jets that are central and well within the acceptance 
+of the CMS tracker;
+\item At least two of the jets selected in step 3 are required to have not more than 2 tracks
+that have impact parameters smaller than 300~$\mu m$. This requirement rejects plenty of promptly
+produced jets for which majority of their tracks have smaller impact parameters;
+\item For at least two of the jets selected in step 4 the jet energy fraction carried by the tracks
+that have transverse impact parameters smaller than 500~$\mu m$ is required to be smaller than
+15\%. This requirement additionally rejects promptly produced jets that passed step 4. 
+\end{enumerate}
+
+Additionally to the trigger just described, a control trigger has been designed which
+consists of the same steps, but the steps 3-5 require only one jet to fulfill
+the corresponding requirement. The two triggers are then called a {\it double displaced jet} and 
+a {\it single displaced jet} triggers, while due to rate limitations the {\it single} trigger
+was prescaled.  
+Both triggers were active during the 2012 LHC run and the number of events collected by CMS
+together with the integrated luminosity are summarized in Table \ref{tab:triggerEvents}.
+\begin{table}[hbtp]
+\begin{center}
+\begin{tabular}{l c c c }
+\hline
+trigger name & prescale factor & \lumi [\fbinv] & N events [1e6] \\
+\hline
+single displaced jet & 100-120 & 0.18 & 0.5\\
+double displaced jet & 1 & 18.5 & 1.9\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Displaced jet triggers active in 2012 LHC run.\label{tab:triggerEvents}}
+\end{table}
+Data collected by the double displaced jet trigger, where presence of two triggering jets is required,
+ is used to search for our signal,
+while data collected by the single jet one, where presence of only one triggering jet is required, is used as a control sample.
 

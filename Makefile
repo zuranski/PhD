@@ -2,7 +2,6 @@ CHAPTERS=thesis.tex \
 abstract.tex \
 chapters/Introduction.tex \
 chapters/CMSdetector.tex \
-chapters/DataAndMCsamples.tex \
 chapters/RecoAndSelection.tex \
 chapters/Background.tex \
 chapters/Systematics.tex \
