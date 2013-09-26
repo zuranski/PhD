@@ -1,0 +1,33 @@
+\section{Trigger}
+
+The high instantaneous luminosity at the LHC together with the storage space available for
+CMS data necessitate an existence of a trigger.
+ The aim of the trigger is to reduce the rate
+of collision events from 40 MHz, as delivered by the LHC, to $\sim500$ Hz that will be stored
+for further analysis, while keeping the events of potential physics interest.
+The details of the CMS trigger design and implementation are described in \cite{Cittolin:578006},
+only the basic concepts are explained here. 
+
+The CMS trigger system consists of two parts: "Level One" (L1) and "High Level" (HLT).
+The L1 is a set of electronics operating at 40 MHz and has a latency of 3~$\mu s$. During this
+time only simplified 
+objects are reconstructed from the detector readouts using fast electronics.
+ They include a L1 muon, photon, 
+electron, or jet candidates, as well as a sum of all jets in the event and missing transverse energy.
+Only the above objects, or combinations of them, are used to make an acceptance decision. 
+The maximal allowed output
+rate of the L1 trigger part is 100 kHz, at which the events are processed by the HLT.
+The HLT processes events with software reconstruction sequences that closely approximate
+the offline reconstruction, while the mean processing time per event is 50ms. There is about 
+500 various HLT triggers that each can make an acceptance decision based 
+on the reconstructed objects
+(jets, leptons, missing energy). The number of trigger paths approximately corresponds to the
+number of various searches and measurements pursued by the CMS collaboration.
+However, in plenty of cases the physics objects,
+upon which the decisions are made, overlap between the triggers in which case the reconstruction 
+is performed only once.
+
+
+\subsection{Trigger for long-lived particles decaying to dijets}
+
+
