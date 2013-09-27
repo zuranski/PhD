@@ -1,16 +1,6 @@
-CHAPTERS=thesis.tex \
-abstract.tex \
-chapters/Introduction.tex \
-chapters/CMSdetector.tex \
-chapters/RecoAndSelection.tex \
-chapters/Background.tex \
-chapters/Systematics.tex \
-chapters/Results.tex \
-#Conclusion.tex 
-
 all: clean AndrzejZuranski_Thesis.pdf
 
-thesis.aux: thesis.tex $(CHAPTERS)
+thesis.aux: thesis.tex 
 	pdflatex -file-line-error -halt-on-error thesis
 
 thesis.bbl: thesis.aux thesis.bib
