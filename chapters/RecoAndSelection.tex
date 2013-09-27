@@ -1,9 +1,15 @@
-\section{Event Reconstruction and Selection}
+This chapter begins by determining the sensitivity of the search in terms of masses and lifetimes
+of the exotic particles given the search strategy. It is then followed by a detailed description
+of the candidates reconstruction.
+Properties of the long-lived particle 
+candidates are examined using signal and background MC events, followed by a correlation study
+between the discrimination criteria. Finally a background estimation technique is introduced 
+and the selection criteria are given.
 
-\subsection{Signal model sensitivity}
-\label{subsec:sigsensitivity}
+\section{Signal model sensitivity}
+\label{sec:sigsensitivity}
 
-\subsubsection{\Higgs mass}
+\subsection{\Higgs mass}
 
 The \Higgs mass range sensitivity is mostly affected by the $H_T>300\GeV$ requirement imposed by the trigger. 
 In order to provide trigger efficiency to this trigger filter,
@@ -15,23 +21,26 @@ we require $H_T>325\GeV$ in the offline reconstruction.
 \caption{$H_T$ distributions for the benchmark signal models.\label{fig:sight}}
 \end{figure}
 
-Figure \ref{fig:sight} presents the $H_T$ distributions for selected signal models; all available \Higgs 
+Figure \ref{fig:sight} presents the offline reconstructed $H_T$ distributions 
+for selected signal models; all available \Higgs 
 mass points are shown.
 The $H_T>325\GeV$ requirement reduces the sensitivity of the search in the low mass region of the exotic \Higgs,
 therefore we analyze further only those signal models where mass of the \Higgs is 200\GeV or higher.
 
-\subsubsection{\X mass given the \Higgs mass}
+\subsection{\X mass given the \Higgs mass}
 
-In this analysis we aim to reconstruct displaced dijet candidates originating from a common displaced
+In this search we aim to reconstruct displaced dijet candidates originating from a common displaced
 vertex using pairs of 
-Particle Flow (PF) jets \cite{CMS-PAS-PFT-09-001} within the tracker acceptance ($|\eta|<2$).  
- PF jets are reconstructed with an anti-k$_T$
-algorithm operated with a size parameter $R$ of 0.5 \cite{Cacciari:2008gp} which determines
-the minimal angular distance between the jets. In order to reconstruct two distinct
+ jets which need to fall 
+within the tracker acceptance ($|\eta|<2$).  
+ The jets are reconstructed with an anti-k$_T$
+algorithm operated with a size parameter $R$ of 0.5 \cite{Cacciari:2008gp} which also determines
+the minimal angular distance between the jets reconstructed in the event. 
+In order to reconstruct two distinct
 jets with this algorithm the opening angle between the two quarks needs to be above 0.5 radians.
 Figure \ref{fig:sigdR} presents the opening angle distributions between the two quarks originating
 from $\X \to \qq $ decay for signal models with 
-$M_{\Higgs}$=200,400,1000 \GeV.  
+$M_{\Higgs}$=200,400,1000\GeV.  
 
 \begin{figure}[htbp]
 \centering
@@ -74,52 +83,29 @@ for the \X candidates at the generator level:
 a transverse displacement up to 60\cm, therefore secondary vertices with higher displacement cannot be reconstructed.
 \end{itemize}
 
-%All reconstructed signal dijet candidates that pass full selection criteria fulfill the acceptance definition. 
+The definition of acceptance is introduced as a minimal set of requirements for the search.
+If any of the criteria is not met by the long-lived object, the reconstruction will not succeed.
 
-\subsection{Event filters}
-
-The following event filters are applied to mitigate known detector effects affecting the quality of the data
-acquired by CMS during the 2012 LHC run:
-\begin{itemize}
-\item {\bf primary vertex filter} - events are required to contain a primary vertex with at least four associated
-tracks whose position is displaced from the nominal interaction point by no more than 2 \cm in the direction
-transverse to the beam and no more than 24 \cm in the direction along the beam;
-\item {\bf beam background filter} - each event is required to contain at least 10 tracks with at least 25\% of them 
-being high-purity tracks;
-\item {\bf beam halo filter} - events containing beam halo muons are rejected;
-\item {\bf HBHE noise filter} - events with anomalous noise activity in the HCAL electronics readout are filtered;
-\item {\bf HCAL laser event filter} - events with a spurious trigger of the HCAL calibration laser are removed;
-\item {\bf anomalous ECAL super-crystal energy filter} - concerns a handful of super-crystals in the ECAL endcap region
-which occasionally give anomalously high energies;
-\item {\bf ECAL laser correction filter} - events are rejected when ECAL crystals are assigned very high transparency
-corrections resulting in biased energy measurement;
-\item {\bf tracking failure filter} - events where tracking algorithm stops without finishing the reconstruction 
-are removed.   
-\end{itemize}
-
-The above filters reject 1.5\% events collected by the displaced jet triggers. 0.7\% and 0.5\% events are rejected
-by the HBHE noise filter and the beam halo filter respectively. Contributions from other filters are typically
-below 0.1\%. 
-
-\subsection{Reconstruction}
+\section{Reconstruction}
 
 In the reconstruction process described below, we identify characteristic variables
 of the long-lived dijet candidates which provide
 signal-to-background discrimination using simulated MC samples.    
-There is no standard model process giving rise to displaced dijet pairs,
+There is no Standard Model process giving rise to displaced dijet pairs,
 however jets may contain displaced (high impact parameter) tracks originating from B meson decays, nuclear
 interactions of charged particles with the tracker material, \Kshort and $\Lambda^0$ decays, etc. These tracks, if 
 present for two distinct jets,
 may then cross at a displaced location and mimic a common dijet vertex. 
 
-Signal and background MC plots in this section present the corresponding distributions 
-scaled to the total available luminosity
-of 18.6\fbinv. Applying the signal trigger to the background MC yields very low candidate counts, therefore
-we apply only the HLT\_HT\_300 trigger.  
+All figures in this Section which present signal and background MC distributions 
+are scaled to the total available luminosity
+of 18.5\fbinv. Applying the signal trigger to the background MC yields very low candidate counts, therefore
+we apply a looser trigger that only requires $H_T>$300\GeV, but does not require existence of jets
+having few low impact parameter tracks (\ref{subsec:trigger}).  
  The cross section of the signal process has been set to 10 $\mu$b for visual purposes.   
 
 %%% primary vertrex
-Events usually contain many primary vertices corresponding to multiple proton-proton collisions occurring 
+The LHC collision events usually contain many primary vertices corresponding to multiple proton-proton collisions occurring 
 in the same bunch crossing.
 Among the set of primary vertices, we select the one whose tracks have the highest squared transverse momentum sum.
  The primary vertex position is
@@ -128,7 +114,7 @@ primary vertex assignment on the background yield and the signal reconstruction 
 in Section \ref{subsec:pv}. 
 
 
-We search for dijet candidates by selecting every pair of PF jets, where both jets are required to 
+We search for dijet candidates by selecting every pair of jets, where both jets are required to 
 have $p_T>$ 60\GeV and $|\eta|<$ 2. 
 The signal dijet candidates are limited
 to those where both reconstructed jets are matched within a cone of 0.5 to generator level quarks originating
@@ -138,9 +124,11 @@ once the full selection is applied.
  
 Additionally, tracks reconstructed with 
 the CMS iterative tracking
-algorithm \cite{Giordano:2012hr}, are associated within 0.5 cone to both jets. The track momentum vector used for 
-the association is evaluated at the point of closest approach to the beam line. Only {\it high-purity} tracks
-with $p_T>$ 1\GeV are considered. Among them we select a set of {\bf displaced tracks} defined as those with
+algorithm \cite{Giordano:2012hr} as described in Section \ref{subsec:trackreco},
+ are associated within 0.5 cone to both jets. The track momentum vector used for 
+the association is evaluated at the point of closest approach to the beam line. Only tracks
+with $p_T>$ 1\GeV are considered. Tracks with lower transverse momenta
+do not reach the calorimeter system due their strong deflection in the CMS magnetic field. Among the tracks we select a set of {\bf displaced tracks} defined as those with
 a transverse impact parameter with respect to the primary vertex greater than 500\micron, which is large enough
 to exclude most of the B hadron decay products. 
 The individual impact parameters are signed with the sign of the scalar product between
@@ -172,9 +160,12 @@ using two different algorithms:
 
 \begin{enumerate}
 
-\item{\bf Adaptive Vertex Fitter}
+\item{\bf Vertex Fitter}
 \label{subsec:AVF}
-\cite{Waltenberger:1166320}. The secondary dijet vertex is required to have a chisquared per degree of freedom 
+\cite{Waltenberger:1166320}. The fitter performs an iterative least-squares estimation of the
+ secondary vertex position. The consecutive iterations down-weight tracks that seem inconsistent
+with the fitted vertex position until an optimum is found.
+ The secondary dijet vertex is required to have a chisquared per degree of freedom 
 $\chi^2/dof < 5$. Additionally, for compatibility with the displaced dijet hypothesis we require that at least 
 one track from each jet be included in the secondary vertex. 
 This requirement greatly reduces the background contribution
@@ -183,7 +174,7 @@ of the outgoing tracks, therefore it is unlikely that the outgoing tracks are as
 The following quantities obtained from the vertex fit, with plots presented in Figure
 \ref{fig:discvtx}, provide signal to background discrimination:
 \begin{itemize}
- \item track multiplicity;
+ \item vertex track multiplicity;
  \item fraction of tracks assigned to the vertex with a positive value of signed impact parameter;
  \item number of missing tracker hits behind the vertex position per track - each track in CMS is reconstructed 
 from hits in the silicon tracker using a Kalman Filter algorithm \cite{Giordano:2012hr}. The algorithm propagates
@@ -194,8 +185,8 @@ This variable represents an average count of missing tracker measurements
 starting from the fitted vertex position until the innermost hit of the vertex tracks. The fitted vertex position
 may be significantly closer to the beam line than the track production point, if the track comes from a nuclear
  interaction or a $V^0$ decay;
- \item vertex invariant mass;
- \item vertex $p_T$;
+ \item invariant mass of the vertex tracks (vertex mass);
+ \item $p_T$ of the vertex tracks (vertex $p_T$);
  \item $L_{xy}$ significance - where $L_{xy}$ is the distance between secondary and primary vertices
 in the transverse plane.
 \end{itemize}
@@ -230,7 +221,7 @@ For high momentum tracks the trajectory in the transverse plane is a straight li
  L_{xy}^{exp}=\frac{d_{xy}}{sin(\phi_{track} - \phi_{di-jet})}
 \label{eqn:lxystraight}
 \end{equation}
-where $d_{xy}$ is the transverse impact parameter. However, in the presence of axial magnetic field 
+where $d_{xy}$ is the transverse impact parameter and $\phi$ is the polar angle. However, in the presence of axial magnetic field 
 the above formula is not valid due to track curvature. In order to find the expected path length in such case,
  we find a corresponding crossing point for the track helix with a radius $R$. Since we consider only
 tracks with $p_T>$1\GeV which translates to the helix radius $R$ above 80\cm, 
@@ -255,11 +246,11 @@ however,  can be
 determined from the track charge and the vector-product between the track transverse momentum vector and transverse
 impact parameter vector:
 \begin{equation}
-q\cdot sgn((\vec{d_{xy}}\times\vec{p_T}) \cdot \vec{B})
+q\cdot sgn((\vec{d_{xy}}\times\vec{p_T}) \cdot \vec{z})
 \end{equation}   
-where $\vec{B}$ vector is longitudinal. The final formula applied to each track is thus:
+where $\vec{z}$ is a unit longitudinal vector. The final formula applied to each track is thus:
 \begin{equation}
- L_{xy}^{exp} = \frac{d_{xy}}{sin(\phi_{track} - \phi_{di-jet})} (1 + q\cdot sgn((\vec{d_{xy}}\times\vec{p_T}) \cdot \vec{B}) \cdot \frac{d_{xy}}{R})
+ L_{xy}^{exp} = \frac{d_{xy}}{sin(\phi_{track} - \phi_{di-jet})} (1 + q\cdot sgn((\vec{d_{xy}}\times\vec{p_T}) \cdot \vec{z}) \cdot \frac{d_{xy}}{R})
 \label{eqn:lxy}
 \end{equation}
 
@@ -272,7 +263,8 @@ where $\vec{B}$ vector is longitudinal. The final formula applied to each track 
 
 For a genuine secondary vertex associated with a dijet pair the $L_{xy}^{exp}$ values obtained with equation
 \ref{eqn:lxy} for each track should be close
- together, therefore we perform a 1-dimensional hierarchical clustering algorithm (appendix \ref{sec:hiercluster})
+ together, therefore we perform a 1-dimensional hierarchical clustering algorithm (Appendix 
+\ref{app:clusters})
 in order to select tracks belonging to the cluster. 
 Clustering is performed with a size parameter equal to 15\% of 
 the vertex $L_{xy}$ reconstructed with Adaptive Vertex Fitter. 
@@ -307,13 +299,13 @@ RMS_{cluster} = \sqrt{1/N_{tracks}\sum_{i=0}^{N_{tracks}}\frac{ (L_{xy}^{exp}(i)
 
 \end{enumerate}
 
-\subsection{Selection}
-\label{subsec:selection}
+\section{Selection}
+\label{sec:selection}
 
-In this analysis  
+In this search  
 to determine the background level we use a data driven technique
 of independent selection criteria, the "ABCD method", which is
- described in detail in Section \ref{sec:background}. This method requires
+ described in detail in Section \ref{sec:abcd}. This method requires
 at least two selection criteria where the probability of a background candidate to pass one of the criteria is
 not strongly correlated with whether it passes the other criteria. Such selection criteria can be generally
 constructed
@@ -384,10 +376,10 @@ fraction 2 & & & & & - \\
 \end{tabular}
 \end{table}
 
-The final selection criteria on the variables used for background estimation are described in Section 
-\ref{subsec:cutvalues}. For all remaining discrimination variables we require loose pre-selection criteria:   
+The final numerical values required for the variables used for background estimation are described in Section 
+\ref{sec:cutvalues}. For all remaining discrimination variables we require loose pre-selection criteria:   
 \begin{itemize}
- \item vertex invariant mass $>$ 4\GeV;
+ \item vertex mass $>$ 4\GeV;
  \item vertex $p_T>$ 8\GeV;
  \item average number of missing tracker hits behind the secondary vertex position $\leq$ 2 per track;
  \item $L_{xy}$ significance $>$ 8.
@@ -446,17 +438,18 @@ $L_{xy}$ significance & 78\% & 68\% & 100\% & 100\% & 100\% \\
 In order to validate the simulation based study we compare the data and background MC distributions
 in a control region for candidates passing the pre-selection.
 We use a control region that requires passing the single jet trigger
-(HLT\_HT300\_SingleDisplacedPFJet60) and vetoes events passing the double jet trigger
- (HLT\_HT300\_DoubleDisplacedPFJet60). Compared to the signal region, there is a factor of 100 less instantaneous 
+ and vetoes events passing the double jet trigger, while the single and double jet trigger
+definitions have been introduced in Section \ref{subsec:trigger}. Compared to the signal region, there is a factor of 100 less instantaneous 
 luminosity and the signal efficiency for all considered signal models is at least factor of 10 less
 compared to the efficiency
-in the signal region. Plots \ref{fig:promptness}, \ref{fig:discriminant}, \ref{fig:vertex} 
+in the signal region. Figures \ref{fig:promptness}, \ref{fig:discriminant}, \ref{fig:vertex} 
 and \ref{fig:cluster} present all 
 discrimination variables used in the analysis in the control region
 after candidate pre-selection. The {\it number of missing hits per track after vertex} requirement has been removed
 in order to increase the statistics of the 
 data and background Monte Carlo samples. 
-%Good agreement between data and background Monte Carlo is found. 
+Good agreement between data and background Monte Carlo is found in most of the cases, suggesting
+that a vast majority of background sources are well modeled in the MC simulation.
 
 \begin{figure}[htbp]
 \centering

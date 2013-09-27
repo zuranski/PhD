@@ -1,10 +1,8 @@
-\section{Systematic Uncertainties}
-\label{sec:systematics}
 
-\subsection{Background}
+\section{Background}
 The systematic uncertainty on the estimated background differs depending on the final selection
  as listed in Table \ref{tab:background}. The relative systematic uncertainty is estimated using the prescription
-described in Section \ref{subsec:abcd}. It is evaluated to be 32\% and 46\%
+described in Section \ref{sec:abcd}. It is evaluated to be 32\% and 46\%
 for {\it low} and {\it high} $L_{xy}$ selections with 1.60 and 1.14 predicted background candidates respectively. 
 The 7 background predictions from which the systematic uncertainty is derived are listed in Table \ref{tab:sigbkg}.
 
@@ -31,10 +29,10 @@ $EF/D$ & 1.16 & 0.62 \\
 \end{table} 
 
 
-\subsection{Luminosity}
+\section{Luminosity}
 For the running period corresponding to this analysis, CMS estimates the relative uncertainty on the luminosity to be 4.4\% \cite{CMS-PAS-LUM-12-001}.
 
-\subsection{Effect of Pile-Up}
+\section{Effect of Pile-Up}
 The likelihood of a given number of pile-up events occurring in the data can be calculated from the distribution
  of the instantaneous luminosity during the 2012 run. The number of true pile-up events in the Monte Carlo
  simulation is also known. The simulation can therefore be re-weighted to match the data. 
@@ -54,7 +52,7 @@ decrease in efficiency is observed as the number of primary pile-up vertices inc
 signal models.\label{fig:effPU}}
 \end{figure}
 
-\subsection{Primary vertex selection}
+\section{Primary vertex selection}
 \label{subsec:pv}
 The relevant impact parameters and decay lengths are computed 
 with respect to the primary vertex which has the highest
@@ -91,7 +89,7 @@ The predicted background level minimally increases if a wrong primary vertex is 
 with respect to the background level uncertainty. The signal reconstruction efficiency 
 does not significantly change whether the first or second leading primary vertex is used.
 
-\subsection{Displaced Tracking Efficiency}
+\section{Displaced Tracking Efficiency}
 
 The signal reconstruction efficiency is obtained assuming the tracking efficiency is correctly 
 accounted for in the MC simulation. In order to validate this assumption we study
@@ -103,8 +101,8 @@ at displaced locations.
 The tracking efficiency for \Kshort pions can be used to check the displaced jet tracking efficiency, 
 as the jet tracks consist mostly of low momentum light hadrons. 
 
-\subsubsection{Pion displaced tracking efficiency}
-\label{subsubsec:pitrkeff}
+\subsection{Pion displaced tracking efficiency}
+\label{subsec:pitrkeff}
 
 Data and simulation events are selected with the HLT\_HT300 trigger, thus providing
 a source of \Kshort decays in a jet environment. The pile-up distribution in simulation is re-weighted
@@ -183,14 +181,14 @@ deviations in the single track reconstruction efficiency. We conservatively adop
 of 10\% as the systematic uncertainty on the \Kshort efficiency and therefore a 5\% systematic on the 
 single track reconstruction efficiency. 
 
-\subsubsection{Impact on the signal reconstruction efficiency}
+\subsection{Impact on the signal reconstruction efficiency}
 
 We examine the effect of tracking efficiency systematic uncertainty by removing 5\% of the displaced tracks 
  and repeating the signal reconstruction procedure.
 For all signal models the reconstruction efficiency is lowered by up to 4\% which we adopt as our reconstruction
 efficiency systematic related to displaced tracking efficiency.  
 
-\subsection{Track missing hits}
+\section{Track missing hits}
 
 In the pre-selection criteria the tracks in the displaced dijet vertex are required to have on average
  less than 2 missing hits behind the vertex position. The efficiency of this requirement is above 98\% 
@@ -214,14 +212,14 @@ There are more missing hits observed in data, however the requirement of less th
 missing hits on average is 98\% efficient in both data and simulation. Given the agreement in the efficiency
 of this selection we do not assign additional systematic uncertainty. 
 
-\subsection{Jet energy scale}
-\label{subsec:jessys}
+\section{Jet energy scale}
+\label{sec:jessys}
 
 In CMS reconstruction the jet energies are determined by applying a set of corrections.
  The systematic uncertainties on the corrections are also provided. The uncertainties vary as a function
  of jet $p_T$ and $\eta$ and are different depending on the jet algorithm. Therefore, the effect of these
 uncertainties on the signal reconstruction efficiency needs to be evaluated by applying variations to individual 
-jets. In the event selection, described in Section \ref{subsec:selection},
+jets. In the event selection, described in Section \ref{sec:selection},
  we use the jet energy information in the following criteria:
 \begin{itemize}
 \item $H_T>$325\GeV - using ak5Calo jets with $p_T>$40\GeV and $|\eta|<3$;
@@ -263,8 +261,8 @@ $M_{\Higgs}$ [\GeV] & $M_{\X}$ [\GeV]  & $\Delta\epsilon$ \\
 \end{tabular}
 \end{table}
 
-\subsection{Jet momentum bias}
-\label{subsec:ptbias}
+\section{Jet momentum bias}
+\label{sec:ptbias}
 
 \X boson jets originate at transversely displaced locations which leads to two effects that affect the jet 
 momentum determination:
@@ -308,7 +306,7 @@ momentum bias in approximately the same amounts.
 
 We do not assign a systematic uncertainty related to the jet momentum bias arising from the skewed approach angle 
 at the calorimeters under the assumption that the detector geometry is well described in the MC simulation.
-In Section \ref{subsubsec:pitrkeff} we assign a 5\% systematic uncertainty on single track efficiency for 
+In Section \ref{subsec:pitrkeff} we assign a 5\% systematic uncertainty on single track efficiency for 
 displaced tracks. We therefore study a 5\% variation of the jet charged energy
 fraction and its impact on the signal reconstruction efficiency with the results presented 
 in Table \ref{tab:jetbias}. The variation is relevant only for selection criteria where Particle Flow jets
@@ -380,10 +378,10 @@ are used.
 %\end{tabular}
 %\end{table}
 
-\subsection{Effect of higher-order QCD corrections}
-\label{subsec:isr}
+\section{Effect of higher-order QCD corrections}
+\label{sec:isr}
 
-As described in Section \ref{subsec:jessys} the signal reconstruction efficiency is sensitive to the jet energy
+As described in Section \ref{sec:jessys} the signal reconstruction efficiency is sensitive to the jet energy
 scale variations; in particular for signal models with \Higgs mass of 200 \GeV and 400 \GeV. 
 Therefore, the signal reconstruction efficiency is also sensitive to the modelling of
  the Higgs $p_T$ spectrum, which may be in turn influenced by higher-order QCD corrections. 
@@ -396,8 +394,8 @@ Since the hidden valley signature is used as a benchmark
 model, we do not incorporate this variation as an additional systematic uncertainty, but emphasize and quantify
 the sensitivity of the reconstruction efficiency to higher-order QCD corrections.  
 
-\subsection{Trigger Efficiency}
-\label{subsec:trigeff}
+\section{Trigger Efficiency}
+\label{sec:trigeff}
 
 The high level trigger used in the analysis, HLT\_HT300\_DoubleDisplacedPFJet60, has been emulated in all
  simulation samples. Trigger selection consists of several consecutive filters applied to each event, 
@@ -407,8 +405,8 @@ passing all trigger decisions
 are not used in order to avoid a possible bias with the signal sample. Individual filters and their efficiency are
 described in the following sections.  
 
-\subsubsection{Scalar sum of jets $E_T$}
-\label{subsubsec:trigHT}
+\subsection{Scalar sum of jets $E_T$}
+\label{subsec:trigHT}
 This trigger filter requires $H_T > $ 300\GeV. Its performance is studied using a lower threshold trigger which 
 requires $H_T >$ 250\GeV. 
 The HT250 trigger has been heavily prescaled in 2012 LHC run, therefore the integrated luminosity corresponds to only 8\pbinv. 
@@ -435,8 +433,8 @@ systematic uncertainty corresponding to this trigger filter.
 \caption{HLT\_HT300 trigger efficiency as a function of offline $H_T$ requirement. \label{fig:effHT300}}
 \end{figure} 
 
-\subsubsection{Two jets each with maximally 2 prompt tracks}
-\label{subsubsec:trig2Trks}
+\subsection{Two jets each with maximally 2 prompt tracks}
+\label{subsec:trig2Trks}
 
 This filter is analyzed with data passing the previous 
 HT300 filter. Data collected by CMS with this trigger amounts to 17\pbinv.  While the filter in question
@@ -485,10 +483,10 @@ each jet passing this trigger filter.
 \caption{Single jet efficiency as a function of jet $p_T$, $\eta$ and $\phi$ for jets with maximally 2 offline prompt tracks. \label{fig:eff2Trksptetaphi}}
 \end{figure}
 
-\subsubsection{Two jets with maximally 15\% of energy fraction carried by prompt tracks}
-\label{subsubsec:trig2PF}
+\subsection{Two jets with maximally 15\% of energy fraction carried by prompt tracks}
+\label{subsec:trig2PF}
 
-Similarly, we require both filters from Sections \ref{subsubsec:trigHT} and \ref{subsubsec:trig2Trks} 
+Similarly, we require both filters from Sections \ref{subsec:trigHT} and \ref{subsec:trig2Trks} 
 to accept the event and examine a single jet efficiency with respect to prompt charged energy
  fraction computed offline. In this trigger step the prompt tracks are defined
  as those having the transverse impact parameter not bigger than 500$\mum$. 
@@ -507,12 +505,12 @@ Trigger efficiency as a function of prompt energy fraction computed offline is s
 Systematic differences between data and simulation are again studied after applying the offline selection at 15\%.
  The efficiency as a function of $p_T$, $\eta$, $\phi$ is presented in Figure \ref{fig:eff2PFptetaphi}. 
 The same procedure as in Section 
-\ref{subsubsec:trig2Trks} is followed and the efficiency ratios are fitted with a zeroth order polynomial.
+\ref{subsec:trig2Trks} is followed and the efficiency ratios are fitted with a zeroth order polynomial.
  No error inflation is needed as the statistical uncertainties on the individual ratio bins are larger
 due to limited statistics.
  We assign a correction of 97\% and a conservative systematic uncertainty of 2\% for
 each jet passing this filter from the average and the spread of the fit results for $p_T$, $\eta$, and $\phi$.
-Similar performance of the filters in Sections \ref{subsubsec:trig2Trks} and \ref{subsubsec:trig2PF} 
+Similar performance of the filters in Sections \ref{subsec:trig2Trks} and \ref{subsec:trig2PF} 
 is expected since both filters use properties of the similar sets of tracks.
 
 \begin{figure}[!h]
@@ -523,23 +521,23 @@ is expected since both filters use properties of the similar sets of tracks.
 \caption{Single jet efficiency as a function of jet $p_T$, $\eta$ and $\phi$ for jets with maximally 15\% prompt energy fraction. \label{fig:eff2PFptetaphi}}
 \end{figure}
 
-\subsubsection{Overall trigger efficiency}
+\subsection{Overall trigger efficiency}
 
 Each of the trigger filters have been analyzed individually by determining performance differences 
 between data and simulation. Observable discrepancies are accounted for as corrections in Sections
- \ref{subsubsec:trig2Trks} and \ref{subsubsec:trig2PF} and the uncertainties on the corrections are treated as 
+ \ref{subsec:trig2Trks} and \ref{subsec:trig2PF} and the uncertainties on the corrections are treated as 
 systematic uncertainties. The trigger used in the analysis, HLT\_HT300\_DoubleDisplacedPFJet60, requires
- at least two jets passing the filters from Sections \ref{subsubsec:trig2Trks} and \ref{subsubsec:trig2PF}, 
+ at least two jets passing the filters from Sections \ref{subsec:trig2Trks} and \ref{subsec:trig2PF}, 
 hence corrections need to be applied twice, while systematic uncertainties added as fully correlated. 
 Additionally, systematic uncertainties related to filters from Sections 
-\ref{subsubsec:trig2Trks} and \ref{subsubsec:trig2PF} are both related to reconstruction of prompt tracks, therefore
+\ref{subsec:trig2Trks} and \ref{subsec:trig2PF} are both related to reconstruction of prompt tracks, therefore
  we adopt a conservative approach and add them as correlated also. The systematic uncertainty assigned to 
 the filter from Section 
-\ref{subsubsec:trigHT} is related to the jets transverse energy, hence it can be treated as uncorrelated. 
+\ref{subsec:trigHT} is related to the jets transverse energy, hence it can be treated as uncorrelated. 
 The total correction applied to the trigger efficiencies determined from simulation is thus 0.89 with a total
 relative systematic uncertainty of 6\%. 
 
-\subsection{Signal efficiency systematic}
+\section{Signal efficiency systematic}
 
 Table \ref{tab:signalsystematics} summarizes the sources of systematic uncertainties on the signal efficiency
 which add up to the total uncertainty between 8-10\% depending on the signal model.
