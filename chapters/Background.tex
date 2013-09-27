@@ -1,7 +1,16 @@
+This chapter focuses on a precise and correct estimation of the search background. The
+background prediction is of crucial importance for searches beyond the SM, because an upward
+deviation in the data observation with respect to background prediction may hint a new discovery.
+First a data-driven background estimation is introduced. The benefit of a data driven technique
+as compared to a simulation based estimation is that it avoids any possible issues of 
+simulation mismodelling. Then a series of tests of the background estimation is performed 
+in control regions to establish the correctness of the method and also asses
+its systematic uncertainty.
+
 
 \section{Method of uncorrelated variables (ABCD)}
 \label{sec:abcd}
-For background estimation we use a data driven method of independent selections, the "ABCD method", using
+We use a data driven method of independent selections, the "ABCD method", using
  three independent selection criteria listed in Section \ref{sec:selection}. 
 The three selection criteria divide the candidates into eight
 independent regions as listed in Table \ref{tab:regions}.
@@ -61,15 +70,15 @@ detailed in Table \ref{tab:background}.
 \centering
 \begin{tabular}{r|c|c}
 %\hline
-$\bf L_{xy}$ &\bf  $\bf <20\cm (low)$ & \bf  $\bf >20\cm (high)$ \\
+$\bf L_{xy}$ \bf selection &\bf  $\bf <30\cm (low)$ & \bf  $\bf >30\cm (high)$ \\
 \hline
 prompt tracks & $\leq1$ & $\leq1$ \\
 %\hline
-prompt energy fraction & $<0.15$ & $<0.09$ \\
+prompt energy & $<0.15\%$ & $<0.09\%$ \\
 %\hline
 vertex/cluster disc. & $>0.9$ & $>0.8$  \\
 \hline
-\bf expected background & $\bf 1.60\pm0.26(stat.)\pm0.51(syst.)$ & $\bf 1.14\pm0.15(stat.)\pm0.52(syst.)$ \\
+\bf expected bkg. & $\bf 1.60\pm0.26(stat)\pm0.51(syst)$ & $\bf 1.14\pm0.15(stat)\pm0.52(syst)$ \\
 %\hline
 \end{tabular}
 \caption{Optimised selection criteria and the corresponding background expectations with their statistical and systematic uncertainties.\label{tab:background}}
@@ -79,8 +88,9 @@ vertex/cluster disc. & $>0.9$ & $>0.8$  \\
 \label{sec:backgroundtests}
 The background estimation procedure described in Section \ref{sec:abcd} is general and can be applied
 to any dataset if the selections used are independent.
-In this section we describe various closure tests performed in QCD Monte Carlo simulation and 
-selected control regions in data. Plots shown in the following sections present the observed number
+In this section we describe various background closure tests
+ performed in QCD Monte Carlo simulation and 
+selected control regions in data. Figures shown in the following sections present the observed number
 of candidates and all of the 7 combinations predicting the background level as described
  in Section \ref{sec:abcd}.
 Uncertainties are statistical only. For each of the tested selection points the background prediction 
@@ -117,11 +127,11 @@ measurements.
 \subsection{QCD Monte Carlo background prediction}
 \label{subsec:bkgQCDMC}
 
-Due to limited statistics of the QCD MC samples the displaced jet trigger requirement has been removed,
- only the HLT\_HT300 trigger selection is applied. Additionally, the background is estimated with looser
+Due to limited statistics of the QCD MC samples the displaced jet trigger requirement has been removed. Additionally, the background is estimated with looser
  selection on prompt tracks variables compared to the final selection. 
 In order to validate the background prediction with 
-the observed poissonian candidate counts the cross-section weights are removed, 
+the observed poissonian candidate counts the cross-section weights (Table \ref{tab:backgrMC}) 
+are removed, 
 therefore this test serves only the purpose of identifying biases due to selections not being
 perfectly independent, and cannot be translated
 into background prediction in data.  
@@ -164,7 +174,7 @@ discriminant selection criteria. Selection requires maximally 1 prompt track and
 is required to be less than 15\% and 9\% on the left and right plot respectively.\label{fig:bkg_NMiss}}
 \end{figure}
 
-\section{10\% unblinding}
+\section{Background in 10\% fraction of the dataset}
 \label{sec:partunblinding}
 
 In order to check that there is no anomalous background present,
