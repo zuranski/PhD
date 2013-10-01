@@ -1,8 +1,8 @@
 \section{The Compact Muon Solenoid}
 
 The Compact Muon Solenoid (CMS) detector is designed to provide efficient identification and 
-measurement of photons, electrons, muons, taus and hadronic showers over a wide range of 
-transverse momentum and direction.
+measurement of photons, electrons, muons, taus and hadronic showers that emerge
+from proton-proton collisions.
 CMS is divided into sub-detector systems, as can be seen in Figure \ref{fig:cms_complete}
 which perform complementary roles.
 The central feature of the CMS apparatus is a superconducting solenoid of 6\unit{m} internal diameter. Within the superconducting solenoid volume are a silicon pixel and strip tracker, a lead tungstate crystal electromagnetic calorimeter (ECAL), and a brass/scintillator hadron calorimeter (HCAL). Muons are measured in gas-ionization detectors embedded in the steel return yoke outside the solenoid. Extensive forward calorimetry complements the coverage provided by the barrel and endcap detectors. 
@@ -72,7 +72,7 @@ suffice to reconstruct the vast majority of moderately high $p_T$ tracks ($>$1Ge
 originating from the production vertex. The $2^{nd}$ and $3^{rd}$ iterations
 also use pixel seeding, but since many of the Tracker hits have already been
 locked by the time they run, they can use a very low $p_T$ cut or a rather
-loose vertex constraint, respectively. Finally, the $4^{th}$ and $5^{th}$
+loose primary vertex constraint, respectively. Finally, the $4^{th}$ and $5^{th}$
 iterations seed the tracks in the Strip Tracker double-layers, which provide 3D
 hits by combining information from mono and stereo hits. This allows them to
 find particles produced even outside the volume of the Pixel Tracker. The procedure has been optimized for using as
@@ -110,14 +110,14 @@ The energy of photons is directly obtained from the ECAL measurement, corrected 
 For each event, hadronic jets are clustered from the particles reconstructed with the PF algorithm
  with the infrared and collinear safe
  anti-$k_\mathrm{t}$ algorithm 
-operated with a size parameter $R$ of 0.5. The size parameter requires that all the jet 
+operated with a size parameter $R$ of 0.5 \cite{Cacciari:2008gp}. The size parameter requires that all the jet 
 particles have $\Delta R \leq 0.5$ relative to the jet momentum vector, where
- $\Delta R=\sqrt{(\Delta\phi)^2 + (\Delta\eta)^2}$ \cite{Cacciari:2008gp}. 
+ $\Delta R=\sqrt{(\Delta\phi)^2 + (\Delta\eta)^2}$. 
 The jet momentum is determined as the vectorial sum of all particle momenta in this jet.
 For jets originating at the event primary vertex the jet momentum is found in the simulation to be within 5\% to 10\% of the true momentum over 
 the whole \pt spectrum and detector acceptance. 
 When the jet origin is significantly displaced from the event primary vertex, the reduced 
 charged particle efficiency results in additional underestimation of the jet momentum. 
-For displaced jets originating within the volume of the CMS tracker the jet momentum is underestimated in the simulation by up to 10\%.
+For displaced jets originating within the volume of the CMS tracker the jet momentum is underestimated in the simulation by up to 10\% (the effect is explained in more detail in Section \ref{sec:ptbias}).
 %Jet energy corrections are derived from the simulation, and are confirmed with in situ measurements with the energy balance of dijet and photon+jet events~\cite{CMS-PAS-JME-10-010}. The jet energy resolution amounts typically to 15\% at 10\GeV, 8\% at 100\GeV, and 4\% at 1\TeV.
 

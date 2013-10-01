@@ -5,15 +5,12 @@ The recent discovery of a Higgs particle, a long sought particle that is respons
 the electroweak symmetry 
 breaking, emphasizes the success of the theory.
 
-However, we are hoping to observe and understand the way in which the Standard Model breaks down.
-This naturally implies an observation of inexplicable experimental results that will call for
-a theoretical interpretation reaching beyond the current scope of the theory.
-At the time of this dissertation 
-significant pieces of the Standard Model are still obscure: the hierarchy
+Nevertheless, significant pieces of the Standard Model are still obscure: the hierarchy
 problem, the unification of the fundamental forces at very small distances and their possible
-connection to gravity, the dark matter and dark energy hypotheses etc.
+connection to gravity, the dark matter and dark energy hypotheses etc. We therefore hope
+to observe and understand the way in which the Standard Model breaks down.
 The issues we have encountered, at the energy scales explored so far, already
-hint at some grander underlying structure of nature. However, this structure is yet to be found.
+hint at some grander underlying structure of nature. This structure is yet to be found.
 
 % More intro needed
 The physics goals of the experiments at the Large Hadron Collider (LHC) are exactly to 
@@ -25,23 +22,23 @@ produced in proton collision and dark matter, and many others.
 Described in this dissertation is a particular course of exploration: a search for hypothetical
 particles that haven't been observed so far. Our aim is to examine existence of particles
 that are neutral, 
-massive and decay with a mean lifetime between pico and nanoseconds. The existence
+massive and decay with a relatively long mean lifetime, between pico and nanoseconds. The existence
 of such long-lived exotic
 particles would offer a clue about what physics may lie beyond the Standard Model.
 
 The thesis is structured as follows. Chapter \ref{chap:intro}
  presents the Standard Model together with its
-open questions, it is then followed by an introduction of Hidden Valley models as a possible
- extension of the Standard Model. The motivations for long-lived particles searches are also 
-given.
+open questions, it is then followed by an introduction of Hidden Valley SM extensions and
+ the motivations for long-lived particles searches.
 Chapter \ref{chap:cmslhc} describes the LHC and the Compact Muon Solenoid (CMS) apparatus.
- The basics of event reconstruction and simulation are presented. In Chapter \ref{chap:selection}
-the details of the long-lived particles reconstruction and selection are explained. 
+The basics of CMS event reconstruction and simulation are also explained.
+In Chapter \ref{chap:selection}
+the details of the long-lived particles reconstruction and selection are described. 
 Chapter \ref{chap:background} is dedicated to estimation of the Standard Model
  background, while Chapter
 \ref{chap:systematics} details the various sources of systematic uncertainty in the analysis.
-Finally, in Chapter \ref{chap:results}, the results of the search are given in terms
-of capability to reconstruct various signals and the data observations.
+Finally, in Chapter \ref{chap:results}, the results of the search are presented in terms
+of the capability to reconstruct various signals and the CMS data obsservations.
 
 The analysis has been structured to follow a {\it blind analysis} approach. In such an analysis
 all the details of event reconstruction and selection are established 
@@ -211,21 +208,23 @@ questions. I list a few of them below:
 Planck scale, $10^{19}$ GeV, which is much above the electroweak scale of $\sim 100$ GeV. 
 In the SM the Higgs boson mass 
 depends on quantum corrections on the order of the Planck scale, unless there
-exists some cancellation mechanism, such as supersymmetry, extra dimensions, or fine-tuning; 
+exists some cancellation mechanism, such as supersymmetry \cite{Martin:1997ns}, extra dimensions
+\cite{ArkaniHamed:1998rs,Zee:2003mt}, or fine-tuning; 
  \item {\it the grand unification of interactions} - at the energies of $\sim 10^{16}$ GeV
 the coupling constants of the SM gauge symmetries become approximately equal which suggests
-there may exists a single gauge symmetry (typically SO(10)) with just one coupling constant;
+there may exists a single gauge symmetry (typically SO(10)) with just one coupling constant
+\cite{Georgi:1974sy,Buras197866};
  \item {\it the dark matter} - it is not known how to incorporate the observed
- dark matter into the theory (should it consists of particles);
+ dark matter into the theory (should it consists of particles) \cite{Bertone2005279};
  \item {\it the neutrino masses} - the nature of the neutrino mixing and masses is yet to be
-determined as well as whether they follow Dirac or Majorana statistics;
+determined as well as whether they follow Dirac or Majorana statistics \cite{Fukuda:1998fd};
  \item {\it the number of fermion generations} - it is unknown why are there three generations
-of fermions;
+of fermions \cite{Decamp:1989tu};
  \item {\it the matter-antimatter asymmetry} - the observable imbalance between the matter and
-antimatter in the observable universe lacks an explanation;
+antimatter in the observable universe hasn't yet been explained \cite{Fukugita:1986hr};
  \item {\it the vacuum energy} - the SM vacuum
 energy density is many orders of magnitude higher when compared to astrophysical measurements
-of the cosmological constant;
+of the cosmological constant \cite{Sahni:1999gb,Rugh2002663};
 \end{itemize}
 To overcome some of these difficulties many theories beyond the Standard Model have been
 proposed, such as Supersymmetry (SUSY), Grand Unified Theories (GUT), extra dimensions and others.
@@ -246,7 +245,7 @@ assumed to have masses around the Grand Unification or the Planck scales. Howeve
 to assume that some of the new particles are lighter, much closer to the electroweak scale,
 but there is some barrier preventing us from finding them up to now. A new sector
 of relatively light particles not accessible because of some high energy barrier is called 
-a Hidden Valley.
+a Hidden Valley \cite{Strassler:2006im,Strassler:2006qa}.
 Although, the relevant mass scale of the Hidden Valley is not well
 specified, it is interesting to study scenarios that may produce visible signals within 
 the reach of the LHC.
@@ -276,7 +275,8 @@ decay back to SM particles. \label{fig:hv}}
 \end{figure}
 
 There is not a clear minimal representative for Hidden Valley models, but
-many phenomena are common for a typical v-sector. Some examples are listed:
+many phenomena are common for a typical v-sector. Some examples are listed
+\cite{Strassler:2006ri,Han:2007ae,Strassler:2008fv}:
 \begin{itemize}
 \item v-hadron production multiplicites at the LHC may be large, especially if $\Lambda_v\ll1$\TeV;
 \item some v-hadrons may be stable, providing dark matter candidates and missing energy signals,
@@ -284,7 +284,7 @@ while others decay to neutral combinations of SM particles;
 \item decay lifetimes can vary over many orders of magnitude, some of the v-particles may produce
 displaced vertices;
 \item some v-hadrons decay preferentially to heavy flavor, while others decay more democratically
-to $f\bar{f}$ states ($f$ is any SM fermion), or $f\bar{f}$ plus another v-hadrons or other final
+to $f\bar{f}$ states ($f$ is any SM fermion), or $f\bar{f}$ plus another v-hadron or other final
 states.
 \end{itemize}
 
@@ -294,7 +294,8 @@ we focus on a particular signature where a long-lived v-particle
 decays to quark-antiquark pairs~($\qq$) at a displaced vertex,
  while we study all SM quark flavors except the top flavor. Due to the colour confinement 
 phenomenon quarks
-will hadronize into jets, therefore we will use the terms {\it quark} and  {\it jet} as equivalent,
+will hadronize into jets, therefore we will use the terms {\it quark} and  {\it jet} as 
+ equivalent from the detection perspective,
 while a {\it quark-antiquark pair} will also be called a {\it dijet}.
 The analysis presented in the next chapters is potentially sensitive 
 to any heavy particle that decays into a pair of jets 

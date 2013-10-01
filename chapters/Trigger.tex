@@ -1,7 +1,7 @@
 \section{Trigger}
 
 The high instantaneous luminosity at the LHC together with the storage space available for
-CMS data necessitate an existence of a trigger.
+CMS data necessitate the existence of a trigger.
  The aim of the trigger is to reduce the rate
 of collision events from 40 MHz, as delivered by the LHC, to $\sim500$ Hz that will be stored
 for further analysis, while keeping the events of potential physics interest.
@@ -13,19 +13,20 @@ The L1 is a set of electronics operating at 40 MHz and has a latency of 3~$\mu s
 time only simplified 
 objects are reconstructed from the detector readouts using fast electronics.
  They include a L1 muon, photon, 
-electron, or jet candidates, as well as a sum of all jets in the event and missing transverse energy.
-Only the above objects, or combinations of them, are used to make an acceptance decision. 
+electron, or jet candidates, as well as an energy sum of all jets in the event 
+and missing transverse energy.
+Only the above objects, or combinations of them, are used to make acceptance decisions. 
 The maximal allowed output
 rate of the L1 trigger part is 100 kHz, at which the events are processed by the HLT.
 The HLT processes events with software reconstruction sequences that closely approximate
 the offline reconstruction, while the mean processing time per event is 50ms. There is about 
-500 various HLT triggers that each can make an acceptance decision based 
+500 various HLT trigger paths that each can make an acceptance decision based 
 on the reconstructed objects
 (jets, leptons, missing energy). The number of trigger paths approximately corresponds to the
 number of various searches and measurements pursued by the CMS collaboration.
-However, in plenty of cases the physics objects,
+In plenty of cases the physics objects,
 upon which the decisions are made, overlap between the triggers in which case the reconstruction 
-is performed only once.
+is only performed once.
 
 
 \subsection{Trigger for long-lived particles decaying to dijets}
@@ -37,17 +38,17 @@ The underlying idea behind such a trigger is not to reconstruct dijets
 associated with a displaced vertex, because such a procedure is too complicated to be executed 
 at HLT, but rather to reject events where all the jets are produced promptly at the collision
 point which is much simpler. The rate limitations (up to 1~Hz imposed by the CMS collaboration)
- together with the limited execution time (up to 5~ms on average for a single trigger)
+ together with the limited execution time (up to 5~ms on average for a single trigger path)
 resulted in the trigger that consists of the following filters:
 
 \begin{enumerate}
  \item Scalar transverse energy sum of all 
-the L1 jets in the event, $H_T$, above 150\GeV, which is the lowest threshold allowed by CMS;
+the L1 jets in the event, $H_T$, above 150\GeV. It is the lowest threshold allowed by L1
+rate limitations;
  \item Scalar transverse energy sum of all 
 the HLT jets in the event, $H_T$, above 300\GeV. The jets at L1 are determined with large
-uncertainties, imposing a requirement twice as large at HLT guarantees very high L1 efficiency and 
-therefore reduces the dependence of the further analysis on the L1 trigger performance and
-simulation;
+uncertainties. Imposing a requirement twice as large at the HLT guarantees very high L1 efficiency and 
+therefore reduces the dependence of the further analysis on the L1 trigger performance;
 \item At least two jets that have transverse momenta, $p_T>$~60\GeV and pseudorapidity
 $|\eta|<$2. This requirement selects jets that are central and well within the acceptance 
 of the CMS tracker;
@@ -56,15 +57,15 @@ that have impact parameters smaller than 300~$\mu m$. This requirement rejects p
 produced jets for which majority of their tracks have smaller impact parameters;
 \item For at least two of the jets selected in step 4 the jet energy fraction carried by the tracks
 that have transverse impact parameters smaller than 500~$\mu m$ is required to be smaller than
-15\%. This requirement additionally rejects promptly produced jets that passed step 4. 
+15\%. This requirement additionally suppresses promptly produced jets. 
 \end{enumerate}
 
 Additionally to the trigger just described, a control trigger has been designed which
 consists of the same steps, but the steps 3-5 require only one jet to fulfill
-the corresponding requirement. The two triggers are then called a {\it double displaced jet} and 
-a {\it single displaced jet} triggers, while due to rate limitations the {\it single} trigger
-was prescaled.  
-Both triggers were active during the 2012 LHC run and the number of events collected by CMS
+the corresponding requirements. The two triggers are then called a {\it double displaced jet} and 
+a {\it single displaced jet} triggers, while due to HLT rate limitations the {\it single} trigger
+was prescaled.
+Both triggers were active during the entire 2012 LHC run and the number of events collected by CMS
 together with the integrated luminosity are summarized in Table \ref{tab:triggerEvents}.
 \begin{table}[hbtp]
 \begin{center}
@@ -81,5 +82,5 @@ double displaced jet & 1 & 18.6 & 1.9\\
 \end{table}
 Data collected by the double displaced jet trigger, where presence of two triggering jets is required,
  is used to search for our signal,
-while data collected by the single jet one, where presence of only one triggering jet is required, is used as a control sample.
+while data collected by the single jet one is used as a prescaled control sample.
 
