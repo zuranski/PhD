@@ -23,7 +23,7 @@ MC data samples is chosen such that it approximates the LHC running conditions.
 For the purpose of the search, signal MC simulation samples are generated to
 simulate non-SM Higgs (\Higgs) production through gluon fusion ($gg \to \Higgs$). 
 Subsequently the \Higgs~is forced to decay to two long-lived, spin~0, exotic particles
-($\Higgs \to 2\X$), which each then decays to quark-antiquark pairs ($\X \to \qq$).
+($\Higgs \to 2\X$), each of which then decays to quark-antiquark pairs ($\X \to \qq$).
 The long-lived exotic \X decays to any flavor $\qq$ pair, excluding \ttbar, with equal probability. Samples
 with different combinations of \Higgs~masses ($M_{\Higgs}$ = 120, 200, 400, 1000 \GeV ) and \X~boson masses
 ($M_{\X}$ = 20, 50, 150, 350 \GeV) are generated. These are listed in Table~\ref{tab:signalMC}.
@@ -82,8 +82,8 @@ The axis labels use \cm units. \label{fig:eventDisplay}}
 \end{figure}
 
 
-The background of the search consists of events containing hadronic jets. Many Standard Model processes
-produce multiple jets in the event, however, given the considered phase space and the SM production
+The main background to this search consists of events containing hadronic jets. Many Standard Model processes
+produce multiple jets in the event. Given the considerable phase space and the SM production 
 cross sections,
  the most significant background 
 is expected to arise from QCD events. The corresponding simulated samples
@@ -92,14 +92,13 @@ of the transverse momentum transfer between the colliding partons, $\hat{p_T}$.
 The resulting transverse sum
 of the jets, $H_T$, for these events corresponds to approximately twice the value of $\hat{p_T}$. 
 For each simulated background sample the number of events passing the signal trigger
-scaled to the total integrated luminosity is shown. The per event weight factors that need 
+scaled to the total integrated luminosity is shown. The per-event weight factors that need 
 to be applied in order to compare the simulated samples with the data are also given. These
 arise simply from the cross section of the process, total integrated luminosity and the number
 of events simulated for each dataset.
 The weight factors for samples with $\hat{p_T}$
-below 470\GeV are significantly above 1, therefore the amount of simulated events in this region is insufficient to compare with data.
-The background contribution
-significantly decreases with increased $\hat{p_T}$, therefore we do not consider samples with $\hat{p_T}$ higher
+below 470\GeV are significantly above unity, therefore the amount of simulated events in this region is insufficient to compare with data.
+Since the background significantly decreases with increased $\hat{p_T}$, we do not consider samples with $\hat{p_T}$ higher
 than 800\GeV. For QCD events with $\hat{p_T}$ below 80\GeV the small efficiency of passing the trigger
  requirement of $H_T>$300\GeV
 makes the low $\hat{p_T}$ contribution negligible.
@@ -111,13 +110,13 @@ makes the low $\hat{p_T}$ contribution negligible.
  \multicolumn{1}{c}{Dataset name} & Cross section  & N events passing  & Per event \\
                                     &     (pb)       & the trigger / 18.6 \fbinv & weight factor \\
 \hline
-\texttt{\small QCD (600$<\hat{p_T}<$800\GeV)}               & 2.70e1       & 4.5e2 & 0.1  \\
-\texttt{\small QCD (470$<\hat{p_T}<$600\GeV)}               & 1.14e2       & 1.7e3 & 0.6 \\
-\texttt{\small QCD (300$<\hat{p_T}<$470\GeV)}               & 1.76e3        & 2.6e4 & 5.5 \\
-\texttt{\small QCD (170$<\hat{p_T}<$300\GeV)}               & 3.41e4 & 5.2e5 & 1.1e2 \\
-\texttt{\small QCD (120$<\hat{p_T}<$170\GeV)}               & 1.56e5  & 7.5e5 & 4.8e2 \\
-\texttt{\small QCD (80$<\hat{p_T}<$120\GeV)}                & 1.03e6  & 4.8e5 & 3.2e3 \\
-\texttt{\small QCD (50$<\hat{p_T}<$80\GeV)}                & 8.15e6  & 1.1e5 & 2.5e4 \\
+\texttt{\small QCD (600$<\hat{p_T}<$800\GeV)}               & $2.70\times10^1$       & $4.5\times10^2$ & 0.1  \\
+\texttt{\small QCD (470$<\hat{p_T}<$600\GeV)}               & $1.14\times10^2$       & $1.7\times10^3$ & 0.6 \\
+\texttt{\small QCD (300$<\hat{p_T}<$470\GeV)}               & $1.76\times10^3$        & $2.6\times10^4$ & 5.5 \\
+\texttt{\small QCD (170$<\hat{p_T}<$300\GeV)}               & $3.41\times10^4$ & $5.2\times10^5$ & $1.1\times10^2$ \\
+\texttt{\small QCD (120$<\hat{p_T}<$170\GeV)}               & $1.56\times10^5$  & $7.5\times10^5$ & $4.8\times10^2$ \\
+\texttt{\small QCD (80$<\hat{p_T}<$120\GeV)}                & $1.03\times10^6$  & $4.8\times10^5$ & $3.2\times10^3$ \\
+\texttt{\small QCD (50$<\hat{p_T}<$80\GeV)}                & $8.15\times10^6$  & $1.1\times10^5$ & $2.5\times10^4$ \\
 \hline
 \end{tabular}
 \caption{Simulated background samples used in the analysis.\label{tab:backgrMC}}.
