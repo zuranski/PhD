@@ -73,17 +73,17 @@ such that a significant fraction of the candidates have opening angles above 0.5
 \item $M_{\X}$=50\GeV for $M_{\Higgs}$=200\GeV
 \end{itemize}
 
-Given the kinematic constraints we define the following acceptance criteria 
-for the \X candidates at the generator level:
-\begin{itemize}
- \item $\qq$ opening angle above 0.5;
- \item $p_T>40\GeV$ and $|\eta|<2.1$ for both quarks from the $\X \to \qq$ decay;
- \item transverse decay length, $L_{xy}<60\cm$ - the CMS tracker allows for track reconstruction originating at
-a transverse displacement up to 60\cm, therefore secondary vertices with higher displacement cannot be reconstructed.
-\end{itemize}
+%Given the kinematic constraints we define the following acceptance criteria 
+%for the \X candidates at the generator level:
+%\begin{itemize}
+% \item $\qq$ opening angle above 0.5;
+% \item $p_T>40\GeV$ and $|\eta|<2.1$ for both quarks from the $\X \to \qq$ decay;
+% \item transverse decay length, $L_{xy}<60\cm$ - the CMS tracker allows for track reconstruction originating at
+%a transverse displacement up to 60\cm, therefore secondary vertices with higher displacement cannot be reconstructed.
+%\end{itemize}
 
-The definition of acceptance is introduced as a minimal set of requirements for the search.
-If any of the criteria is not met by the long-lived object, the reconstruction will not succeed.
+%The definition of acceptance is introduced as a minimal set of requirements for the search.
+%If any of the criteria is not met by the long-lived object, the reconstruction will not succeed.
 
 \section{Reconstruction}
 
@@ -91,18 +91,19 @@ In the reconstruction process described below, we identify characteristic variab
 of the long-lived dijet candidates that provide
 signal-to-background discrimination using simulated MC samples.    
 There is no Standard Model process giving rise to displaced dijet pairs. Jets may,
-however, contain displaced (high impact parameter) tracks originating from B meson decays, nuclear
+however, may contain displaced (high impact parameter) tracks originating from B meson decays, nuclear
 interactions of charged particles with the tracker material, \Kshort and $\Lambda^0$ decays, etc. These tracks, if 
 present for two distinct jets,
 may then cross at a displaced location and mimic a common dijet vertex. 
 
-All figures in this Section that present signal and background MC distributions 
+We apply a trigger that only requires $H_T>$300\GeV, but does not require
+the presence of at least two jets having few low impact parameter tracks. Such a requirement
+yields very low
+candidate counts for the background MC samples.
+All figures in this Section that show signal and background MC distributions 
 are scaled to the total available luminosity
-of 18.6\fbinv. Applying the signal trigger to the background MC yields very low candidate
-counts. We therefore apply a looser trigger that only requires $H_T>$300\GeV, 
-but does not require existence of jets
-having few low impact parameter tracks (\ref{subsec:trigger}).  
- The cross section of the signal process has been set to 10 $\mu$b for visual purposes.   
+of 18.5\fbinv. 
+The cross section of the signal process has been set to 10 $\mu$b for visual purposes.   
 
 %%% primary vertrex
 The LHC collision events usually contain many primary vertices corresponding to multiple proton-proton collisions occurring 
@@ -390,14 +391,14 @@ may result in multiple candidates per event that all pass
 the pre-selection criteria. In such cases, we select only one candidate per event by
 choosing the one with the highest number of tracks associated to the secondary vertex.
 If two or more candidates have the same number of tracks associated to the secondary vertex,
-we choose the vertex with a smaller $\chi^2/\text{dof}$. The candidate pre-selection together
+we choose the candidate with a smaller $\chi^2/\text{dof}$. The candidate pre-selection together
 with the selection of the 
 one candidate per event will be further referred to as event pre-selection.
 Only the 
-properties of the one candidate are used for further selection and background estimation.
+properties of the one selected candidate are used for further selection and background estimation.
 It is worth noting that
 among the background MC events above 99\% of events contains only one candidate
-after the pre-selection criteria are applied.
+after the pre-selection criteria are applied. 
 
 %When a single jet is used in more than one dijet pair after pre-selection, we 
 %In case a single jet is used in more than one dijet pair after pre-selection, we resolve
@@ -459,7 +460,7 @@ luminosity and the signal efficiency for all considered signal models is at leas
 times smaller than the efficiency
 in the signal region. Figures \ref{fig:promptness}, \ref{fig:discriminant}, \ref{fig:vertex} 
 and \ref{fig:cluster} present all 
-discrimination variables used in the analysis in the control region
+of the discrimination variables used in the analysis in the control region
 after event pre-selection. The number of missing hits per track after the vertex requirement has been removed
 in order to increase the statistics of the 
 data and background Monte Carlo samples. 
