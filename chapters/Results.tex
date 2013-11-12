@@ -8,50 +8,6 @@ compute upper limits depending on the reconstruction efficiency of the signal mo
 \section{Long-lived particles reconstruction efficiency}
 \label{sec:signalefficiency}
 
-The signal events contain two \X bosons each decaying to $\qq$, therefore we define the \X bosons 
- efficiency times acceptance ($\epsilon A$) as:
-\begin{equation}
-\epsilon A= \frac{N_{X reconstructed}}{2N_{events}}
-\end{equation}
-
-where the \X bosons acceptance $A$ has been defined in Section \ref{sec:sigsensitivity}. 
-Table \ref{tab:sigeff} presents the acceptance and efficiency for
-reconstructing \X boson candidates as a function of the \Higgs and \X particles masses for different 
-mean lifetimes of the \X particles.
-
-\begin{table}[htbp]
-\caption{
-Signal acceptance and reconstruction efficiency ($\epsilon$) for $\X \to \qq$ in simulated signal models.
-The trigger and reconstruction efficiencies are both included in the efficiency.
-The uncertainties are statistical only.\label{tab:sigeff}}
-\centering
-\begin{tabular}{llcccc}
-\hline
-$\Higgs$ [GeV] & $\X$ [GeV] & c$\tau$ [cm] & $\langle L_{xy} \rangle$ [cm] & Acceptance [\%] & $\epsilon$ [\%] \\
-\hline
-200 & 50 & 2 & 3 & $9.1\pm0.2$ & $1.5\pm0.3$ \\
-200 & 50 & 20 & 30 & $7.3\pm0.2$ & $0.8\pm0.2$ \\
-\hline
-400 & 50 & 0.8 & 2.6 & $35.2\pm0.4$ & $8.8\pm0.4$ \\
-400 & 50 & 8 & 26 & $31.3\pm0.4$ & $4.4\pm0.3$ \\
-400 & 50 & 80 & 260 & $7.2\pm0.2$ & $1.6\pm0.4$ \\
-\hline
-400 & 150 & 4 & 3 & $59.9\pm0.4$ & $15.9\pm0.4$ \\
-400 & 150 & 40 & 30 & $51.5\pm0.4$ & $6.7\pm0.3$ \\
-400 & 150 & 400 & 300 & $13.6\pm0.3$ & $1.7\pm0.3$ \\
-\hline 
-1000 & 150 & 1 & 2.5 & $74.6\pm0.4$ & $37.7\pm0.4$ \\
-1000 & 150 & 10 & 25 & $66.8\pm0.4$ & $25.3\pm0.4$ \\ 
-1000 & 150 & 100 & 250 & $15.7\pm0.3$ & $14.4\pm0.7$ \\
-\hline 
-1000 & 350 & 3.5 & 2.9 & $89.0\pm0.2$ & $39.0\pm0.4$ \\
-1000 & 350 & 35 & 29 & $76.9\pm0.3$ & $22.0\pm0.4$ \\
-1000 & 350 & 350 & 290 & $19.4\pm0.3$ & $11.0\pm0.5$ \\
-\hline
-\end{tabular}
-\end{table}
-
-
 In order to visualize the capabilities of the CMS detector for reconstructing long-lived particles decaying to 
 dijets, 
 the reconstructed dijet mass and $L_{xy}$ distributions for selected signal models are shown in Figure
@@ -65,13 +21,89 @@ ratio to quarks ($\X \to \qq$) to be 100\%.
 \caption{The reconstructed dijet mass and $L_{xy}$ for selected signal models; central lifetime out of the three available is presented.\label{fig:signal}}
 \end{figure}
 
+The signal reconstruction efficiency is obtained by applying the final selection
+criteria (Section \ref{sec:cutvalues}) to the dijet candidate that have been chosen 
+after candidate pre-selection and counting the surviving events.
+The efficiency for all considered signal models 
+is presented in Table 
+\ref{tab:sigeff}. 
+
+\begin{table}[htbp]
+\caption{
+Signal reconstruction efficiency ($\epsilon$) for $\Higgs \to 2\X \left(\X \to \qq\right)$ 
+in simulated signal models.
+The trigger and reconstruction efficiencies are both included in the efficiency.
+The uncertainties are statistical only.\label{tab:sigeff}}
+\centering
+\begin{tabular}{llccc}
+\hline
+$\Higgs$ [GeV] & $\X$ [GeV] & c$\tau$ [cm] & $\langle L_{xy} \rangle$ [cm] & $\epsilon$ [\%] \\
+\hline
+200 & 50 & 2 & 3 & $0.25 \pm 0.05$ \\
+200 & 50 & 20 & 30 & $0.15 \pm 0.04$ \\
+\hline
+400 & 50 & 0.8 & 2.6 & $5.6 \pm 0.2$ \\
+400 & 50 & 8 & 26 &  $3.3 \pm 0.2$ \\
+400 & 50 & 80 & 260 & $0.3 \pm 0.06$ \\
+\hline
+400 & 150 & 4 & 3 & $15.6 \pm 0.4$ \\
+400 & 150 & 40 & 30 & $7.6 \pm 0.3$ \\
+400 & 150 & 400 & 300 & $0.6 \pm 0.1$ \\
+\hline
+1000 & 150 & 1 & 2.5 & $41.3 \pm 0.5$ \\
+1000 & 150 & 10 & 25 & $31.1 \pm 0.5$ \\
+1000 & 150 & 100 & 250 & $4.8 \pm 0.2$ \\
+\hline
+1000 & 350 & 3.5 & 2.9 & $49.2 \pm 0.5$ \\
+1000 & 350 & 35 & 29 & $30.9 \pm 0.5$ \\
+1000 & 350 & 350 & 290 & $4.4 \pm 0.2$ \\
+\hline
+
+\end{tabular}
+\end{table}
+
+The signal reconstruction efficiency is examined further as a function of the various
+properties of the signal event. 
+Figure \ref{fig:effLxy} presents the efficiency as a function of the \X particles
+transverse displacement, Figure \ref{fig:effIP2d} shows the efficiency as a function of
+the transverse impact parameters of the $\qq$ system, while Figure \ref{fig:effPt} presents
+the efficiency as a function of \Higgs and \X particles transverse momenta.
+
+\begin{figure}[htbp]
+\includegraphics[width=0.49\textwidth]{plots/signal/effSmallLxy.pdf}
+\includegraphics[width=0.49\textwidth]{plots/signal/effLxy.pdf}
+\caption{Signal reconstruction efficiency as a function of the \X particle transverse 
+displacement ($L_{xy}$). The turn-on curve for small displacement is shown on the left,
+while the turn-off for large displacements is presented on the right.\label{fig:effLxy}}
+\end{figure}
+\begin{figure}[htbp]
+\includegraphics[width=0.49\textwidth]{plots/signal/effIP2dMin.pdf}
+\includegraphics[width=0.49\textwidth]{plots/signal/effIP2dMax.pdf}
+\caption{Signal reconstruction efficiency as a function of the transverse impact
+parameters of the $\qq$ system. The efficiency as a function of the smaller 
+of the two $\qq$ transverse impact parameters
+is shown on the left, while the efficiency as a function of the larger one 
+is presented on the right.
+\label{fig:effIP2d}}
+\end{figure}
+
+\begin{figure}[htbp]
+\includegraphics[width=0.49\textwidth]{plots/signal/effXPt.pdf}
+\includegraphics[width=0.49\textwidth]{plots/signal/effHPt.pdf}
+\caption{Signal reconstruction efficiency as a function of the \X particle transverse 
+momentum (left) and as a function of the \Higgs particle transverse momentum (right).
+\label{fig:effPt}}
+\end{figure}
+
+
 \section{Data in the signal region}
 \label{sec:fullunblinding}
 
-Table \ref{tab:fullunblinding} summarizes the observed candidate counts in the signal region for the optimized 
+Table \ref{tab:fullunblinding} summarizes the observed event counts in the signal region for the optimized 
 selections detailed in Section \ref{sec:cutvalues}. Data is found in good agreement with the 
-background only hypothesis. In addition, the two selected candidates are examined using event displays
-and are found consistent with background candidates as described in Figure \ref{fig:eventDisplays}.  
+background only hypothesis. In addition, the two selected events are examined using event displays
+and are found consistent with background events as described in the caption of 
+Figure \ref{fig:eventDisplays}.  
 
 \begin{table}[htbp]
 \centering
@@ -81,10 +113,10 @@ $\bf L_{xy}$ \bf selection & \bf low & \bf high \\
 \hline
 \bf Predicted Background & $ 1.60\pm0.58(stat+sys)$ & $ 1.14\pm0.54(stat+sys)$ \\
 \hline
-\bf Observed candidates & 2 & 1 \\ 
+\bf Observed events & 2 & 1 \\ 
 \hline
 \end{tabular}
-\caption{Observed candidates and predicted background for the optimized selections.\label{tab:fullunblinding}}
+\caption{Observed events and predicted background for the optimized selections.\label{tab:fullunblinding}}
 \end{table}
 
 \begin{figure}
@@ -92,7 +124,7 @@ $\bf L_{xy}$ \bf selection & \bf low & \bf high \\
 \includegraphics[width=0.9\textwidth]{plots/displays/candidate1_display.png}
 \includegraphics[width=0.9\textwidth]{plots/displays/candidate2_display.png}
 
-\caption{Event displays of the two candidates passing the optimized selection where only the selected di-jet pair
+\caption{Event displays of the two events passing the optimized selection where only the selected dijet pair
  (yellow cones) and 
 the associated tracks (curved lines) are shown, other objects being removed. The tracks that fit the secondary 
 vertex are coloured black.  
@@ -120,34 +152,23 @@ takes into account the systematic uncertainties described in Chapter
 \ref{chap:systematics} by introducing
 a nuisance parameter for each uncertainty, marginalised by a log-normal prior distribution.
 
-As a first step, upper limits are placed on the mean number of \X bosons ($N_\X$) that could pass
-the selection requirements. The resulting observed upper limits on $N_\X$ are 4.6 candidates
-for the {\it low} $L_{xy}$ selection and 3.7 candidates for the {\it high} selection.
+As a first step, upper limits are placed on the mean number of events that could pass
+the selection requirements. The resulting observed upper limits are 4.6 events
+for the {\it low} $L_{xy}$ selection and 3.7 events for the {\it high} selection.
  These limits are independent
-of the particular model assumed for \X boson production.
+of the particular model assumed for production of long-lived particles given
+that the efficiency to pass the selection criteria is not negligible. 
 
 
 Secondly, an upper limit is quoted on the cross section
 to produce $\Higgs \to 2\X$ times the branching fraction squared, $B^2$, for \X to decay into $\qq$.
-The expected number of signal dijet candidates passing the selection can be expressed as:
-\begin{equation}
-N_\X \geq 2 \mathcal{L}\epsilon A\sigma B^2
-\end{equation}
-where $\mathcal{L}$ is the integrated luminosity, $A$ is the acceptance,
-$\epsilon$ is the efficiency to reconstruct \X boson candidates
-(Table \ref{tab:sigeff}), $\sigma$ is the production cross-section of the heavy resonance decaying to \X,
-$B$ is the branching fraction of $\X$ to dijets, and the factor of 2 reflects the 2 $\X$ decays in each event.
- The non-equality arises from the fact that when the branching
-fraction $B$
-is smaller than 1, there is an additional contribution from events where only one \X boson decayed to dijets.
-The limits will therefore be exact when $B=1$ and conservative when $B$ is smaller than 1.
 The observed and
 expected limits are shown in Figure \ref{fig:limits}. In order to expand the number of tested models,
-the lifetime distributions of the signal MC candidates are reweighted to
+the lifetime distributions of the signal MC events are reweighted to
 different mean values, namely $0.4\tau$, $0.6\tau$, and $1.4\tau$ for every
 lifetime value $\tau$ and mass combination listed
 in Table \ref{tab:sigeff}.
-Candidates are weighted using event based weights computed as the product
+Event weights are computed as the product
  of weights assigned to each $\X$ candidate in the event.
 The reweighted signal reconstruction efficiencies are then used
 to compute the expected and observed limits for these additional mean lifetime values.
