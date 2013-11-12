@@ -1,18 +1,18 @@
-This chapter focuses on a precise and correct estimation of the search background. The
+This chapter focuses on a precise estimate of the search background. The
 background prediction is of crucial importance for searches beyond the SM, because an observation
 of an upward deviation with respect to the background prediction may hint a new discovery.
-Firstly a data-driven background estimation is introduced. The benefit of a data driven technique
-as compared to a simulation based estimation is that it avoids any possible issues of 
-simulation mismodelling. Then a series of tests of the background estimation is performed 
-in control regions to establish the correctness of the method and also asses
+First a data-driven background estimate is introduced. The benefit of a data-driven technique
+as compared to a simulation based estimate is that it avoids possible issues of 
+simulation mismodelling. Then a series of tests of the background estimate is performed 
+in control regions to establish the correctness of the method and to asses
 its systematic uncertainty.
 
 
 \section{Method of uncorrelated variables (ABCD)}
 \label{sec:abcd}
-We use a data driven method of independent selections, the "ABCD method", using
- three independent selection criteria listed in Section \ref{sec:selection}. 
-The three selection criteria divide the candidates into eight
+We use a data-driven method of independent selections, the ``ABCD method", using
+ the three independent selection criteria listed in Section \ref{sec:selection}. 
+The three selection criteria divide the events into eight
 independent regions as listed in Table \ref{tab:regions}.
 
 \begin{table}[htbp]
@@ -36,26 +36,27 @@ being applied, while "--" to a selection being inverted. \label{tab:regions}}
 \end{table}
 
 The background level in the signal region H can be estimated from anyone of the 6 semi-independent combinations
-of the candidate counts in other regions:
+of the event counts in other regions:
 \begin{itemize}
-\item FG/B, EG/C, EF/D - these combinations use 1 selection always applied, while applying and inverting the 
-2 other selections;
-\item DG/A, BE/A, CF/A - these combinations combine 2 selections together and apply or invert it with the 
+\item FG/B, EG/C, EF/D - these combinations use one selection always applied, while applying and inverting the 
+two other selections;
+\item DG/A, BE/A, CF/A - these choices combine two selections together and apply or invert it with the 
 remaining selection.
 \end{itemize}
 
-A seventh background prediction which minimizes statistical uncertainty, BCD/A$^2$, can be constructed from regions
-with at least 2 selections inverted where background candidate counts are largest. 
+A seventh background prediction, which minimizes statistical uncertainty, BCD/A$^2$, can be constructed from regions
+with at least 2 selections inverted where background event counts are largest. 
 We use BCD/A$^2$ as our background prediction central value. In the case of perfectly independent 
-variables all combinations predict statistically consistent  amount of background. 
+variables, all combinations predict statistically consistent  amount of background. 
 However, to account for possible systematic
-effects due to residual dependence of the selections, we assign a systematic uncertainty as the maximal difference 
+effects due to residual dependence of the selections, we assign a systematic uncertainty 
+that is equal to the largest difference 
 between BCD/A$^2$ and any of the 6 other predictions.
 
 \section{Selection optimisation}
 \label{sec:cutvalues}
 We determine the numerical values of the selection criteria that are employed in the background estimation procedure 
-by optimizing expected limit for each tested signal model.
+by optimizing the expected limit for each tested signal model.
 The signal models considered include various values of the \Higgs mass, the \X mass, and the \X lifetime.
 The selection variables
 do not strongly depend on the particles masses, therefore the optimal selection criteria
@@ -90,15 +91,20 @@ The background estimation procedure described in Section \ref{sec:abcd} is gener
 to any dataset if the selections used are independent.
 In this section we describe various background closure tests
  performed in QCD Monte Carlo simulation and 
-selected control regions in data. Figures shown in the following sections present the observed number
-of candidates and all of the 7 combinations predicting the background level as described
+selected control regions in data. 
+In order to perform background tests we apply various selections, not only the optimal ones
+listed in Section \ref{sec:cutvalues}.
+The figures shown in the following sections present the observed number
+of events and all of the 7 background estimates which were described
  in Section \ref{sec:abcd}.
-Uncertainties are statistical only. For each of the tested selection points the background prediction 
+Uncertainties are statistical only. 
+For each of the tested selection points the background prediction 
 and its uncertainty are obtained 
-using the prescription from Section \ref{sec:abcd}. The background prediction and its statistical 
-and systematic uncertainties are
- not explicitly plotted given that all of the 7 combinations employed in its derivation are shown.  
-The compatibility between predicted and observed background is estimated with a {\it p-value} for every measurement. 
+using the prescription from Section \ref{sec:abcd}. 
+%The background prediction and its statistical 
+%and systematic uncertainties are
+% not explicitly plotted given that all of the 7 combinations employed in its derivation are shown.  
+The compatibility between predicted and observed background is estimated with a {\it p-value} for each measurement. 
 %The {\it p-values} are then converted into {\it significances} using the normal distribution. 
  The {\it p-value}
 is computed with respect to the estimated background probability density function (p.d.f.). 
@@ -107,7 +113,7 @@ therefore the background p.d.f. is a Poissonian function convolved
 with a Gaussian error function. The probability of observing $n$ background events is given by:
 \begin{equation}
 B(n,b,\sigma_b)= \frac{1}{\sqrt{2\pi}\sigma_b} \int_{0}^{\infty} 
-exp\left[ -\frac{\left(x-b\right)^2}{2\sigma_b^2}\right]\frac{x^n e^{-x}}{n!}dx
+\exp\left[ -\frac{\left(x-b\right)^2}{2\sigma_b^2}\right]\frac{x^n e^{-x}}{n!}dx
 \label{eqn:bdensity}
 \end{equation}
 where $b$ is the background central value and $\sigma_b$ the total uncertainty.
@@ -116,7 +122,7 @@ The gaussian probability density of the background mean has been truncated at
 \ref{eqn:bdensity}, however the {\it p-values} computed according to equation \ref{eqn:pvalues} take the 
 normalization into account.   
 \begin{equation}
-{\it p} (n_{obs},b,\sigma_b) = \sum_{k\geq n_{obs}} B(k,b,\sigma_b) / \sum_{k} B(k,b,\sigma_b)
+{\it p} (n_\text{obs},b,\sigma_b) = \sum_{k\geq n_{obs}} B(k,b,\sigma_b) / \sum_{k} B(k,b,\sigma_b)
 \label{eqn:pvalues}
 \end{equation}
 The {\it p-values} are then converted into {\it significances} using the normal
@@ -127,14 +133,14 @@ measurements.
 \subsection{QCD Monte Carlo background prediction}
 \label{subsec:bkgQCDMC}
 
-Due to limited statistics of the QCD MC samples the displaced jet trigger requirement has been removed. Additionally, the background is estimated with looser
+Due to the limited statistics of the QCD MC samples, the displaced jet trigger requirement has been removed. In addition, the background is estimated with looser
  selection on prompt tracks variables compared to the final selection. 
 In order to validate the background prediction with 
-the observed poissonian candidate counts the cross-section weights (Table \ref{tab:backgrMC}) 
+the observed Poissonian event counts the cross-section weights (Table \ref{tab:backgrMC}) 
 are removed, 
 therefore this test serves only the purpose of identifying biases due to selections not being
 perfectly independent, and cannot be translated
-into background prediction in data.  
+into a background prediction in data.  
 As shown in Figure \ref{fig:bkg_MC} good agreement between predicted and observed background level is found, 
 and the discrepancy is not significant for the tested selection points. Therefore, we conclude that the  
 bias due to variables being not perfectly independent is small in the QCD MC samples. 
@@ -153,11 +159,13 @@ is significantly looser compared to final selection. \label{fig:bkg_MC}}
 \label{subsec:bkgCtrl}
 
 As a data control region we use candidates passing all of the pre-selection criteria listed in Section
- \ref{sec:selection} but with the {\it missing hits} selection inverted. Such a region has a very small 
+ \ref{sec:selection} but with the {\it missing hits} selection inverted. We again choose only 
+ one candidate per event applying the same procedure as described in Section \ref{sec:selection}.
+ Such a region has a very small 
 signal acceptance compared to the signal region as the {\it missing hits} criterion has a very high signal 
-efficiency, while providing
+efficiency, while providing a
 background sample with good statistics. Using this control region we are able to test final selection
-criteria with amounts and uncertainties on predicted background comparable to the signal region. 
+criteria with amounts and uncertainties of predicted background comparable to the signal region. 
  As shown in Figure \ref{fig:bkg_NMiss}, 
 the background predictions in this control region are in good agreement 
 with the observed background level. Given that the significance
@@ -169,23 +177,24 @@ that the background estimation method is valid and the systematic uncertainty on
 \centering
 \includegraphics[width=0.495\textwidth]{plots/background/bkg_NMiss1.pdf}
 \includegraphics[width=0.495\textwidth]{plots/background/bkg_NMiss2.pdf}
-\caption{Predicted and observed background level in the data control region as a function of the vertex
+\caption{Predicted and observed background levels in the data control region as a function of the vertex
 discriminant selection criteria. Selection requires maximally 1 prompt track and the prompt track energy fraction
 is required to be less than 15\% and 9\% on the left and right plot respectively.\label{fig:bkg_NMiss}}
 \end{figure}
 
-\section{Background in 10\% fraction of the dataset}
+\section{Background estimate based on 10\% of the dataset}
 \label{sec:partunblinding}
 
 In order to check that there is no anomalous background present,
  we initially examined the data corresponding to only 10\% of all available 
 data in the signal region.  
-We select the data using exactly 1 out of every 10 luminosity sections, where 1 luminosity
+We select the data using exactly one out of every ten luminosity sections, where a luminosity
 section is a period of approximately 23 seconds of active data taking. This way of choosing 
-the data is sensitive to possible issues that occur only for selected data taking periods, and also for effects that may arise from
+the data is sensitive to possible issues that occur only for selected data taking periods, and also to effects that may arise from
 correlations between consecutive events accepted by the trigger. Comparison of the data and predicted
 background is presented in Figure \ref{fig:10percent}. No anomalous background is observed in this sample,
-however the background predictions are small therefore making the test statistically limited.
+however the background predictions are small, thus limiting the statistical
+power of the test.
 
 \begin{figure}[htbp]
   \centering
