@@ -1,6 +1,6 @@
 We describe the sources of systematic uncertainty, which include those related to 
 the background prediction, the integrated luminosity, and the signal reconstruction efficiency. 
-The signal efficiencies are obtained from Monte Carlo simulations of the various signals processed
+The signal efficiencies are obtained from MC simulations of the various signals processed
 through the full detector simulation. 
 The systematic uncertainties are then estimated by determining
 the relevant differences between data and simulation using control samples. The sources
@@ -50,23 +50,23 @@ $\text{EF/D}$ & 1.16 & 0.62 \\
 \section{Luminosity}
 For the running period corresponding to this analysis, CMS estimates the relative uncertainty on the luminosity to be 2.6\% \cite{CMS-PAS-LUM-13-001}.
 
-\section{Effect of Pile-Up}
-The likelihood of a given number of pile-up events occurring in the data can be calculated from the distribution
- of the instantaneous luminosity during the 2012 LHC run. The number of true pile-up events in the Monte Carlo
+\section{Effect of Pileup}
+The likelihood of a given number of pileup events occurring in the data can be calculated from the distribution
+ of the instantaneous luminosity during the 2012 LHC run. The number of true pileup events in the MC
  simulation is also known. The simulation can therefore be reweighted to match the data. 
 
 The systematic uncertainty in this procedure is estimated by adjusting the reweighting, so as to account
- for uncertainties related to pile-up modeling. 
+ for uncertainties related to pileup modeling. 
 The effect of a $\pm$5\% variation in the number of interactions is estimated and gives rise 
 to a relative systematic uncertainty in the signal reconstruction efficiency 
 of less than 2\% for all mass and lifetime points considered. The signal reconstruction efficiency as
-a function of the number of primary pile-up vertices is shown in Figure \ref{fig:effPU}. No significant
-decrease in efficiency is observed as the number of primary pile-up vertices increases.
+a function of the number of primary pileup vertices is shown in Figure \ref{fig:effPU}. No significant
+decrease in efficiency is observed as the number of primary pileup vertices increases.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.49\textwidth]{plots/signal/effPU.pdf}
-\caption{Reconstruction efficiency as a function of number of pile-up vertices for selected
+\caption{Reconstruction efficiency as a function of number of pileup vertices for selected
 signal models.\label{fig:effPU}}
 \end{figure}
 
@@ -117,7 +117,7 @@ does not significantly change whether the first or second leading primary vertex
 
 The signal reconstruction efficiency is obtained assuming the tracking efficiency is correctly 
 accounted for in the MC simulation. In order to validate this assumption we study
-the relative tracking efficiency as a function of displacement and pile-up using
+the relative tracking efficiency as a function of displacement and pileup using
 $\Kshort \to \pi^+\pi^-$ decays in data and simulation.
 The $\Kshort \to \pi^+\pi^-$ decay mode, with the \Kshort proper decay length of $2.68 \cm$
  \cite{Beringer:1900zz}, provides an abundant source of tracks originating
@@ -129,7 +129,7 @@ as the jet tracks consist mostly of low-momentum light hadrons.
 \label{subsec:pitrkeff}
 
 Data and simulation events are selected with the multijet trigger, thus providing
-a source of \Kshort decays in a jet environment. The pile-up distribution in simulation is reweighted
+a source of \Kshort decays in a jet environment. The pileup distribution in simulation is reweighted
 to match the corresponding distribution in data. 
 To obtain a clean sample of \Kshort mesons, pairs of tracks with $p_T>1$\GeV are combined
  into a secondary 
@@ -189,7 +189,7 @@ of the \Kshort candidates in data and simulation. \label{fig:ksdisplacement}}
 \end{figure}
 
 The average number of 
-reconstructed \Kshort candidates as a function of pile-up is presented in Figure \ref{fig:kspileup}.
+reconstructed \Kshort candidates as a function of pileup is presented in Figure \ref{fig:kspileup}.
 
 The tracking efficiency is found to decrease more rapidly in data than simulation, but the
 overall difference is not bigger than 5\%.
@@ -214,7 +214,7 @@ efficiency systematic uncertainty from this source.
 
 \section{Track missing hits}
 
-In the pre-selection criteria the tracks in the displaced dijet vertex are required to have on average
+In the preselection criteria the tracks in the displaced dijet vertex are required to have on average
  fewer than two missing hits behind the vertex position. The efficiency of this requirement is above 98\% 
 for the simulated signal dijets as shown in Table \ref{tab:seleff}. 
 The number of missing measurements depends on the number of tracking modules that are capable of providing
@@ -360,7 +360,7 @@ in Table \ref{tab:jetbias}.
 %\subsection{PDF systematics}
 %\label{subsec:pdfsys}
 
-%The signal Monte Carlo samples are generated using \PYTHIA. According to the recommendations on Parton Density
+%The signal MC samples are generated using \PYTHIA. According to the recommendations on Parton Density
 %Functions use at the LHC \cite{Bourilkov:2006cj}, the events are then reweighted using 
 %three PDF sets:
 %\begin{itemize}
@@ -524,7 +524,7 @@ to accept the event and examine a single jet efficiency with respect to prompt c
  fraction computed offline. In this trigger step the prompt tracks are defined
  as those having the transverse impact parameter not bigger than 500\micron. 
 Using transverse impact parameter
-minimizes the sensitivity to additional pile-up interactions in the event. The size of the luminous region in 
+minimizes the sensitivity to additional pileup interactions in the event. The size of the luminous region in 
 the transverse plane is very small, about 15\micron, therefore the track promptness definition is general
 and does not depend on the choice of the leading primary vertex. 
 Trigger efficiency as a function of prompt energy fraction computed offline is shown in Figure \ref{fig:eff2PF}.
@@ -586,7 +586,7 @@ uncertainty between 8--10\% depending on the signal model.
   Jet energy scale & 3-5\%(*) \\
   Jet momentum bias & 1-5\% \\ 
   %NLO effects & 3-20\%(*) \\ 
-  Pile-up modelling & 2\% \\
+  Pileup modelling & 2\% \\
 %  Parton distribution functions & 1\% \\
   \hline
  Total & 8-10\% \\

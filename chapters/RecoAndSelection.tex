@@ -232,7 +232,7 @@ the calculation is limited to first order in
 $d_{xy}/R$. 
  A line drawn from the primary vertex along the dijet momentum crosses the helix twice, yielding
  two solutions, although only one of them behaves properly when $R \to \infty$ 
-and reduces to equation \ref{eqn:lxystraight}. Nevertheless, we consider two  
+and reduces to Eq. \ref{eqn:lxystraight}. Nevertheless, we consider two  
 separate cases:
 \begin{itemize}
  \item primary vertex lies inside the track helix:
@@ -264,7 +264,7 @@ where $\vec{z}$ is a unit longitudinal vector. The final formula applied to each
 \caption{Graphical representation of the crossing point (SV) between track helix and a straight line originating from the primary vertex (PV) in the direction of the dijet momentum. \label{fig:guesslxydiagram}}
 \end{figure} 
 
-For a genuine secondary vertex associated with a dijet pair the $L_{xy}^\text{exp}$ values obtained with equation
+For a genuine secondary vertex associated with a dijet pair the $L_{xy}^\text{exp}$ values obtained with Eq.
 \ref{eqn:lxy} for each track should be close
  together, therefore we perform a one-dimensional hierarchical clustering algorithm (Appendix 
 \ref{app:clusters})
@@ -281,7 +281,7 @@ since it uses additional information about the dijet direction. Discriminating v
 \begin{itemize}
 \item cluster track multiplicity, Figure \ref{fig:discclr};
 \item cluster RMS - a root-mean-square of the $L_{xy}^\text{exp}$ values belonging to the cluster
- relative to the vertex $L_{xy}$ given by Equation \ref{eqn:clrrms}. In addition to cluster density, this
+ relative to the vertex $L_{xy}$ given by Eq. \ref{eqn:clrrms}. In addition to cluster density, this
 variable provides information on whether both vertex and cluster reconstructions share the same tracks.
  If the two sets of tracks
 are different that fact greatly increases the value of the cluster RMS, Figure \ref{fig:discclr}.
@@ -336,7 +336,7 @@ well uncorrelated with prompt tracks variables. They include:
  \item cluster track multiplicity;
  \item cluster RMS.
 \end{itemize}  
-The likelihood discriminant is obtained using signal and background Monte Carlo samples, where samples for
+The likelihood discriminant is obtained using signal and background MC samples, where samples for
 various signal models are added together due to small signal dependence of the variables used.
 For each dijet candidate a signal probability is computed according to the formula:
 \begin{equation}
@@ -360,9 +360,9 @@ from both jets simultaneously.
 
 \begin{table}[htbp]
 \centering
-\caption{Correlation factors obtained with equation \ref{eqn:corr} between the variables 
-used for background estimation obtained from background QCD Monte
-Carlo samples. N1 and N2 represent the numbers
+\caption{Correlation factors obtained with Eq. \ref{eqn:corr} between the variables 
+used for background estimation obtained from background QCD MC
+samples. N1 and N2 represent the numbers
 of prompt tracks for jets 1 and 2, respectively, while fraction 1 and 2 the jet energy fraction carried by
 prompt tracks.
 \label{tab:corr}}
@@ -378,7 +378,7 @@ fraction 2 & & & & & - \\
 \end{table}
 
 The final numerical values required for the variables used for background estimation are described in Section 
-\ref{sec:cutvalues}. For all remaining discrimination variables we require loose pre-selection criteria:   
+\ref{sec:cutvalues}. For all remaining discrimination variables we require loose preselection criteria:   
 \begin{itemize}
  \item vertex mass $>$ 4\GeV;
  \item vertex $p_T>$ 8\GeV;
@@ -386,27 +386,27 @@ The final numerical values required for the variables used for background estima
  \item $L_{xy}$ significance $>$ 8.
 \end{itemize}
 
-The reconstruction and pre-selection procedure 
+The reconstruction and preselection procedure 
 may result in multiple candidates per event that all pass
-the pre-selection criteria. In such cases, we select only one candidate per event by
+the preselection criteria. In such cases, we select only one candidate per event by
 choosing the one with the highest number of tracks associated to the secondary vertex.
 If two or more candidates have the same number of tracks associated to the secondary vertex,
-we choose the candidate with a smaller $\chi^2/\text{dof}$. The candidate pre-selection together
+we choose the candidate with a smaller $\chi^2/\text{dof}$. The candidate preselection together
 with the selection of the 
-one candidate per event will be further referred to as event pre-selection.
+one candidate per event will be further referred to as event preselection.
 Only the 
 properties of the one selected candidate are used for further selection and background estimation.
 It is worth noting that
 among the background MC events above 99\% of events contains only one candidate
-after the pre-selection criteria are applied. 
+after the preselection criteria are applied. 
 
-%When a single jet is used in more than one dijet pair after pre-selection, we 
-%In case a single jet is used in more than one dijet pair after pre-selection, we resolve
+%When a single jet is used in more than one dijet pair after preselection, we 
+%In case a single jet is used in more than one dijet pair after preselection, we resolve
 %the ambiguity by choosing the highest $L_{xy}$ significance candidate for each jet, thus ensuring that
 %each jet is only used once. 
 
-Pre-selection criteria efficiencies are presented in Table \ref{tab:seleff}.  
-When the pre-selection requirements are applied to each dijet candidate,
+Preselection criteria efficiencies are presented in Table \ref{tab:seleff}.  
+When the preselection requirements are applied to each dijet candidate,
 the efficiencies are computed using the number of events with at least one candidate fulfilling the selection.
 The requirement for the signal candidates to be matched with a decay of an \X boson at the generator level,
  denoted in Table \ref{tab:seleff} as {\it signal dijet}, 
@@ -415,13 +415,13 @@ jets do not originate from the same \X boson particle.
 The $H_T>300\GeV$ requirement imposed by the trigger reduces the efficiency for lower masses of the \Higgs, 
 while the vertex reconstruction efficiency is affected by the acceptance of the CMS tracker, which cannot 
 reconstruct vertices displaced by more than 60\cm in the transverse plane. However, if the trigger accepted a signal event and the secondary vertex is reconstructed
-for at least one of the \X boson candidates the pre-selection efficiency is high for the signal samples
+for at least one of the \X boson candidates the preselection efficiency is high for the signal samples
 when compared to the background.   
 
 \begin{table}[!htbp]
 \centering
-\caption{Trigger and pre-selection criteria efficiency for data,
-background Monte Carlo, and three selected signal models. 
+\caption{Trigger and preselection criteria efficiency for data,
+background MC, and three selected signal models. 
 Event selection efficiencies in each row are relative to events that passed the criteria from rows above.
 All criteria, except the trigger, are applied to individual dijet candidates.
 There may be many dijet candidates in a single event, therefore
@@ -430,7 +430,7 @@ containing at least one dijet candidate that fulfills the selection.
 \label{tab:seleff}}
 \begin{tabular}{|l|ccccc|}
 \hline
- & \multicolumn{5}{c|}{pre-selection criteria efficiency} \\
+ & \multicolumn{5}{c|}{preselection criteria efficiency} \\
 \cline{2-6}
  & & &  $M_H$=1000\GeV & $M_H$=400\GeV & $M_H$=200\GeV \\
  & & &  $M_X$=350\GeV & $M_X$=150\GeV & $M_X$=50\GeV \\
@@ -452,7 +452,7 @@ $L_{xy}$ significance & 78\% & 68\% & 100\% & 100\% & 100\% \\
 \end{table}
 
 In order to validate the simulation based study, we compare the data and background MC distributions
-in a control region for events passing the pre-selection.
+in a control region for events passing the preselection.
 We use a control region that requires passing the single jet trigger
  and vetoes events passing the double jet trigger (the single and double jet trigger
 definitions are given in Section \ref{subsec:trigger}). Compared to the signal region, there is a factor of 100 less integrated 
@@ -461,10 +461,10 @@ times smaller than the efficiency
 in the signal region. Figures \ref{fig:promptness}, \ref{fig:discriminant}, \ref{fig:vertex} 
 and \ref{fig:cluster} present all 
 of the discrimination variables used in the analysis in the control region
-after event pre-selection. The number of missing hits per track after the vertex requirement has been removed
+after event preselection. The number of missing hits per track after the vertex requirement has been removed
 in order to increase the statistics of the 
-data and background Monte Carlo samples. 
-Good agreement between data and background Monte Carlo is found in most of the cases, suggesting
+data and background MC samples. 
+Good agreement between data and background MC is found in most of the cases, suggesting
 that background sources are well modeled in the MC simulation.
 
 \begin{figure}[htbp]
