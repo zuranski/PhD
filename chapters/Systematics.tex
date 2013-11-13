@@ -1,43 +1,46 @@
-We describe the sources of systematic uncertainty which inlcude those related to 
+We describe the sources of systematic uncertainty, which include those related to 
 the background prediction, the integrated luminosity, and the signal reconstruction efficiency. 
 The signal efficiencies are obtained from Monte Carlo simulations of the various signals processed
-through full detector simulation. The systematic uncertainties are then estimated by determining
+through the full detector simulation. 
+The systematic uncertainties are then estimated by determining
 the relevant differences between data and simulation using control samples. The sources
 of systematic uncertainty are discussed below and their impact on the analysis result is
 evaluated.
  
 As discussed in Section \ref{sec:cutvalues} the analysis aims to optimize the expected limit
-in case no signal is present in the data.
- With the level of the predicted
-background, we study the impact of a hypothetical total signal efficiency systematic uncertainty 
-on the limit result in Appendix \ref{app:sys}. 
-Upon an increase in signal systematic uncertainty the expected limit degrades relatively slowly,
-therefore when evaluating MC related systematic effects we take a conservative approach.
+on possible signals in data.
+As shown in Appendix \ref{app:sys}, an increase in the signal efficiency systematic uncertainty results only in slow degradation in the expected limit.
+Therefore, when evaluating MC related systematic effects we take a conservative approach.
+
+
+%With the level of the predicted
+%background, we study the impact of a hypothetical total signal efficiency systematic uncertainty 
+%on the limit result in Appendix \ref{app:sys}. 
 
 \section{Background}
-The systematic uncertainty on the estimated background differs depending on the final selection
- as listed in Table \ref{tab:background}. The relative systematic uncertainty is estimated using the prescription
-described in Section \ref{sec:abcd}. It is evaluated to be 32\% and 46\%
-for {\it low} and {\it high} $L_{xy}$ selections with 1.60 and 1.14 predicted background events respectively. 
-The 7 background predictions from which the systematic uncertainty is derived are listed in Table \ref{tab:sigbkg}.
+The systematic uncertainty on the estimated background depends on the final selection used.
+Using the prescription from Section \ref{sec:abcd} the systematic uncertainty 
+is evaluated to be 32\% and 46\%
+for the {\it low} and {\it high} $L_{xy}$ selections, with 1.60 and 1.14 predicted background events respectively. 
+The seven background predictions from which the systematic uncertainty is derived are listed in Table \ref{tab:sigbkg}.
 
 \begin{table}[htbp]
 \centering
-\caption{Predicted background level for the final selections obtained with 7 combinations using the
+\caption{Predicted background level for the final selections obtained with seven combinations using the
 method of independent selections. \label{tab:sigbkg}}
 
 \begin{tabular}{lcc}
 
 \hline
-Selection & {\it low} $L_{xy} $& {\it high} $L_{xy}$ \\
+Selection & low $L_{xy} $& high $L_{xy}$ \\
 \hline
-$BCD/A^2$ & 1.60 & 1.14 \\
-$FG/B$ & 1.21 & 1.00 \\
-$EG/C$ & 1.92 & 0.84 \\
-$DG/A$ & 1.76 & 1.25 \\
-$BE/A$ & 1.72 & 0.77 \\
-$CF/A$ & 1.08 & 0.92 \\
-$EF/D$ & 1.16 & 0.62 \\
+$\text{BCD/}\text{A}^2$ & 1.60 & 1.14 \\
+$\text{FG/B}$ & 1.21 & 1.00 \\
+$\text{EG/C}$ & 1.92 & 0.84 \\
+$\text{DG/A}$ & 1.76 & 1.25 \\
+$\text{BE/A}$ & 1.72 & 0.77 \\
+$\text{CF/A}$ & 1.08 & 0.92 \\
+$\text{EF/D}$ & 1.16 & 0.62 \\
 \hline
 
 \end{tabular}
@@ -50,14 +53,14 @@ For the running period corresponding to this analysis, CMS estimates the relativ
 \section{Effect of Pile-Up}
 The likelihood of a given number of pile-up events occurring in the data can be calculated from the distribution
  of the instantaneous luminosity during the 2012 LHC run. The number of true pile-up events in the Monte Carlo
- simulation is also known. The simulation can therefore be re-weighted to match the data. 
+ simulation is also known. The simulation can therefore be reweighted to match the data. 
 
-The systematic uncertainty in this procedure is estimated by adjusting the re-weighting, so as to account
+The systematic uncertainty in this procedure is estimated by adjusting the reweighting, so as to account
  for uncertainties related to pile-up modeling. 
 The effect of a $\pm$5\% variation in the number of interactions is estimated and gives rise 
 to a relative systematic uncertainty in the signal reconstruction efficiency 
 of less than 2\% for all mass and lifetime points considered. The signal reconstruction efficiency as
-a function of number of primary pile-up vertices is shown in Figure \ref{fig:effPU}. No significant
+a function of the number of primary pile-up vertices is shown in Figure \ref{fig:effPU}. No significant
 decrease in efficiency is observed as the number of primary pile-up vertices increases.
 
 \begin{figure}[htbp]
@@ -70,18 +73,18 @@ signal models.\label{fig:effPU}}
 \section{Primary vertex selection}
 \label{subsec:pv}
 The relevant impact parameters and decay lengths are computed 
-with respect to the primary vertex which has the highest
+with respect to the primary vertex that has the highest
 squared transverse momentum sum of the tracks. If a dijet candidate does not originate from this vertex the impact
 parameters would be computed incorrectly. The size of the luminous region, where the primary vertices lie,
- is $\sim$5\cm in the longitudinal direction and $\sim$15$\mu m$ in both transverse directions. 
+ is $\sim$5\cm in the longitudinal direction and $\sim$15$\mu\text{m}$ in both transverse directions. 
 Therefore the effect of an incorrect primary vertex assignment significantly increases the 3-D impact parameters,
  while for
-the transverse impact parameters the effect is small as the size of the luminous region is smaller than the 
-primary vertex resolution (20$\mu m$).
+the transverse impact parameters the effect is small, as the size of the luminous region is smaller than the 
+primary vertex resolution (20$\mu\text{m}$).
 In the displaced dijet selection criteria the 3-D impact parameters are used to compute 
 the number of jet prompt tracks, while all other criteria employ
 only the transverse impact parameters. 
- We study the background level and signal reconstruction efficiency where all
+ We study the background levels and signal reconstruction efficiency where all
  the relevant impact parameters and
 decay lengths are computed with respect to the second, instead of the first, primary vertex. In this scenario 
 the selection of an incorrect primary vertex is greatly enhanced. The predicted and
@@ -107,29 +110,28 @@ observed bkg. & 1 & 1 \\
 \end{tabular}
 \end{table}
 
-The predicted background level minimally increases if a wrong primary vertex is used, while the increase is small
-with respect to the background level uncertainty. The signal reconstruction efficiency 
+The predicted background level increases by a negligible amount if a wrong primary vertex is used. The signal reconstruction efficiency 
 does not significantly change whether the first or second leading primary vertex is used.
 
 \section{Displaced Tracking Efficiency}
 
 The signal reconstruction efficiency is obtained assuming the tracking efficiency is correctly 
 accounted for in the MC simulation. In order to validate this assumption we study
-the relative tracking efficiency as functions of displacement and pile-up using
+the relative tracking efficiency as a function of displacement and pile-up using
 $\Kshort \to \pi^+\pi^-$ decays in data and simulation.
 The $\Kshort \to \pi^+\pi^-$ decay mode, with the \Kshort proper decay length of $2.68 \cm$
  \cite{Beringer:1900zz}, provides an abundant source of tracks originating
 at displaced locations. 
 The tracking efficiency for \Kshort pions can be used to check the displaced jet tracking efficiency, 
-as the jet tracks consist mostly of low momentum light hadrons. 
+as the jet tracks consist mostly of low-momentum light hadrons. 
 
-\subsection{Pion displaced tracking efficiency}
+\subsection{Displaced pion tracking efficiency}
 \label{subsec:pitrkeff}
 
 Data and simulation events are selected with the multijet trigger, thus providing
-a source of \Kshort decays in a jet environment. The pile-up distribution in simulation is re-weighted
+a source of \Kshort decays in a jet environment. The pile-up distribution in simulation is reweighted
 to match the corresponding distribution in data. 
-To obtain a clean sample of \Kshort, pairs of tracks with $p_T>1$\GeV are combined
+To obtain a clean sample of \Kshort mesons, pairs of tracks with $p_T>1$\GeV are combined
  into a secondary 
 vertex with the following criteria:
 \begin{itemize}
@@ -140,9 +142,9 @@ vertex with the following criteria:
 \end{itemize}
 where the decay lengths and impact parameters are computed with respect to the leading primary vertex
 in the event.
-The secondary vertex invariant mass distribution is shown in Figure \ref{fig:ksmass}. 
+The secondary-vertex invariant-mass distribution is shown in Figure \ref{fig:ksmass}. 
 In Figure \ref{fig:ksmass}, as well as all other figures
-presented in this section, in order to reduce the effect of statistical fluctuations, 
+presented in this Section, in order to reduce the effect of statistical fluctuations, 
 the data/simulation ratio histograms are shown with neighbouring bins merged until the
 relative statistical uncertainty does not exceed 2\%. 
 
@@ -159,7 +161,7 @@ by \PYTHIA \cite{Khachatryan:2011tm}.
 In order to remove a potential bias arising from the generator level discrepancies, 
 we select the \Kshort candidates with transverse decay length $L_{xy}<2\cm$ where tracking efficiency
 is high and well simulated. We then compare $p_T$ and $\eta$ distributions for these candidates and obtain
-weights, binned in $p_T$ and $\eta$, as well as an overall scale factor which are further
+weights, binned in $p_T$ and $\eta$, as well as an overall scale factor that are further
  applied for all \Kshort candidates. 
 
 \begin{figure}[htbp]
@@ -173,7 +175,7 @@ The proper lifetime and momentum distributions of the \Kshort candidates are
 shown in Figure \ref{fig:ksctau}, while
 Figure \ref{fig:ksdisplacement} shows the two and three dimensional decay lengths and track impact
  parameter distributions for data and simulation.  
- A good agreement between data and simulation is found, with simulation
+ Good agreement between data and simulation is found, with simulation
  deviations not exceeding 10\%.   
 
 \begin{figure}[htbp]
@@ -187,9 +189,10 @@ of the \Kshort candidates in data and simulation. \label{fig:ksdisplacement}}
 \end{figure}
 
 The average number of 
-reconstructed \Kshort candidates as a function of pile-up is presented in Figure \ref{fig:kspileup}. 
-The decrease of tracking efficiency is found to be faster in data compared to simulation, while the 
-effect is not bigger than 5\%.
+reconstructed \Kshort candidates as a function of pile-up is presented in Figure \ref{fig:kspileup}.
+
+The tracking efficiency is found to decrease more rapidly in data than simulation, but the
+overall difference is not bigger than 5\%.
 
 \begin{figure}[htbp]
 \centering
@@ -197,29 +200,28 @@ effect is not bigger than 5\%.
 \caption{Average number of reconstructed \Kshort candidates as a function of number of primary vertices in data and simulation. \label{fig:kspileup}}
 \end{figure}
 
-The \Kshort reconstruction efficiency is proportional to the single track reconstruction efficiency squared, 
-therefore the deviations between data and simulation of \Kshort distributions can be translated to twice smaller 
-deviations in the single track reconstruction efficiency. We conservatively adopt the largest deviation 
-of 10\% as the systematic uncertainty on the \Kshort efficiency and therefore a 5\% systematic on the 
+The \Kshort reconstruction efficiency is proportional to the single-track reconstruction efficiency squared, 
+therefore the deviations between data and simulation of \Kshort distributions can be translated to deviations in the single track reconstruction efficiency that are half as large. We conservatively adopt the largest deviation 
+of 10\% as the systematic uncertainty on the \Kshort efficiency and therefore assign 5\% systematic uncertainty on the 
 single track reconstruction efficiency. 
 
 \subsection{Impact on the signal reconstruction efficiency}
 
-We examine the effect of tracking efficiency systematic uncertainty by removing 5\% of the displaced tracks 
+We examine the effect of the tracking efficiency systematic uncertainty by removing 5\% of the displaced tracks 
  and repeating the signal reconstruction procedure.
-For all signal models the reconstruction efficiency is lowered by up to 4\% which we adopt as our reconstruction
-efficiency systematic related to displaced tracking efficiency.  
+For all signal models the reconstruction efficiency is lowered by up to 4\%, which we adopt as our reconstruction
+efficiency systematic uncertainty from this source.  
 
 \section{Track missing hits}
 
 In the pre-selection criteria the tracks in the displaced dijet vertex are required to have on average
- less than 2 missing hits behind the vertex position. The efficiency of this requirement is above 98\% 
+ fewer than two missing hits behind the vertex position. The efficiency of this requirement is above 98\% 
 for the simulated signal dijets as shown in Table \ref{tab:seleff}. 
-The number of missing measurements depends on the number of tracking modules which are capable of providing
-valid hits along the path of each track, which may not be properly simulated as the overall number of 
-not functional modules in data changes over the data taking period. We study the average number of missing
-hits behind the vertex position in a control sample of prompt dijets in data and simulation. We apply the
-analogous selection criteria which are applied to the signal dijets,
+The number of missing measurements depends on the number of tracking modules that are capable of providing
+valid hits along the path of each track. This may not be properly simulated as the overall number of 
+non-functional modules changes over the data taking period. We study the average number of missing
+hits behind the vertex position in a control sample of prompt dijets in data and simulation. We apply the selection criteria that are analogous to the selection criteria applied to the signal
+dijets,
  while omitting the requirements on prompt tracks and vertex displacement. Figure \ref{fig:misshits} presents
 the average number of missing hits behind the vertex position per track for prompt dijets in data and simulation.
 
@@ -230,33 +232,32 @@ the average number of missing hits behind the vertex position per track for prom
 in data and simulation.\label{fig:misshits}}
 \end{figure}
 
-There are more missing hits observed in data, however the requirement of less than 2
-missing hits on average is 98\% efficient in both data and simulation. Given the agreement in the efficiency
+There are more missing hits observed in data, however, the requirement of less than two
+missing hits is on average 98\% efficient in both data and simulation. Given the agreement in the efficiency
 of this selection we do not assign additional systematic uncertainty. 
 
 \section{Jet energy scale}
 \label{sec:jessys}
 
-In CMS reconstruction the jet energies are determined by applying a set of corrections.
+In the CMS reconstruction the jet energies are determined by applying a set of corrections.
  The systematic uncertainties on the corrections are also provided. The uncertainties vary as a function
  of jet $p_T$ and $\eta$ and are different depending on the jet algorithm \cite{Chatrchyan:2011ds}.
  Therefore, the effect of these
 uncertainties on the signal reconstruction efficiency needs to be evaluated by applying variations to individual 
-jets. In the event selection, described in Section \ref{sec:selection},
+jets. In the event selection described in Section \ref{sec:selection},
  we use the jet energy information in the following criteria:
 \begin{itemize}
-\item $H_T>$325\GeV - using jets with $p_T>$40\GeV and $|\eta|<3$;
-\item $p_T>$60\GeV for both jets of the dijet candidate - here jets within $|\eta|<2$ are used.  
+\item $H_T>325$\GeV -- using jets with $p_T>40$\GeV and $|\eta|<3$;
+\item $p_T>60$\GeV for both jets of the dijet candidate - here jets within $|\eta|<2$ are used.  
 \end{itemize}    
 
-We determine the systematic uncertainty due to jet energy scale by shifting all relevant jet energies by 
-their individual uncertainties up and down. 
+We determine the systematic uncertainty due to the jet energy scale by shifting all relevant jet energies by $\pm1$ standard deviation. 
 %Additionally, we assume that uncertainties for the two  
 % jet algorithms, ak5Calo and ak5PF, are correlated, 
 %since they both use energy information from the calorimeters. 
 The systematic 
-difference in signal reconstruction efficiency upon jet energy scale variations is presented in Table
-\ref{tab:jessys}. For \Higgs mass of 1000 \GeV the uncertainty is negligible, while for lower masses
+difference in the signal reconstruction efficiency upon jet energy scale variations is presented in Table
+\ref{tab:jessys}. For a \Higgs mass of 1000 \GeV the uncertainty is negligible, while for lower masses
 of the \Higgs the systematic effect is below 5\%. 
 
 
@@ -289,25 +290,26 @@ $M_{\Higgs}$ [\GeV] & $M_{\X}$ [\GeV]  & $\Delta\epsilon$ \\
 \section{Jet momentum bias}
 \label{sec:ptbias}
 
-\X boson jets originate at transversely displaced locations which leads to two effects that affect the jet 
+\X boson jets originate at transversely displaced locations, which leads to two effects 
+that are relevant for the jet 
 momentum determination:
 \begin{itemize}
  \item skewed approach angle at the calorimeters face. This effect is a result of the displacement 
 of the jet production point combined with the opening angle of the $\qq$ pair.
-If the angle is large, the jet particles pass sideways through the calorimeters 
+If the angle is large, the jet particles pass sideways through the calorimeters, 
  which results in a geometrical bias of the individual
-particles momentum and therefore the entire jet momentum;  
+particle's momentum and therefore the entire jet momentum;  
  \item reduced tracking efficiency for tracks originating far from the interaction point. 
 %This effect
 %is applicable only to Particle Flow jets which employ the tracking information, while it is not relevant for the 
 %Calo jets. 
-In the jet reconstruction algorithm when charged particles
+In the jet reconstruction algorithm, when charged particles
 are not reconstructed as tracks, they are assumed to be neutral particles, therefore the jet 
-charged energy fraction is underestimated in favor of the neutral energy fraction. 
+charged-energy fraction is underestimated in favor of the neutral-energy fraction. 
 The calorimeter response to charged and neutral particles is different,
-therefore the mis-measured energy fractions lead to biased jet energy corrections.
+therefore the mismeasured energy fractions lead to biased jet energy corrections.
 \end{itemize}
-Figure \ref{fig:jetbias} shows the bias (points) and the resolution (error bars) of the signal jets $p_T$  as a function of the \X boson transverse decay length $L_{xy}$.
+Figure \ref{fig:jetbias} shows the bias (points) and the resolution (error bars) of the signal jets' $p_T$ as a function of the \X boson transverse decay length $L_{xy}$.
 
 \begin{figure}[htbp]
 \centering
@@ -321,19 +323,19 @@ Figure \ref{fig:jetbias} shows the bias (points) and the resolution (error bars)
 \caption{Signal jet $p_T$ bias and resolution as a function of the jet approach angle at the calorimeters.\label{fig:jetbiasAngle}}
 \end{figure} 
 
-The jet momentum bias due to geometrical displacement is found to be up to -10\% for dijet candidates with transverse
+The jet momentum bias due to geometrical displacement is found to be as large as -10\% for dijet candidates with transverse
 decay lengths below 60\cm, while it is small for the prompt jets as expected. The level of the bias differs
-depending on the signal mass point chosen, while the variation is related to the calorimeter approach angle
+depending on the signal mass point chosen, while the variation is related to the calorimeter approach angle,
 which is influenced by the opening angle of the $\qq$ pairs.
-The jet momentum bias as a function of the calorimeter approach angle is shown in Figure \ref{fig:jetbiasAngle}.
-If the jet approach angle is restricted to below one degree, the jet momentum bias is found to be reduced by half.
+The jet-momentum bias as a function of the calorimeter approach angle is shown in Figure \ref{fig:jetbiasAngle}.
+If the jet approach angle is restricted to below one degree, the jet momentum bias is reduced by half.
  Therefore, the two effects related to tracking efficiency and skewed approach angle contribute to the 
 momentum bias in approximately the same amounts.
 
 We do not assign a systematic uncertainty related to the jet momentum bias arising from the skewed approach angle 
 at the calorimeters under the assumption that the detector geometry is well described in the MC simulation.
-In Section \ref{subsec:pitrkeff} we assign a 5\% systematic uncertainty on single track efficiency for 
-displaced tracks. We therefore study a 5\% variation of the jet charged energy
+In Section \ref{subsec:pitrkeff} we assign a 5\% systematic uncertainty on single-track efficiency for 
+displaced tracks. We therefore study a 5\% variation of the jet charged-energy
 fraction and its impact on the signal reconstruction efficiency with the results presented 
 in Table \ref{tab:jetbias}. 
 %The variation is relevant only for selection criteria where Particle Flow jets
@@ -359,7 +361,7 @@ in Table \ref{tab:jetbias}.
 %\label{subsec:pdfsys}
 
 %The signal Monte Carlo samples are generated using \PYTHIA. According to the recommendations on Parton Density
-%Functions use at the LHC \cite{Bourilkov:2006cj}, the events are then re-weighted using 
+%Functions use at the LHC \cite{Bourilkov:2006cj}, the events are then reweighted using 
 %three PDF sets:
 %\begin{itemize}
 %\item CT10 - update of CTEQ6.6
@@ -413,7 +415,7 @@ in Table \ref{tab:jetbias}.
 %Therefore, the signal reconstruction efficiency is also sensitive to the modelling of
 % the Higgs $p_T$ spectrum, which may be in turn influenced by higher-order QCD corrections. 
 %To study this effect
-%we re-weight the \PYTHIA \Higgs $p_T$ spectrum from our signal samples to match the corresponding distribution
+%we reweight the \PYTHIA \Higgs $p_T$ spectrum from our signal samples to match the corresponding distribution
 %determined at NLO using \POWHEG \cite{Bagnaschi:2011tu}. For $M_{\Higgs}$ = 200 \GeV with $M_{\X}$ = 50 \GeV and for $M_{\Higgs}$ = 400 \GeV 
 %with $M_{\X}$ = 150 \GeV signal models this changes the efficiency by 20\% and 3\% respectively, while for
 %other signal models the corresponding change is below 1\%. 
@@ -424,36 +426,36 @@ in Table \ref{tab:jetbias}.
 \section{Trigger Efficiency}
 \label{sec:trigeff}
 
-The high level trigger used in the analysis, double displaced jet trigger described
+The double displaced jet trigger, described
 in Section \ref{subsec:trigger}, has been emulated in all
  simulation samples. The trigger selection consists of several consecutive filters applied to each event, 
 and the performance of each filter is studied individually in data and simulation with respect to 
 the corresponding offline selection criteria. For studying each individual filter, events 
 passing all trigger decisions 
 are not used in order to avoid a possible bias with the signal sample. Individual filters and their efficiency are
-described in the following sections.  
+described in the following Sections.  
 
-\subsection{Scalar sum of jets $E_T$}
+\subsection{$H_T$ trigger}
 \label{subsec:trigHT}
-This trigger filter requires $H_T > $ 300\GeV. Its performance is studied using a lower threshold trigger which 
-requires $H_T >$ 250\GeV. 
-The lower threshold trigger has been heavily prescaled in 2012 LHC run, therefore the integrated luminosity corresponds to only 8\pbinv. 
-In both trigger calculation and offline reconstruction, hadronic jets with $p_T>$40\GeV and $|\eta|<$3 are used
+This trigger filter requires $H_T > 300$\GeV. Its performance is studied using a lower threshold trigger that 
+requires $H_T >250$\GeV. 
+The lower threshold trigger was heavily prescaled in 2012 LHC run, therefore the integrated luminosity corresponds to only 8\pbinv. 
+In both trigger calculation and offline reconstruction, hadronic jets with $p_T>40$\GeV and $|\eta|<3$ are used
  for $H_T$ computation. 
 Figure \ref{fig:effHT300} shows the trigger efficiency as a function of the offline $H_T$. 
 The difference in performance between data and simulation can be inferred from the efficiency ratio 
 shown at the bottom. The observed discrepancy in the turn-on curves close to the threshold is caused by the 
-difference in Level 1 trigger seeds used in the simulation compared to data.
+difference in Level 1 trigger seeds between simulation and data.
 An offline selection on 
-$H_T$ at 325\GeV is applied in the selection criteria. 
-Above this value the differences in efficiency between data and simulation are up to
-7\%. To account for these differences the simulation events are re-weighted to match the efficiency in data.
-This re-weighting
+$H_T$ at 325\GeV is applied. 
+Above this value the differences in efficiency between data and simulation are as large as
+7\%. To account for these differences the simulation events are reweighted to match the efficiency in data.
+This reweighting
 lowers the signal efficiency by up to 2\% for all considered signal models. The systematic effects in the turn-on
-curve shape are studied by re-weighting the simulation with data turn-on curves corresponding to
- different periods of the LHC data taking in 2012. The variations in efficiency are found consistent within 
-less than 1\%, while we conservatively assign 1\% as a relative 
-systematic uncertainty corresponding to this trigger filter.      
+curve shape are studied by reweighting the simulation with data turn-on curves corresponding to
+ different periods of the LHC data taking in 2012. The variations in efficiency are 
+less than 1\%, leading us to assign 1\% 
+systematic uncertainty corresponding for this trigger filter.      
 
 \begin{figure}[htbp]
 \centering
@@ -465,22 +467,23 @@ systematic uncertainty corresponding to this trigger filter.
 \label{subsec:trig2Trks}
 
 This filter is analyzed with data passing the previous 
-$H_T$ filter. Data collected by CMS with this filter applied has also been prescaled and 
+$H_T$ filter. Data collected by CMS with this filter applied was prescaled and 
 amounts to 17\pbinv.  
 While the filter in question
  requires at least two jets with $p_T>$ 60\GeV passing the requirement, it is sufficient to study
  only the efficiency
- of a single jet passing the filter with respect to number of prompt tracks computed offline.
- In both HLT trigger and offline
- reconstruction prompt tracks are selected as those with an impact parameter in 3 dimensions 
+ of a single jet passing the filter with respect to the number of prompt tracks computed offline.
+ In both the HLT trigger and the offline
+ reconstruction prompt tracks are selected as those with an impact parameter in three
+ dimensions 
 not bigger than 300$\mum$
- with respect to leading primary vertex. Figure \ref{fig:eff2Trks} shows the single jet efficiency of passing
- the requirement of maximally 2 prompt tracks as a function of the same variable computed offline.
- The trigger becomes efficient with number of offline prompt tracks less than 2. 
-A drop in efficiency for 0 prompt tracks arises from a fact of different leading primary vertex assignment 
+ with respect to the leading primary vertex. Figure \ref{fig:eff2Trks} shows the single jet efficiency for passing
+ the requirement of at most two prompt tracks as a function of the same variable computed offline.
+ The trigger becomes efficient when the number of offline prompt tracks is less than two. 
+A drop in efficiency for the case of zero prompt tracks results from different leading primary vertex assignment 
 between HLT and offline reconstructions. 
-In such a scenario a track may be assumed to be prompt at HLT and non-prompt
- in offline reconstruction or vice versa. 
+In such a scenario a track may be assumed to be prompt in the HLT and non-prompt
+ in the offline reconstruction or vice versa. 
   
 
 \begin{figure}[htbp]
@@ -489,12 +492,12 @@ In such a scenario a track may be assumed to be prompt at HLT and non-prompt
 \caption{Single jet efficiency for jets having maximally of 2 prompt tracks as a function of number of offline prompt tracks. \label{fig:eff2Trks}}
 \end{figure}
 
-The trigger efficiency for jets passing the offline selection of maximally 2 prompt tracks 
+The trigger efficiency for jets passing the offline selection of at most two prompt tracks 
 is plotted in Figure \ref{fig:eff2Trksptetaphi}
  as a function of $p_T$, $\eta$ and $\phi$. In order to determine the differences in performance 
 between data and simulation the efficiency ratios are fitted with a zeroth order polynomial for each variable.
-The fits yield a value of 97\% consistent within statistical uncertainties in $p_T$, $\eta$ and $\phi$,
- however with the $\chi^2$ per degree of freedom of the fits up to 4. 
+The fits yield ratio values close to 97\% for all three functions. This is statistically consistent given the uncertainties in $p_T$, $\eta$ and $\phi$.
+ However, the $\chi^2$ per degree of freedom for the fits is as large as 4. 
 The statistical uncertainties on individual points in the ratio histograms
 are thus inflated by a factor of 2 and the ratios refitted.
  The overall correction is determined from the average of the fit values for
@@ -519,10 +522,10 @@ each jet passing this trigger filter.
 Similarly, we require both filters from Sections \ref{subsec:trigHT} and \ref{subsec:trig2Trks} 
 to accept the event and examine a single jet efficiency with respect to prompt charged energy
  fraction computed offline. In this trigger step the prompt tracks are defined
- as those having the transverse impact parameter not bigger than 500$\mum$. 
+ as those having the transverse impact parameter not bigger than 500\micron. 
 Using transverse impact parameter
 minimizes the sensitivity to additional pile-up interactions in the event. The size of the luminous region in 
-the transverse plane is very small, about 15$\mum$, therefore the track promptness definition is general
+the transverse plane is very small, about 15\micron, therefore the track promptness definition is general
 and does not depend on the choice of the leading primary vertex. 
 Trigger efficiency as a function of prompt energy fraction computed offline is shown in Figure \ref{fig:eff2PF}.
 
