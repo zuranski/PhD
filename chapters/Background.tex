@@ -40,8 +40,11 @@ of the event counts in other regions. Among the suitable combinations
 there are six combinations that use event counts in only
 three regions, namely:
 \begin{enumerate}
- \item FG/B = (+,--,+)(+,+,--) / (+,--,--) -- ``+" or ``--" corresponds to a selection
- being applied or inverted;
+ \item FG/B = (+,--,+)(+,+,--) / (+,--,--) -- the right hand side of the equation uses
+ a notation that indicates which selections are passed and which are failed by 
+ the events in a given region
+ \ie (+,--,+) corresponds to region F where events pass the first and third selection,
+ while they fail the second selection;
  \item EG/C = (--,+,+)(+,+,--) / (--,+,--)
  \item EF/D = (--,+,+)(+,--,+) / (--,--,+)
  \item DG/A = (--,--,+)(+,+,--) / (--,--,--)
@@ -81,7 +84,7 @@ central value.
 %DG/A * BE/A / EG/C = BCD/A^2
 %\end{equation}
 In the case of perfectly independent 
-variables, all suitable combinations predict statistically consistent  amount of background. 
+variables, all above combinations predict statistically consistent  amount of background. 
 However, to account for possible systematic
 effects due to residual dependence of the selections, we assign a systematic uncertainty 
 that is equal to the largest difference 
