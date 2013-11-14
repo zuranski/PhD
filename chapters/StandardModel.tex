@@ -1,15 +1,15 @@
-The Standard Model (SM) is the theoretical framework that describes fundamental particles
+The Standard Model is the theoretical framework that describes fundamental particles
 and their interactions. It explains a wealth of results from accelerator-based
-and cosmic ray-based experiments, in many cases with great accuracy.
-The recent discovery of a Higgs particle, a long sought particle that is responsible for
-the electroweak symmetry 
+and cosmic ray-based experiments, with great accuracy in most cases.
+The recent discovery of a Higgs boson, which is a long sought particle thought to be responsible for
+electroweak symmetry 
 breaking, emphasizes the success of the theory.
 
 Nevertheless, significant pieces of the Standard Model are still obscure: the hierarchy
 problem, the unification of the fundamental forces at very small distances and their possible
 connection to gravity, the dark matter and dark energy hypotheses, etc. We therefore hope
 to observe and understand the way in which the Standard Model breaks down.
-The issues we have encountered, at the energy scales explored so far, already
+The phenomena we have encountered, at the energy scales explored so far, already
 hint at some grander underlying structure of nature. This structure is yet to be found.
 
 % More intro needed
@@ -17,14 +17,14 @@ The physics goals of the experiments at the Large Hadron Collider (LHC) are exac
 examine the internal consistency of the Standard Model while looking for its extensions.
 Currently, the major tasks are to explore
 the Standard Model Higgs sector, fully investigate the \TeV mass scale with searches
-for new particles, seek connections between the particles 
-produced in proton collision and dark matter, and many others. 
+for new particles, and to seek connections between the particles 
+produced in proton-proton collisions and dark matter. 
 Described in this dissertation is a particular course of exploration: a search for hypothetical
-particles that haven't been observed so far. Our aim is to examine existence of particles
+particles that haven't been observed so far. Our aim is to probe the existence of particles
 that are neutral, 
-massive and decay with a relatively long mean lifetime, between pico and nanoseconds. The existence
+massive and decay with a relatively long lifetime, between pico and nanoseconds. The existence
 of such long-lived exotic
-particles would offer a clue about what physics may lie beyond the Standard Model.
+particles would offer a clue about physics that may lie beyond the Standard Model.
 
 The thesis is structured as follows. Chapter \ref{chap:intro}
  presents the Standard Model together with its
@@ -35,13 +35,16 @@ Chapter \ref{chap:cmslhc} describes the LHC and the Compact Muon Solenoid (CMS) 
 The basic aspects of CMS event reconstruction and simulation are also explained.
 In Chapter \ref{chap:selection},
 the details of long-lived particle reconstruction and selection are described. 
-Chapter \ref{chap:background} is dedicated to estimation of the Standard Model
+Chapter \ref{chap:background} is dedicated to the estimation of the Standard Model
  background, while Chapter
 \ref{chap:systematics} details the various sources of systematic uncertainty in the analysis.
-Finally, in Chapter \ref{chap:results}, the results of the search are presented in terms
-of the capability to reconstruct various signals and the CMS data obsservations.
+Finally, in Chapter \ref{chap:results}, the results of the search are presented, 
+and limits on the various signals are set. 
 
-The analysis has been structured to follow a {\it blind analysis} approach. In such an analysis
+%in terms
+%of the capability to reconstruct various signals and the CMS data observations.
+
+The search has been constructed to follow a {\it blind analysis} approach. In such an analysis
 all the details of event reconstruction and selection are established 
 with the use of simulations and control samples before
 the analysis of the final dataset is performed.
@@ -53,29 +56,28 @@ Natural units, in which $\hbar=c=1$, are used throughout this thesis.
 
 The Standard Model is a quantum field theory of elementary particles that describes 
 three of the four fundamental interactions: 
-the electromagnetic, the weak, and the strong interactions. The fourth fundamental
-interaction, the gravity, 
-is not a part of the model as no quantum theory of gravity exists to this date. 
-The theory is described in detail elsewhere, e.g. \cite{Glashow:1961tr,Salam:1968rm,Tully:1417476}, 
-but a brief overview is given here.
+the electromagnetic, the weak, and the strong interactions. A fourth fundamental
+interaction, gravity, 
+is not a part of the model as no quantum theory of gravity exists to date. 
+The Standard Model is described in detail elsewhere, e.g. \cite{Glashow:1961tr,Salam:1968rm,Tully:1417476}, 
+but a brief overview is given here. From this point forward the Standard Model will be denoted as SM.
 
 In the SM each particle is described
 in terms of a dynamical field that permeates space-time, while the internal dynamics 
 and kinematics are controlled by a relativistically invariant Lagrangian.
-The Standard Model is defined by the three local gauge symmetries of the Lagrangian
+The SM is defined by the three local gauge symmetries of the Lagrangian
 corresponding to three fundamental interactions.
 It is important to note that particle mass and electric charge, 
 which are well known properties from 
 classical physics, are highly non-obvious quantities in the Standard Model. They
-will be re-introduced together with the mechanism of electroweak symmetry breaking, however
-at this point,
+will be re-introduced together with the mechanism of electroweak symmetry breaking. At this point, however,
 all elementary particles are assumed massless and only the possible quantum numbers
 and degrees of freedom of particle states are investigated.
 
 The existence of an interaction is reflected in the quantum numbers of the elementary
 particles, while an interaction itself can be viewed as a transformation between particle states
-into one another in a manner similar to a rotation, but within an internal space of the interaction.
-The Standard Model Lagrangian is assumed invariant under the following symmetry group:
+in a manner similar to a rotation, but within an internal space of the interaction.
+The SM Lagrangian is assumed to be invariant under the following symmetry group:
 \begin{equation}
 \text{SU}(3)_\text{C} \times \text{SU}(2)_\text{L} \times \text{U}(1)_\text{Y}
 \label{eqn:symSM}
@@ -87,13 +89,13 @@ interaction.
 The smallest non-trivial representation of the weak isospin interaction is
 a two-component doublet of particles with three generators
 of rotations in the isospin space denoted as $W^i$ and $i=1,2,3$.
-Therefore, there is an ``up" and ``down" type in each weak isospin doublet of elementary particles.
+Therefore, there is an ``up" and a ``down" type in each weak isospin doublet of elementary particles.
 Both quarks and leptons are arranged into doublets of weak isospin, the up quarks ($u$, $c$, $t$)
 are matched to down quarks ($d$, $s$, $b$), and the leptons ($e$, $\mu$, $\tau$) are matched
 to neutrinos ($\nu_e$, $\nu_{\mu}$, $\nu_{\tau}$). The weak isospin doublets of quarks and leptons
 are presented in Figure \ref{fig:parttable}.  
-The hypercharge $Y$ has every similarity to electric charge, with the exception of the
-charge assignments to the elementary particles so as to preserve indistinguishability of the components
+The hypercharge $Y$ is very similar to electric charge, although the charge assignments
+are such as to preserve indistinguishability of the components
 of weak isospin doublets.
 
 The sub-symmetry $\text{SU}(2)_\text{L} \times \text{U}(1)_\text{Y}$ describes the electroweak sector of the SM with the 
@@ -115,7 +117,7 @@ non-trivial representation given by a triplet of states, denoted as colors: red,
 and a set of eight generators of rotation. Such a color triplet is called a quark, with the
 three colour states being indistinguishable, while the
 eight carriers of the strong interaction are called gluons. 
-The quantum chromo-dynamics (QCD)
+The quantum chromodynamics (QCD)
 part of the SM is described by the following Lagrangian:
 
 \begin{equation}
@@ -128,12 +130,12 @@ is the strong coupling constant.
 
 An interesting feature of the strong interaction is that as the energy scale of the interaction 
 increases (the length scale decreases) the strength of the coupling constant becomes small.
-Such a feature of the coupling constant,
+This phenomenon,
  also known as {\it asymptotic freedom},
  is an outcome of the interaction dimension ($N=3$) and the number of existing
 quark flavours ($6$ known flavors).
  Another aspect of the strong interaction is {\it colour
-confinement}. Although the phenomenon is not yet well explained, it is thought to be
+confinement}. Although this phenomenon is not yet well explained, it is thought to be
  related to the fact that gluons also carry colour charge and can interact
 with themselves. As a result of the confinement, the colour particles 
 cannot be isolated or directly measured. The particles that carry colour
@@ -155,7 +157,7 @@ mass and electric charge, making them distinguishable.
 in some form given the structure of the particles table. 
 In order to explain the physically observed masses and charges of elementary
  particles we need to introduce electroweak symmetry breaking, a central concept
-of the Standard Model that transforms the
+of the SM that transforms the
 weak isospin and hypercharge interactions into the well known weak and electromagnetic forces.
 
 
@@ -183,7 +185,7 @@ Z_{\mu}=\cos\theta_W W_{\mu}^3-\sin\theta_W B_{\mu}
 \begin{equation}
 A_{\mu}=\sin\theta_W W_{\mu}^3+\cos\theta_W B_{\mu}
 \end{equation}
-where $\theta_W$ is the weak mixing angle defined as $\theta_W=tan^{-1} g^{'}/g$, where $g$ 
+where $\theta_W$ is the weak mixing angle defined as $\theta_W=\tan^{-1} g^{'}/g$, where $g$ 
 and $g^{'}$ are the coupling constants of $\text{SU}(2)_\text{L}$ and $\text{U}(1)_\text{Y}$, respectively; $A_{\mu}$ is the 
 massless electromagnetic photon field ($\gamma$); $W_{\mu}^{\pm}$ and $Z_{\mu}$ are the charged 
 and neutral weak fields. The mechanism requires the introduction of a complex
