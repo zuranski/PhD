@@ -463,7 +463,7 @@ systematic uncertainty corresponding for this trigger filter.
 \caption{$H_T>$300\GeV trigger efficiency as a function of offline $H_T$ requirement. \label{fig:effHT300}}
 \end{figure} 
 
-\subsection{Two jets each with maximally 2 prompt tracks}
+\subsection{Two jets, each with no more than two prompt tracks}
 \label{subsec:trig2Trks}
 
 This filter is analyzed with data passing the previous 
@@ -516,35 +516,36 @@ each jet passing this trigger filter.
 \caption{Single jet efficiency as a function of jet $p_T$, $\eta$ and $\phi$ for jets with maximally 2 offline prompt tracks. \label{fig:eff2Trksptetaphi}}
 \end{figure}
 
-\subsection{Two jets with maximally 15\% of energy fraction carried by prompt tracks}
+\subsection{Two jets, each with less than 15\% of prompt energy fraction}
 \label{subsec:trig2PF}
 
-Similarly, we require both filters from Sections \ref{subsec:trigHT} and \ref{subsec:trig2Trks} 
-to accept the event and examine a single jet efficiency with respect to prompt charged energy
+We require both filters from Sections \ref{subsec:trigHT} and \ref{subsec:trig2Trks} 
+to accept the event and then
+examine the single jet efficiency with respect to the prompt charged-energy
  fraction computed offline. In this trigger step the prompt tracks are defined
- as those having the transverse impact parameter not bigger than 500\micron. 
-Using transverse impact parameter
-minimizes the sensitivity to additional pileup interactions in the event. The size of the luminous region in 
-the transverse plane is very small, about 15\micron, therefore the track promptness definition is general
-and does not depend on the choice of the leading primary vertex. 
+ as those having a transverse impact parameter smaller than 500\micron. 
+Using the transverse impact parameter
+minimizes the sensitivity to additional pileup interactions in the event. The luminous region in 
+the transverse plane is very small, about 15\micron, therefore the track promptness definition does not depend on the choice of the primary vertex. 
 Trigger efficiency as a function of prompt energy fraction computed offline is shown in Figure \ref{fig:eff2PF}.
 
 \begin{figure}[htbp]
 \centering
  \includegraphics[width=0.49\textwidth]{plots/trigger/effHT300_PF_PromptEnergyFrac.pdf}
-\caption{Single jet efficiency for jets with maximally 15\% prompt energy fraction as a function of offline prompt energy fraction. \label{fig:eff2PF}}
+\caption{Single jet efficiency for jets with less than 15\% prompt energy fraction as a function of offline prompt energy fraction. \label{fig:eff2PF}}
 \end{figure}     
 
-Systematic differences between data and simulation are again studied after applying the offline selection at 15\%.
- The efficiency as a function of $p_T$, $\eta$, $\phi$ is presented in Figure \ref{fig:eff2PFptetaphi}. 
-The same procedure as in Section 
+Systematic differences between data and simulation are again studied after an offline requirement
+that the prompt energy fraction is less than 15\%.
+ The efficiency as a function of $p_T$, $\eta$, and $\phi$ is presented in Figure \ref{fig:eff2PFptetaphi}. 
+The same procedure used in Section 
 \ref{subsec:trig2Trks} is followed and the efficiency ratios are fitted with a zeroth order polynomial.
  No error inflation is needed as the statistical uncertainties on the individual ratio bins are larger
 due to limited statistics.
  We assign a correction of 97\% and a conservative systematic uncertainty of 2\% for
-each jet passing this filter from the average and the spread of the fit results for $p_T$, $\eta$, and $\phi$.
-Similar performance of the filters in Sections \ref{subsec:trig2Trks} and \ref{subsec:trig2PF} 
-is expected since both filters use properties of the similar sets of tracks.
+each jet passing this filter based on the average and the spread of the fit results for $p_T$, $\eta$, and $\phi$.
+Similar performance of the filters described in Sections \ref{subsec:trig2Trks} and \ref{subsec:trig2PF} 
+is expected, since both filters act on similar sets of tracks.
 
 \begin{figure}[!h]
 \centering
@@ -556,24 +557,25 @@ is expected since both filters use properties of the similar sets of tracks.
 
 \subsection{Overall trigger efficiency}
 
-Each of the trigger filters have been analyzed individually by determining performance differences 
+Each of the trigger filters has been analyzed individually by determining performance differences 
 between data and simulation. Observable discrepancies are accounted for as corrections in Sections
  \ref{subsec:trig2Trks} and \ref{subsec:trig2PF} and the uncertainties on the corrections are treated as 
-systematic uncertainties. The trigger used in the analysis requires
+systematic uncertainties. The trigger used in the physics analysis requires
  at least two jets passing the filters from Sections \ref{subsec:trig2Trks} and \ref{subsec:trig2PF}, 
-hence corrections need to be applied twice, while systematic uncertainties added as fully correlated. 
+hence corrections need to be applied twice, while systematic uncertainties need to be 
+added as fully correlated. 
 Additionally, systematic uncertainties related to filters from Sections 
-\ref{subsec:trig2Trks} and \ref{subsec:trig2PF} are both related to reconstruction of prompt tracks, therefore
- we adopt a conservative approach and add them as correlated also. The systematic uncertainty assigned to 
+\ref{subsec:trig2Trks} and \ref{subsec:trig2PF} are both related to the reconstruction of prompt tracks. We therefore
+ adopt a conservative approach and also assume that they are correlated. The systematic uncertainty assigned to 
 the filter from Section 
-\ref{subsec:trigHT} is related to the jets transverse energy, hence it can be treated as uncorrelated. 
-The total correction applied to the per event trigger efficiency determined from simulation is thus 0.89 with a total
+\ref{subsec:trigHT} is related to the jet transverse energies, and therefore can be treated as uncorrelated. 
+The total correction applied to the per-event trigger efficiency determined from simulation is thus 0.89 with a total
 relative systematic uncertainty of 6\%. 
 
 \section{Total signal efficiency systematic uncertainty}
 
 Table \ref{tab:signalsystematics} summarizes the sources of systematic uncertainties on the signal efficiency. 
-The various effects are assumed uncorrelated and therefore added in quadrature with the total
+The various effects are assumed uncorrelated and therefore added in quadrature with a total
 uncertainty between 8--10\% depending on the signal model.
 
 \begin{table}[htbp]
