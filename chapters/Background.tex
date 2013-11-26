@@ -9,9 +9,17 @@ its systematic uncertainty.
 
 
 \section{Method of uncorrelated variables (ABCD)}
+
+
+% We use an extension of the ABCD method 
+% a little paragraph in there saying something like: to establish the notation, we consider a simple version of the ABCD method
+% involving two independent cuts. 
+
+% make an introduction about the ABCD method for only two variables
+
 \label{sec:abcd}
-We use a data-driven method of independent selections, the ``ABCD method", using
- the three independent selection criteria listed in Section \ref{sec:selection}. 
+We use a data-driven method of independent selections, ``the ABCD method", using
+ three independent selection criteria listed in Section \ref{sec:selection}. 
 The three selection criteria divide the events into eight
 regions (A, B, C, ..., H) as listed in Table \ref{tab:regions}.
 
@@ -19,6 +27,7 @@ regions (A, B, C, ..., H) as listed in Table \ref{tab:regions}.
 \centering
 \caption{Naming convention for the regions used in background estimation. "+" corresponds to a selection 
 being applied, while "--" to a selection being inverted. \label{tab:regions}}
+\vspace{0.1cm}
 \begin{tabular}{cccc}
  \hline
   Region & selection 1 & selection 2 & selection 3 \\
@@ -37,7 +46,7 @@ being applied, while "--" to a selection being inverted. \label{tab:regions}}
 
 The background level in the signal region H can be estimated from combinations
 of the event counts in other regions. Among the suitable combinations 
-there are six combinations that use event counts in only
+there are six that use event counts in only
 three regions, namely:
 \begin{enumerate}
  \item FG/B = (+,--,+)(+,+,--) / (+,--,--) -- the right hand side of the equation uses
@@ -84,7 +93,7 @@ central value.
 %DG/A * BE/A / EG/C = BCD/A^2
 %\end{equation}
 In the case of perfectly independent 
-variables, all above combinations predict statistically consistent  amount of background. 
+variables, all above combinations predict statistically consistent  amounts of background. 
 However, to account for possible systematic
 effects due to residual dependence of the selections, we assign a systematic uncertainty 
 that is equal to the largest difference 
@@ -106,6 +115,8 @@ detailed in Table \ref{tab:background}.
 
 \begin{table}[htbp]
 \centering
+\caption{Optimised selection criteria and the corresponding background expectations with their statistical and systematic uncertainties.\label{tab:background}}
+\vspace{0.1cm}
 \begin{tabular}{r|c|c}
 %\hline
 $\bf L_{xy}$ \bf selection &\bf  $\bf <30\cm (low)$ & \bf  $\bf >30\cm (high)$ \\
@@ -119,7 +130,6 @@ vertex/cluster disc. & $>0.9$ & $>0.8$  \\
 \bf expected bkg. & $\bf 1.60\pm0.26(stat)\pm0.51(syst)$ & $\bf 1.14\pm0.15(stat)\pm0.52(syst)$ \\
 %\hline
 \end{tabular}
-\caption{Optimised selection criteria and the corresponding background expectations with their statistical and systematic uncertainties.\label{tab:background}}
 \end{table}
 
 \section{Background tests}

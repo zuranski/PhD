@@ -10,7 +10,7 @@ a correlation study between the discrimination criteria.
 
 \subsection{\Higgs mass}
 
-The \Higgs mass range sensitivity is mostly affected by the $H_T>300\GeV$ requirement imposed by the trigger. 
+The \Higgs mass range sensitivity is most affected by the $H_T>300\GeV$ requirement imposed by the trigger. 
 In order to minimize the effects of the trigger turn-on curve,
 we require $H_T>325\GeV$ in the offline reconstruction.
 
@@ -24,22 +24,22 @@ Figure \ref{fig:sight} presents the offline reconstructed $H_T$ distributions
 for selected signal models; all available \Higgs 
 mass points are shown.
 The $H_T>325\GeV$ requirement reduces the sensitivity of the search in the low mass region of the exotic \Higgs,
-therefore we analyze further only those signal models where mass of the \Higgs is 200\GeV or higher.
+therefore we analyze further only those signal models where the mass of the \Higgs is 200\GeV or higher.
 
 \subsection{\X mass given the \Higgs mass}
 
 In this search we aim to reconstruct displaced dijet candidates originating from a common displaced
 vertex using pairs of 
- jets which need to fall 
+ jets that need to fall 
 within the tracker acceptance ($|\eta|<2$).  
  The jets are reconstructed with an anti-k$_T$
-algorithm operated with a size parameter $R$ of 0.5 \cite{Cacciari:2008gp} which also determines
+algorithm operated with a size parameter $R$ of 0.5 \cite{Cacciari:2008gp}, which also determines
 the minimal angular distance between the jets reconstructed in the event. 
 In order to reconstruct two distinct
 jets with this algorithm the opening angle between the two quarks needs to be above 0.5 radians.
 Figure \ref{fig:sigdR} presents the opening angle distributions between the two quarks originating
 from $\X \to \qq $ decay for signal models with 
-$M_{\Higgs}$= 200, 400, 1000\GeV.  
+$M_{\Higgs}$= 200, 400, and 1000\GeV.  
 
 \begin{figure}[htbp]
 \centering
@@ -54,15 +54,15 @@ of \Higgs and \X particles masses. \label{fig:sigdR}}
 \centering
 \includegraphics[width=0.49\textwidth]{plots/signal/effDijet.pdf}
 \caption{Dijet reconstruction efficiency as a function of the quark-pair opening angle for jets reconstructed with an
-anti-k$_T$ algorithm operated with a cone size of 0.5. Both reconstructed jets are required to have a $p_T>60$\GeV
+anti-k$_T$ algorithm operated with a cone size of 0.5. Both reconstructed jets are required to have $p_T>60$\GeV
 and $|\eta|<2$.  \label{fig:effdR}}
 \end{figure}
 
 The efficiency of reconstructing a pair of jets
- corresponding to the $\X \to \qq$ decay using anti-k$_T$ algorithm with the 0.5 radius as a function of the
+ corresponding to the $\X \to \qq$ decay using the anti-k$_T$ algorithm with a 0.5 radius as a function of the
 opening angle of the quark pair is shown in Figure \ref{fig:effdR}. Both jets are required 
-to have the $p_T>60$\GeV and $|\eta|<2$, which causes the 
-efficiency to be reduced for lower \Higgs  mass models.
+to have $p_T>60$\GeV and $|\eta|<2$, which causes the 
+efficiency to be reduced for lower \Higgs  masses.
  
 
 The dijet analysis is therefore sensitive to long-lived \X particles with masses
@@ -91,19 +91,19 @@ In the reconstruction process described below, we identify characteristic variab
 of the long-lived dijet candidates that provide
 signal-to-background discrimination using simulated MC samples.    
 There is no SM process giving rise to displaced dijet pairs. Jets may,
-however, may contain displaced (high impact parameter) tracks originating from B meson decays, nuclear
+however, contain displaced (high impact parameter) tracks originating from B meson decays, nuclear
 interactions of charged particles with the tracker material, \Kshort and $\Lambda^0$ decays, etc. These tracks, if 
 present for two distinct jets,
 may then cross at a displaced location and mimic a common dijet vertex. 
 
-We apply a trigger that only requires $H_T>$300\GeV, but does not require
-the presence of at least two jets having few low impact parameter tracks. Such a requirement
+We apply a trigger that requires $H_T>$300\GeV, but does not require
+jets having few low impact parameter tracks. Such a requirement
 yields very low
 candidate counts for the background MC samples.
-All figures in this Section that show signal and background MC distributions 
+All figures in this section that show signal and background MC distributions 
 are scaled to the total available luminosity
 of 18.5\fbinv. 
-The cross section of the signal process has been set to 10 $\mu$b for visual purposes.   
+The cross section of the signal process has been set to 10 $\mu$b for purposes of illustration.   
 
 %%% primary vertrex
 The LHC collision events usually contain many primary vertices corresponding to multiple proton-proton collisions occurring 
@@ -122,18 +122,17 @@ to those where both reconstructed jets are matched within a cone of 0.5 to gener
  from the \X boson decay. Applying this requirement does not change the signal reconstruction efficiency
 once the full selection is applied. 
 
- 
 Additionally, tracks reconstructed with 
 the CMS iterative tracking
 algorithm \cite{Giordano:2012hr} as described in Section \ref{subsec:trackreco},
  are associated within 0.5 cone to both jets. The track momentum vector used for 
 the association is evaluated at the point of closest approach to the beam line. Only tracks
 with $p_T>$ 1\GeV are considered. Tracks with lower transverse momenta
-do not reach the calorimeter system due their strong deflection in the CMS magnetic field. Among the tracks we select a set of {\bf displaced tracks} defined as those with
+do not reach the calorimeter system due their strong deflection in the CMS magnetic field. Among the tracks we select a set of displaced tracks defined as those with
 a transverse impact parameter with respect to the primary vertex greater than 500\micron, which is large enough
 to exclude most of the B hadron decay products. 
 The individual impact parameters are signed with the sign of the scalar product between
- the dijet momentum and the impact parameter vectors in the transverse plane.
+ the dijet momentum vector and the impact parameter vector in the transverse plane.
 For each jet we also repeat the calculation of variables used in the displaced jet trigger
  using offline reconstruction, namely:
 
@@ -156,14 +155,14 @@ We present the distributions for the lower $p_T$ jet in the dijet pair.
 
 \end{figure}
 
-Secondary vertices are searched among the tracks associated to each dijet pair 
-using two different algorithms: 
+Secondary vertices are sought among the tracks associated with each dijet pair 
+using two different algorithms. 
 
 \begin{enumerate}
 
 \item{\bf Vertex Fitter}
 \label{subsec:AVF}
-\cite{Waltenberger:1166320}. The fitter performs an iterative least-squares estimation of the
+\cite{Waltenberger:1166320}. The fitter performs an iterative least-squares estimate of the
  secondary vertex position. The consecutive iterations down-weight tracks that seem inconsistent
 with the fitted vertex position until an optimum is found.
  The secondary dijet vertex is required to have a chisquared per degree of freedom 
@@ -206,6 +205,8 @@ in the transverse plane.
 
 \end{figure}
 
+\item In a second algorithm we search for clustering of the $L_{xy}$ values from the tracks in the jets.
+
 \item{\bf Clusters of the expected path length}  
 \label{subsec:Clusters}
 - in this algorithm, for each of the displaced tracks associated with either jet, a decay point consistent 
@@ -217,17 +218,17 @@ the particle trajectory and a straight line drawn from the primary vertex in the
 Information about the production point for each track is then used to compute an expected path length in the
 transverse plane, $L_{xy}^\text{exp}$.  
 For high momentum tracks the trajectory in the transverse plane is a straight line,
- therefore the decay point can be determined from the crossing point between two lines
+ therefore the decay point can be determined from the crossing point between two lines,
  and the expected path length is simply:
 \begin{equation}
  L_{xy}^\text{exp}=\frac{d_{xy}}{\sin(\phi_\text{track} - \phi_\text{dijet})}
 \label{eqn:lxystraight}
 \end{equation}
-where $d_{xy}$ is the transverse impact parameter and $\phi$ is the polar angle. However, 
+where $d_{xy}$ is the transverse impact parameter and $\phi$ is the azimuthal angle. However, 
 in the presence of an axial magnetic field, the formula above is not valid as a result of
 curvature. In order to find the expected path length in such cases,
  we find a corresponding crossing point for the track helix with a radius $R$. Since we consider only
-tracks with $p_T>$1\GeV, which translates to the helix radius $R$ above 80\cm, 
+tracks with $p_T>$1\GeV, which translates to a helix radius $R>80\cm$, 
 the calculation is limited to first order in 
 $d_{xy}/R$. 
  A line drawn from the primary vertex along the dijet momentum crosses the helix twice, yielding
@@ -271,11 +272,11 @@ For a genuine secondary vertex associated with a dijet pair the $L_{xy}^\text{ex
 in order to select tracks belonging to the cluster. 
 Clustering is performed with a size parameter equal to 15\% of 
 the vertex $L_{xy}$ reconstructed with the vertex fitter. 
-The tracks are added to the cluster given that the distances between the $L_{xy}^{exp}$
+The tracks are added to the cluster in cases where the distances between the $L_{xy}^{exp}$
 values are not larger than the size parameter. 
  If two or more clusters 
 are reconstructed, the one closest to the vertex is selected. 
-This algorithm is complementary to adaptive vertex fitter
+This algorithm is complementary to the vertex fitter
 since it uses additional information about the dijet direction. Discriminating variables provided
  by this algorithm include:
 \begin{itemize}
@@ -284,7 +285,7 @@ since it uses additional information about the dijet direction. Discriminating v
  relative to the vertex $L_{xy}$ given by Eq. \ref{eqn:clrrms}. In addition to cluster density, this
 variable provides information on whether both vertex and cluster reconstructions share the same tracks.
  If the two sets of tracks
-are different that fact greatly increases the value of the cluster RMS, Figure \ref{fig:discclr}.
+are different the value of the cluster RMS is greatly increased, see Figure \ref{fig:discclr}.
 \begin{equation}
 \text{RMS}_\text{cluster} = \sqrt{1/N_\text{tracks}\sum_{i=0}^{N_\text{tracks}}\frac{ \left(L_{xy}^\text{exp}(i) - L_{xy}\right)^2}{L_{xy}^2}}
 \label{eqn:clrrms}
@@ -310,7 +311,7 @@ of independent selection criteria, the ``ABCD method", which is
  described in detail in Section \ref{sec:abcd}. This method requires
 at least two selection criteria where the probability of a background candidate to pass one 
 criterion is
-not correlated with whether it passes the other criterion. Such selection criteria can be generally
+not correlated with whether it passes the other criterion. Such selection criteria generally can be
 constructed
 from variables which are mutually independent. 
  In order to eliminate pairs of variables that are not independent,
@@ -321,15 +322,15 @@ according to the formula:
  \text{corr}(x,y) = \text{cov}(x,y)/\text{RMS}(x)\text{RMS}(y), \hspace{5pt} \text{cov}(x,y)= \sum_i(x_i y_i)/N - \sum_i(x_i)/N \sum_i(y_i)/N
 \label{eqn:corr}
 \end{equation}
-where N is the normalization of the histogram and index $i$ loops over the histogram bins. Based on the study of the correlation factors, we construct
+where N is the normalization of the histogram and index the $i$ loops over the histogram bins. Based on the study of the correlation factors, we construct
 three independent selection criteria for the background estimation:
 
 \begin{itemize}     
-\item[1.] {\bf Combination of the number of prompt tracks and prompt tracks jet energy fraction selections} - for first jet in the dijet pair;
-\item[2.] {\bf Combination of the number of prompt tracks and prompt tracks jet energy fraction selections} - for second jet in the dijet pair;
-\item[3.] {\bf Combined vertex \& cluster likelihood discriminant}. 
+\item[1.] {\bf Combination of the number of prompt tracks and prompt-track jet-energy-fraction selections} - for first jet in the dijet pair;
+\item[2.] {\bf Combination of the number of prompt tracks and prompt-track jet-energy-fraction selections} - for second jet in the dijet pair;
+\item[3.] {\bf Combined vertex and cluster likelihood discriminant}. 
 We select variables that have small model dependence and are 
-well uncorrelated with prompt tracks variables. They include:
+uncorrelated with prompt tracks variables. They include:
 \begin{itemize}
  \item vertex track multiplicity;
  \item fraction of tracks assigned to the vertex with positive value of signed transverse impact parameter;
@@ -337,7 +338,7 @@ well uncorrelated with prompt tracks variables. They include:
  \item cluster RMS.
 \end{itemize}  
 The likelihood discriminant is obtained using signal and background MC samples, where samples for
-various signal models are added together due to small signal dependence of the variables used.
+various signal models are added together due to the small signal dependence of the variables used.
 For each dijet candidate a signal probability is computed according to the formula:
 \begin{equation}
 p=\frac{p_S}{p_S+p_B}=\frac{1}{1+p_B/p_S}=\frac{1}{1+\Pi_i p_B{}_i/p_S{}_i}
@@ -363,9 +364,10 @@ from both jets simultaneously.
 \caption{Correlation factors obtained with Eq. \ref{eqn:corr} between the variables 
 used for background estimation obtained from background QCD MC
 samples. N1 and N2 represent the numbers
-of prompt tracks for jets 1 and 2, respectively, while fraction 1 and 2 the jet energy fraction carried by
+of prompt tracks for jets 1 and 2, respectively, while fraction 1 and fraction 2 represent the jet energy fraction carried by
 prompt tracks.
 \label{tab:corr}}
+\vspace{0.1cm}
 \begin{tabular}{c|ccccc}
  & Vtx/Cluster & N1 & N2 & fraction 1 & fraction 2 \\
 \hline
@@ -389,15 +391,14 @@ The final numerical values required for the variables used for background estima
 The reconstruction and preselection procedure 
 may result in multiple candidates per event that all pass
 the preselection criteria. In such cases, we select only one candidate per event by
-choosing the one with the highest number of tracks associated to the secondary vertex.
-If two or more candidates have the same number of tracks associated to the secondary vertex,
+choosing the one with the highest number of tracks associated with the secondary vertex.
+If two or more candidates have the same number of tracks associated with the secondary vertex,
 we choose the candidate with a smaller $\chi^2/\text{dof}$. The candidate preselection together
 with the selection of the 
 one candidate per event will be further referred to as event preselection.
 Only the 
 properties of the one selected candidate are used for further selection and background estimation.
-It is worth noting that
-among the background MC events above 99\% of events contains only one candidate
+More than 99\% of the background MC events contain only one candidate
 after the preselection criteria are applied. 
 
 %When a single jet is used in more than one dijet pair after preselection, we 
@@ -428,6 +429,7 @@ There may be many dijet candidates in a single event, therefore
 for those criteria the efficiency is computed using the number of events 
 containing at least one dijet candidate that fulfills the selection. 
 \label{tab:seleff}}
+\vspace{0.1cm}
 \begin{tabular}{|l|ccccc|}
 \hline
  & \multicolumn{5}{c|}{preselection criteria efficiency} \\
@@ -458,8 +460,8 @@ We use a control region that requires passing the single jet trigger
 definitions are given in Section \ref{subsec:trigger}). Compared to the signal region, there is a factor of 100 less integrated 
 luminosity and the signal efficiency for all considered signal models is at least ten 
 times smaller than the efficiency
-in the signal region. Figures \ref{fig:promptness}, \ref{fig:discriminant}, \ref{fig:vertex} 
-and \ref{fig:cluster} present all 
+in the signal region. Figures \ref{fig:promptness} through % \ref{fig:discriminant}, \ref{fig:vertex} 
+\ref{fig:cluster} present all 
 of the discrimination variables used in the analysis in the control region
 after event preselection. The number of missing hits per track after the vertex requirement has been removed
 in order to increase the statistics of the 

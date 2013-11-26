@@ -3,18 +3,18 @@
 The high instantaneous luminosity at the LHC together with limitations on the storage space available for
 CMS data necessitate the existence of a trigger.
  The aim of the trigger is to reduce the rate
-of collision events from 40 MHz, as delivered by the LHC, to $\sim500$ Hz that will be stored
+of collision events from $\sim15$~MHz, delivered by the LHC, to $\sim500$ Hz that will be stored
 for further analysis, while keeping the events of potential physics interest.
 The details of the CMS trigger design and implementation are described in \cite{Cittolin:578006},
 only the basic concepts are explained here. 
 
-The CMS trigger system consists of two parts: ``Level One" (L1) and ``High Level" (HLT).
+The CMS trigger system consists of two parts: ``the Level One" (L1) and ``the High Level Trigger" (HLT).
 The L1 is a set of electronics operating at 40 MHz and has a latency of 3~$\mu s$. During this
 time only simplified 
 objects are reconstructed from the detector readouts using fast electronics.
  They include L1 muon, photon, 
-electron, or jet candidates, as well as an energy sum of all jets in the event 
-and missing transverse energy.
+electron, and jet candidates, as well as an energy sum of all jets in the event 
+and the missing transverse energy.
 Only the objects above, or combinations of them, are used to make acceptance decisions. 
 The maximum allowed output
 rate of the L1 trigger part is 100 kHz. Events passing the L1 requirements are processed by the
@@ -26,9 +26,9 @@ There are about
 on the reconstructed objects
 (jets, leptons, missing energy). The number of trigger paths approximately corresponds to the
 number of searches and measurements pursued by the CMS collaboration.
-In many of cases, the physics objects
+Frequently the physics objects
 upon which the decisions are made overlap between the triggers, in which case the reconstruction 
-is only performed once.
+is performed only once.
 
 
 \subsection{Trigger for long-lived particles decaying to dijets}
@@ -38,10 +38,10 @@ A dedicated trigger has been designed to accept events that contain long-lived p
 decaying to dijets. 
 The underlying idea behind such a trigger is not to reconstruct dijets
 associated with a displaced vertex, because such a procedure is too complicated to be executed 
-at the HLT stage, but rather to reject events where all the jets are produced promptly at the collision
-point which is much simpler. The rate limitations (up to 1~Hz imposed by the CMS collaboration)
+at the HLT stage, but rather to simply reject events where all the jets are produced promptly at the collision
+point. The rate limitations (up to 1~Hz imposed by the CMS collaboration)
  together with the limited execution time (up to 5~ms on average for a single trigger path)
-resulted in the trigger that consists of the following filters:
+resulted in a trigger that consists of the following filters:
 
 \begin{enumerate}
  \item Scalar transverse energy sum of all 
@@ -56,10 +56,10 @@ $|\eta|<2$. This requirement selects jets that are central and well within the a
 of the CMS tracker;
 \item At least two of the jets selected in step 3 are required to have not more than two tracks
 that have impact parameters smaller than 300\micron. This requirement rejects many promptly
-produced jets, having a majority of their tracks with small impact parameters;
+produced jets, which typically have many tracks with small impact parameters;
 \item For at least two of the jets selected in step 4 the jet energy fraction carried by the tracks
 that have transverse impact parameters smaller than 500\micron is required to be smaller than
-15\%. This requirement additionally suppresses promptly produced jets. 
+15\%. This requirement also suppresses promptly produced jets. 
 \end{enumerate}
 
 In addition to the trigger just described, a control trigger has been designed which
@@ -68,9 +68,11 @@ consists of the same steps, but modified such that the steps 3 through 5 require
 {\it single displaced jet} triggers. Due to HLT rate limitations the {\it single} trigger
 was prescaled.
 Both triggers were active during the entire 2012 LHC run and the number of events collected by CMS
-together with the integrated luminosity are summarized in Table \ref{tab:triggerEvents}.
+together with the integrated luminosity is summarized in Table \ref{tab:triggerEvents}.
 \begin{table}[hbtp]
 \begin{center}
+\caption{Displaced jet triggers active in 2012 LHC run.\label{tab:triggerEvents}}
+\vspace{0.1cm}
 \begin{tabular}{l c c c }
 \hline
 trigger name & prescale factor & \lumi [\fbinv] & N events [1e6] \\
@@ -80,9 +82,8 @@ double displaced jet & 1 & 18.5 & 1.9\\
 \hline
 \end{tabular}
 \end{center}
-\caption{Displaced jet triggers active in 2012 LHC run.\label{tab:triggerEvents}}
 \end{table}
 Data collected by the double displaced jet trigger, where the presence of two triggering jets is required,
  is used to search for our signal,
-while data collected by the single jet one is used as a prescaled control sample.
+while data collected by the single jet trigger is used as a prescaled control sample.
 
