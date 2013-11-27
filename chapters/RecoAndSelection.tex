@@ -86,6 +86,7 @@ such that a significant fraction of the candidates have opening angles above 0.5
 %If any of the criteria is not met by the long-lived object, the reconstruction will not succeed.
 
 \section{Reconstruction}
+\label{sec:reco}
 
 In the reconstruction process described below, we identify characteristic variables
 of the long-lived dijet candidates that provide
@@ -97,9 +98,10 @@ present for two distinct jets,
 may then cross at a displaced location and mimic a common dijet vertex. 
 
 We apply a trigger that requires $H_T>$300\GeV, but does not require
-jets having few low impact parameter tracks. Such a requirement
-yields very low
-candidate counts for the background MC samples.
+jets having few low impact parameter tracks. 
+%Such a requirement
+%yields very low
+%candidate counts for the background MC samples.
 All figures in this section that show signal and background MC distributions 
 are scaled to the total available luminosity
 of 18.5\fbinv. 
@@ -122,10 +124,10 @@ to those where both reconstructed jets are matched within a cone of 0.5 to gener
  from the \X boson decay. Applying this requirement does not change the signal reconstruction efficiency
 once the full selection is applied. 
 
-Additionally, tracks reconstructed with 
-the CMS iterative tracking
-algorithm \cite{Giordano:2012hr} as described in Section \ref{subsec:trackreco},
- are associated within 0.5 cone to both jets. The track momentum vector used for 
+Among the jet constituents charged tracks
+%reconstructed with the CMS iterative tracking
+%algorithm \cite{Giordano:2012hr} as described in Section \ref{subsec:trackreco},
+ are associated within 0.5 cone to each jet. The track momentum vector used for 
 the association is evaluated at the point of closest approach to the beam line. Only tracks
 with $p_T>$ 1\GeV are considered. Tracks with lower transverse momenta
 do not reach the calorimeter system due their strong deflection in the CMS magnetic field. Among the tracks we select a set of displaced tracks defined as those with
@@ -155,14 +157,14 @@ We present the distributions for the lower $p_T$ jet in the dijet pair.
 
 \end{figure}
 
-Secondary vertices are sought among the tracks associated with each dijet pair 
+Secondary vertices are sought among the displaced tracks associated with each dijet pair 
 using two different algorithms. 
 
-\begin{enumerate}
+%\begin{enumerate}
 
-\item{\bf Vertex Fitter}
-\label{subsec:AVF}
-\cite{Waltenberger:1166320}. The fitter performs an iterative least-squares estimate of the
+{\bf The Vertex Fitter}
+%\label{subsec:AVF}
+\cite{Waltenberger:1166320} performs an iterative least-squares estimate of the
  secondary vertex position. The consecutive iterations down-weight tracks that seem inconsistent
 with the fitted vertex position until an optimum is found.
  The secondary dijet vertex is required to have a chisquared per degree of freedom 
@@ -177,15 +179,26 @@ The following quantities obtained from the vertex fit, with plots presented in F
 \begin{itemize}
  \item vertex track multiplicity;
  \item fraction of tracks assigned to the vertex with a positive value of signed impact parameter;
- \item number of missing tracker hits behind the vertex position per track - each track in CMS is reconstructed 
+ \item number of missing tracker hits after the vertex position per track - each track in CMS is reconstructed 
 from hits in the silicon tracker using a Kalman Filter algorithm \cite{Giordano:2012hr}. The algorithm propagates
  track seeds through the CMS tracker in the direction from the beam line towards the calorimeters. Whenever a hit 
 is found along the trajectory the track parameters are updated, while occasional missing measurements 
 are allowed. 
-This variable represents an average count of missing tracker measurements 
-starting from the fitted vertex position until the innermost hit of the vertex tracks. The fitted vertex position
+For each of the vertex tracks we compute a number of missing tracker measurements starting from the
+secondary vertex position until the innermost hit of the track. We then average the missing measurements over
+the vertex tracks.
+The fitted vertex position
 may be significantly closer to the beam line than the track production point, if the track comes from a nuclear
- interaction or a $V^0$ decay;
+ interaction or a $V^0$ decay. An example of a fake secondary vertex (SV) that can be rejected by requiring a small
+ number of missing tracker hits after the vertex position is shown in Fig.~\ref{fig:miss_hits};
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.65\textwidth]{plots/missing_hits.png}
+\caption{An example of a fake secondary vertex with multiple missing hits after the secondary vertex position. The rectangular tracking modules
+are filled if a hit is found and empty if there is no hit present. The two tracks that form a secondary vertex have three and two
+missing measurements after the secondary vertex position. Such a secondary vertex may be found \eg if the two tracks originate from
+two distinct nuclear interaction vertices; if one track comes from a nuclear interaction vertex while the other comes from a pileup interaction; etc.\label{fig:miss_hits}}
+\end{figure}
  \item invariant mass of the vertex tracks (vertex mass);
  \item $p_T$ of the vertex tracks (vertex $p_T$);
  \item $L_{xy}$ significance - where $L_{xy}$ is the distance between secondary and primary vertices
@@ -193,7 +206,7 @@ in the transverse plane.
 \end{itemize}
 
 
-\begin{figure}
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=0.49\textwidth]{plots/discrimination/disc_vtxN.pdf}
 \includegraphics[width=0.49\textwidth]{plots/discrimination/disc_Posip2dFrac.pdf}
@@ -205,11 +218,8 @@ in the transverse plane.
 
 \end{figure}
 
-\item In a second algorithm we search for clustering of the $L_{xy}$ values from the tracks in the jets.
-
-\item{\bf Clusters of the expected path length}  
-\label{subsec:Clusters}
-- in this algorithm, for each of the displaced tracks associated with either jet, a decay point consistent 
+In the second algorithm we search for clustering of the $L_{xy}$ values from the tracks in the jets.
+For each of the displaced tracks associated with either jet, a decay point consistent 
 with the displaced dijet hypothesis 
 is determined. As schematically presented in Fig. 
 \ref{fig:guesslxydiagram} such a point 
@@ -301,7 +311,7 @@ are different the value of the cluster RMS is greatly increased, see Fig.~\ref{f
 \end{figure}
 
 
-\end{enumerate}
+%\end{enumerate}
 
 \section{Selection}
 \label{sec:selection}
@@ -384,7 +394,7 @@ The final numerical values required for the variables used for background estima
 \begin{itemize}
  \item vertex mass $>$ 4\GeV;
  \item vertex $p_T>$ 8\GeV;
- \item average number of missing tracker hits behind the secondary vertex position $\leq$ 2 per track;
+ \item average number of missing tracker hits after the secondary vertex position $\leq$ 2 per track;
  \item $L_{xy}$ significance $>$ 8.
 \end{itemize}
 

@@ -18,10 +18,31 @@ its systematic uncertainty.
 % make an introduction about the ABCD method for only two variables
 
 \label{sec:abcd}
-We use a data-driven method of independent selections, ``the ABCD method", using
- three independent selection criteria listed in Section \ref{sec:selection}. 
+We use a data-driven method of independent selections, ``the ABCD method".
+To establish the notation, we introduce a simple version of the method that involves two 
+independent selection criteria. As schematically presented in Fig.~\ref{fig:abcd} 
+with two selection criteria one can divide the events into four
+regions.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.65\textwidth]{plots/abcd.png}
+\caption{Naming convention for the regions used in ``the ABCD method".\label{fig:abcd}}
+\end{figure}
+The regions A, B, and C are background dominated. The events that fall into those regions fail at least 
+one of the selection criteria which have been optimized for signal detection. 
+Given that for background events the probability of passing the first criterion is independent 
+from whether it passes the second criterion, the number
+of background events in the signal region, D, can be obtained from the event counts in regions A, B and C using the formula:
+
+\begin{equation}
+\text{D} = \frac {\text{BC}}{\text{A}}
+\end{equation}
+
+
+In this analysis, we use an extension of the ``the ABCD method" using
+ three, instead of two, independent selection criteria, see Section \ref{sec:selection} for the definitions of those selection criteria. 
 The three selection criteria divide the events into eight
-regions (A, B, C, ..., H) as listed in Table \ref{tab:regions}.
+regions (A, B, C, ..., H), as listed in Table \ref{tab:regions}, with  H being the signal region.
 
 \begin{table}[htbp]
 \centering
@@ -44,7 +65,7 @@ being applied, while "--" to a selection being inverted. \label{tab:regions}}
 \end{tabular} 
 \end{table}
 
-The background level in the signal region H can be estimated from combinations
+With three independent selections the background level in the signal region H can be estimated from various combinations
 of the event counts in other regions. Among the suitable combinations 
 there are six that use event counts in only
 three regions, namely:
