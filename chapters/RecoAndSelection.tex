@@ -179,6 +179,10 @@ The following quantities obtained from the vertex fit, with plots presented in F
 \begin{itemize}
  \item vertex track multiplicity;
  \item fraction of tracks assigned to the vertex with a positive value of signed impact parameter;
+ \item invariant mass of the vertex tracks (vertex mass);
+ \item $p_T$ of the vertex tracks (vertex $p_T$);
+ \item $L_{xy}$ significance - where $L_{xy}$ is the distance between secondary and primary vertices
+in the transverse plane;
  \item number of missing tracker hits after the vertex position per track - each track in CMS is reconstructed 
 from hits in the silicon tracker using a Kalman Filter algorithm \cite{Giordano:2012hr}. The algorithm propagates
  track seeds through the CMS tracker in the direction from the beam line towards the calorimeters. Whenever a hit 
@@ -190,7 +194,7 @@ the vertex tracks.
 The fitted vertex position
 may be significantly closer to the beam line than the track production point, if the track comes from a nuclear
  interaction or a $V^0$ decay. An example of a fake secondary vertex (SV) that can be rejected by requiring a small
- number of missing tracker hits after the vertex position is shown in Fig.~\ref{fig:miss_hits};
+ number of missing tracker hits after the vertex position is shown in Fig.~\ref{fig:miss_hits}.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.65\textwidth]{plots/missing_hits.png}
@@ -199,10 +203,6 @@ are filled if a hit is found and empty if there is no hit present. The two track
 missing measurements after the secondary vertex position. Such a secondary vertex may be found \eg if the two tracks originate from
 two distinct nuclear interaction vertices; if one track comes from a nuclear interaction vertex while the other comes from a pileup interaction; etc.\label{fig:miss_hits}}
 \end{figure}
- \item invariant mass of the vertex tracks (vertex mass);
- \item $p_T$ of the vertex tracks (vertex $p_T$);
- \item $L_{xy}$ significance - where $L_{xy}$ is the distance between secondary and primary vertices
-in the transverse plane.
 \end{itemize}
 
 
@@ -332,14 +332,14 @@ according to the formula:
  \text{corr}(x,y) = \text{cov}(x,y)/\text{RMS}(x)\text{RMS}(y), \hspace{5pt} \text{cov}(x,y)= \sum_i(x_i y_i)/N - \sum_i(x_i)/N \sum_i(y_i)/N
 \label{eqn:corr}
 \end{equation}
-where N is the normalization of the histogram and index the $i$ loops over the histogram bins. Based on the study of the correlation factors, we construct
+where N is the normalization of the histogram and the index $i$ loops over the histogram bins. Based on the study of the correlation factors, we construct
 three independent selection criteria for the background estimation:
 
 \begin{itemize}     
 \item[1.] {\bf Combination of the number of prompt tracks and prompt-track jet-energy-fraction selections} - for first jet in the dijet pair;
 \item[2.] {\bf Combination of the number of prompt tracks and prompt-track jet-energy-fraction selections} - for second jet in the dijet pair;
 \item[3.] {\bf Combined vertex and cluster likelihood discriminant}. 
-We select variables that have small model dependence and are 
+We select variables that have small signal model dependence and are 
 uncorrelated with prompt tracks variables. They include:
 \begin{itemize}
  \item vertex track multiplicity;
@@ -394,8 +394,8 @@ The final numerical values required for the variables used for background estima
 \begin{itemize}
  \item vertex mass $>$ 4\GeV;
  \item vertex $p_T>$ 8\GeV;
- \item average number of missing tracker hits after the secondary vertex position $\leq$ 2 per track;
- \item $L_{xy}$ significance $>$ 8.
+ \item $L_{xy}$ significance $>$ 8;
+ \item average number of missing tracker hits after the secondary vertex position $\leq$ 2 per track.
 \end{itemize}
 
 The reconstruction and preselection procedure 
