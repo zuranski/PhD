@@ -1,7 +1,8 @@
 
 % Say what the application is
-In this analysis dijet tracks are clustered, using a method known as {\it hierarchical clustering}, according to 
-their $L_{xy}^\text{exp}$ as described in Section \ref{sec:reco}.
+In this analysis dijet tracks are clustered
+according to their $L_{xy}^\text{exp}$ values, as described in Section \ref{sec:reco},
+using a method known as {\it hierarchical clustering}. 
 
 Hierarchical clustering connects elements of an unclustered set using a similarity (linkage) criterion,
 as shown schematically in Figure \ref{fig:dendrogram}.
@@ -25,5 +26,5 @@ where $\mathcal{A}$ and $\mathcal{B}$ are already existing clusters.
 The procedure is repeated until the similarity criterion is no longer satisfied. In Figure \ref{fig:dendrogram} the minimal similarity criterion is 
 schematically presented as a horizontal
 dashed line. The clustering procedure results in two clusters: ABC and DEFG. In the dijet analysis we cluster tracks according to 
-their $L_{xy}^\text{exp}$ only, if the minimal distance between the clusters (Eqn. \ref{eqn:linkage}) does not exceed 15\% of the secondary vertex $L_{xy}$.
+their $L_{xy}^\text{exp}$ if the minimal distance between the clusters (Eqn. \ref{eqn:linkage}) does not exceed 15\% of the secondary vertex $L_{xy}$.
 
